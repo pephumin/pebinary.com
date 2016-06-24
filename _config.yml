@@ -28,6 +28,7 @@ encoding: utf-8
 
 timezone: Asia/Bangkok
 
+exclude: ['README.md']
 
 # Build settings
 
