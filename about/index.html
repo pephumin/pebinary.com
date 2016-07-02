@@ -1,0 +1,27 @@
+---
+layout: default
+title: About us
+navigation_weight: 1
+---
+
+<h1>About us</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
+<h4>Welcome to {% include logo.html %}</h4>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+<hr>
+
+{% include why.html %}
+
+<hr>
+
+{% include map.html %}
