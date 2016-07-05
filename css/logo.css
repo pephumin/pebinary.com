@@ -34,6 +34,7 @@
 
 .logo4 {
   /*color: #800080;*/
+  color: #000000;
   font-weight: normal;
   /*vertical-align: text-top;*/
 }
@@ -49,6 +50,7 @@
 .logo6 {
   font-family: 'neon';
   font-size: 175%;
+  color: #000000;
   /*color: #800080;*/
   /*text-transform: uppercase;*/
   font-weight: normal;
@@ -57,7 +59,7 @@
 .stamp1 {
   font-family: 'boon';
   font-size: 120%;
-  color: #FFFFFF;
+  color: #000000;
   letter-spacing: 0.1rem;
   /*text-transform: uppercase;*/
   /*background: #FFFFFF;*/
@@ -67,8 +69,21 @@
 .stamp2 {
   font-family: 'ubuntu';
   font-size: 120%;
-  color: #FFFFFF;
+  color: #000000;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   /*background: #FFFFFF;*/
+}
+
+/* -------------------------------------------------------------------------- */
+
+.colorfiller1 {
+  color: #FFFFFF;
+  background-color: #800080;
+  border: 3px solid black;
+}
+
+.colorfiller2 {
+  color: #0000000;
+  background-color: #FFFFFF;
 }

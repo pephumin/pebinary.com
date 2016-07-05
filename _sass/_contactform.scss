@@ -3,7 +3,7 @@
   border: solid 2px #21a1e1;
   color: #21a1e1;
   padding: 15px 40px;
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
 }
 
@@ -37,9 +37,9 @@
   left: 0px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: 'ubuntu';
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #999;
   pointer-events: none;
   -webkit-transition: all 0.15s ease-out 0s;
@@ -50,5 +50,6 @@
 .contact-form .input-group input.has-value + label {
   top: -10px;
   font-size: 12px;
+  font-weight: 300;
   color: #aaa;
 }
