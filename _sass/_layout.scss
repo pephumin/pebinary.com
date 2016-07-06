@@ -130,6 +130,10 @@ footer .footer-3 {
   margin: 10px auto;
 }
 
+footer .footer-3 > ul > li {
+  display: none;
+}
+
 /* -------------------------------------------------------------------------- */
 
 .navbar {
