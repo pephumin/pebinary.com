@@ -8,16 +8,18 @@
 <div class="row">
 
   <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" align="center">
-    <img src="/images/map.png" class="img-responsive center-block"><br>
+    <!-- <img src="/images/map.png" class="img-responsive center-block"> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.8446141383849!2d100.57114658805479!3d13.756036202031705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e8b2a395bcf%3A0xd1ebeeb31500a81b!2zMTI5IOC4nuC4o-C4sOC4o-C4suC4oSA5IEtod2FlbmcgSHVhaSBLaHdhbmcsIEtoZXQgSHVhaSBLaHdhbmcsIEtydW5nIFRoZXAgTWFoYSBOYWtob24gMTAzMTA!5e0!3m2!1sen!2sth!4v1466609444058" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <br>
   </div>
 
   <div class="col-xs-0 col-sm-4 col-md-4 col-lg-4">
 
-    <h3>{{site.title}}</h3>
-
-    <p>{% include logo.html %}</p>
+    <h3>{% include logo.html %}</h3>
 
     <address>
+
+      <p><strong>{{ site.title }}</strong></p>
 
       <p><i class="pe-building pe-fw"></i>
         Glory House, 5th Floor, 129 Rama IX Road.<br>
@@ -27,8 +29,8 @@
       <p><i class="pe-clock-o pe-fw"></i> Business hours: 09:00-18:00 (weekdays)</p>
       <p><i class="pe-phone pe-fw"></i> Tel: 0-2246-1633</p>
       <p><i class="pe-fax pe-fw"></i> Fax: 0-2246-1630</p>
-      <p><i class="pe-envelope-o pe-fw"></i> Email: <a href="mailto:support@pebinary.com">support@pebinary.com</a></p>
-      <p><i class="pe-globe pe-fw"></i> Website: <a href="http://www.pebinary.com">http://www.pebinary.com</a></p>
+      <p><i class="pe-envelope-o pe-fw"></i> Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><i class="pe-globe pe-fw"></i> Website: <a href="{{ site.url }}">{{ site.url }}</a></p>
 
     </address>
 
