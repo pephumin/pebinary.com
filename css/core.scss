@@ -36,15 +36,10 @@ $on-laptop:          1000px;
     }
 }
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  "base",
-  "mixin",
-  "pe",
-  "bootstrap",
-  "animate",
-  "layout",
-  "syntax-highlighting",
-  "contactform"
-;
+@import "animate";
+@import "base";
+@import "bootstrap";
+@import "contactform";
+@import "mixin";
+@import "pe";
+@import "syntax-highlighting";

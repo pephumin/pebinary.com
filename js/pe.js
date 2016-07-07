@@ -1,8 +1,8 @@
-// menu drop down
-
-$(document).ready(function(){
-    $(".dropdown-toggle").dropdown();
-});
+// // menu drop down
+//
+// $(document).ready(function(){
+//     $(".dropdown-toggle").dropdown();
+// });
 
 // back to top
 
@@ -49,7 +49,5 @@ $(document).ready(function() {
         $("nav").removeClass("fixed");
       }
   });
-
-
 
 });
