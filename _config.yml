@@ -7,7 +7,7 @@
 
 # Site settings
 
-title: PE Binary Co., Ltd.
+title: PE BINARY CO., LTD.
 
 email: support@pebinary.com
 
@@ -16,7 +16,7 @@ description: "A mobile research company based in Bangkok, Thailand."
 baseurl: "/pebinary.com"
 
 #url: "http://www.pebinary.com"
-url: "https://pephumin.github.io"
+#url: "https://pephumin.github.io"
 
 # twitter_username: pephumin
 
@@ -30,9 +30,8 @@ exclude: ['README.md']
 
 # Build settings
 
-markdown: kramdown
-
-hilighter: pygments
+#markdown: kramdown
+#hilighter: pygments
 
 #gems: [jekyll-assets, bourbon, neat]
 
