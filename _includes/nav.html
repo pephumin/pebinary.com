@@ -8,39 +8,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ page.url | prepend: site.github.url }}"><i class="pe-home pe-fw"></i> Home</a>
+      <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-home pe-fw"></i> Home</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="products/" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-cube"></i> Our offers <i class="pe-caret-down"></i></a>
+          <a href="{{ "/product/" | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-cube"></i> Our offers <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="product/A/"><i class="pe-magnet pe-fw"></i> Poduct A</a></li>
-            <li><a href="product/B/"><i class="pe-magnet pe-fw"></i> Poduct B</a></li>
-            <li><a href="product/C/"><i class="pe-magnet pe-fw"></i> Poduct C</a></li>
-            <li><a href="product/D/"><i class="pe-magnet pe-fw"></i> Poduct D</a></li>
-            <li><a href="product/E/"><i class="pe-magnet pe-fw"></i> Poduct E</a></li>
+            <li><a href="{{ "/product/A.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-magnet pe-fw"></i> Poduct A</a></li>
+            <li><a href="{{ "/product/B.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-magnet pe-fw"></i> Poduct B</a></li>
+            <li><a href="{{ "/product/C.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-magnet pe-fw"></i> Poduct C</a></li>
+            <li><a href="{{ "/product/D.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-magnet pe-fw"></i> Poduct D</a></li>
+            <li><a href="{{ "/product/E.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-magnet pe-fw"></i> Poduct E</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="https://itunes.apple.com/en/app/"><i class="pe-cloud-download pe-fw"></i> Get the app</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="members/" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-user"></i> Member zone <i class="pe-caret-down"></i></a>
+          <a href="{{ "/members/" | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-user"></i> Member zone <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="members/benefits/"><i class="pe-thumbs-o-up pe-fw"></i> Member benefits</a></li>
-            <li><a href="members/rewards/"><i class="pe-diamond pe-fw"></i> Reward program</a></li>
-            <li><a href="members/support/"><i class="pe-file-text-o pe-fw"></i> Member manual</a></li>
+            <li><a href="{{ "/members/benefits.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-thumbs-o-up pe-fw"></i> Member benefits</a></li>
+            <li><a href="{{ "/members/rewards.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-diamond pe-fw"></i> Reward program</a></li>
+            <li><a href="http://support.pebinary.com/members/"><i class="pe-file-text-o pe-fw"></i> Member manual</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="http://wwww.siamsquare.org/sign-up"><i class="pe-user-plus pe-fw"></i> Create an account</a></li>
             <li><a href="http://wwww.siamsquare.org/login"><i class="pe-sign-in pe-fw"></i> Sign-in</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="clients/" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-briefcase"></i> Client zone <i class="pe-caret-down"></i></a>
+          <a href="{{ "/clients/" | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-briefcase"></i> Client zone <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="clients/benefits/"><i class="pe-thumbs-o-up pe-fw"></i> Client benefits</a></li>
-            <li><a href="clients/voices/"><i class="pe-commenting-o pe-fw"></i> Testimonial</a></li>
-            <li><a href="clients/support/"><i class="pe-file-text-o pe-fw"></i> Client manual</a></li>
+            <li><a href="{{ "/clients/benefits.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-thumbs-o-up pe-fw"></i> Client benefits</a></li>
+            <li><a href="{{ "/clients/voices.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-commenting-o pe-fw"></i> Testimonial</a></li>
+            <li><a href="http://support.pebinary.com/clients/"><i class="pe-file-text-o pe-fw"></i> Client manual</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="http://wwww.binary.in.th/login"><i class="pe-sign-in pe-fw"></i> Sign-in</a></li>
           </ul>
@@ -48,11 +48,13 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-info-circle"></i> Help <i class="pe-caret-down"></i></a>
+          <a href="{{ "/contact/" | prepend: site.baseurl | prepend: site.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-info-circle"></i> Help <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="contact/us/"><i class="pe-bell-o pe-fw"></i> Contact us</a></li>
-            <li><a href="contact/map/"><i class="pe-map-marker pe-fw"></i> Our office</a></li>
-            <li><a href="#"><i class="pe-university pe-fw"></i> Knowledge library</a></li>
+            <li><a href="{{ "/contact/us.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-bell-o pe-fw"></i> Contact us</a></li>
+            <li><a href="{{ "/contact/map.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-map-marker pe-fw"></i> Our office</a></li>
+            <li><a href="{{ "/policy/privacy.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-bell-o pe-fw"></i> Privacy</a></li>
+            <li><a href="{{ "/policy/terms.html" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-map-marker pe-fw"></i> Terms</a></li>
+            <li><a href="{{ "#" | prepend: site.baseurl | prepend: site.url }}"><i class="pe-university pe-fw"></i> Knowledge library</a></li>
           </ul>
         </li>
       </ul>

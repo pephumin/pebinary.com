@@ -7,25 +7,28 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="robots" content="index follow">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ "css/core.css" | prepend: site.url }}">
-  <link rel="stylesheet" type="text/css" href="{{ "css/layout.css" | prepend: site.url }}">
-  <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="{{ "/css/core.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/css/layout.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/icons/favicon.ico" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/180x180.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/icons/96x96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/icons/192x192.png">
-  <link rel="manifest" href="images/icons/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ "/images/icons/apple-icon-57x57.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ "/images/icons/apple-icon-60x60.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/images/icons/apple-icon-72x72.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "/images/icons/apple-icon-76x76.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/images/icons/apple-icon-114x114.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "/images/icons/apple-icon-120x120.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "/images/icons/apple-icon-144x144.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/images/icons/apple-icon-152x152.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/icons/apple-icon-180x180.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ "/images/icons/android-icon-192x192.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/icons/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ "/images/icons/favicon-96x96.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/icons/favicon-16x16.png" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="manifest" href="{{ "//images/icons/manifest.json" | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="{{ "/images/icons/ms-icon-144x144.png" | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="theme-color" content="#FFFFFF">
   <!-- <link rel="alternate" hreflang="en" href=""> -->
   <!-- <link rel="alternate" hreflang="th" href=""> -->
 </head>

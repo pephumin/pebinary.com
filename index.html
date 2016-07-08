@@ -4,7 +4,7 @@ title: PE BINARY CO., LTD.
 ---
 
 <section class="intro">
-  <img src="images/1.jpg" class="img-responsive center-block">
+  <img src="{{ site.baseurl }}/images/1.jpg" class="img-responsive center-block">
   <div class="intro-text">
     <h2>Say goodbye to traditional market research.</h2>
     <p class="lead">Consumer behaviour changes too quickly and this is where traditional research fails to keep pace. After waiting for months for get </p>
@@ -50,7 +50,36 @@ title: PE BINARY CO., LTD.
 <hr>
 
 <div class="container">
+  <h1>Blogs</h1>
+  <ul>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+  </ul>
+  <p>{% post_url 2016-07-06-the-first-setup %}</p>
+  <p>[The First Setup]({% post_url 2016-07-06-the-first-setup %})</p>
+</div>
+
+<hr>
+
+<div class="container">
   <h1>Why work with us?</h1>
   {% include why.html %}
 </div>
+
 <hr>

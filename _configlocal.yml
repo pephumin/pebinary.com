@@ -6,12 +6,12 @@ email: support@pebinary.com
 
 description: "A mobile research company based in Bangkok, Thailand."
 
-baseurl: "/pebinary.com"
-#baseurl: ""
+#baseurl: "/pebinary.com"
+baseurl: ""
 
 #url: "http://www.pebinary.com"
-url: "https://pephumin.github.io"
-#url: "http://localhost:4000"
+#url: "https://pephumin.github.io"
+url: "http://localhost:4000"
 
 #twitter_username: pephumin
 #github_username:  pephumin
