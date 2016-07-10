@@ -1,44 +1,32 @@
-# Site settings
+##########################################
+####### jekyll default vars
+##########################################
 
-title: "PE BINARY CO., LTD."
+title:            "PE BINARY CO., LTD."
+email:            support@pebinary.com
+description:      "A mobile research company based in Bangkok, Thailand."
+markdown:         kramdown
+#highlighter:      rouge
+highlighter:      pygments
+permalink:        pretty
+source:           _source
+destination:      _site
+host:             localhost
+port:             4000
+#url:             http://pephumin.github.io
+baseurl:          /pebinary.com
+encoding:         utf-8
+timezone:         Asia/Bangkok
+exclude:          ['README.md', 'run', 'Gemfile', 'Gemfile.lock']
+gems:             ['jekyll-sitemap']
 
-email: support@pebinary.com
+##########################################
+####### my custom vars
+##########################################
 
-description: "A mobile research company based in Bangkok, Thailand."
-
-baseurl: "/pebinary.com"
-#baseurl: ""
-
-#url: "http://www.pebinary.com"
-url: "https://pephumin.github.io"
-#url: "http://localhost:4000"
-
-#twitter_username: pephumin
-#github_username:  pephumin
-
-encoding: utf-8
-timezone: Asia/Bangkok
-
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'run', '_configlocal.yml']
-
-# Build settings
-
-markdown: kramdown
-hilighter: pygments
-
-gems: [github-pages, remote-include, sitemap_generator]
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "main-en"
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: "blog-en"
-
+domain:
+  main-en:        http://www.pebinary.com
+  main-th:        http://www.pebinary.co.th
+  client:         http://www.binary.in.th
+  member:         http://www.siamsquare.org
+  support:        http://support.pebinary.com

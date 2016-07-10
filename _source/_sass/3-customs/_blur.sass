@@ -1,0 +1,15 @@
+.text-blur
+  text-shadow: 0 0 8px #000000
+  color: rgba(255, 255, 255, 0)
+  //filter: DXImageTransform.Microsoft.Blur(pixelradius=2);
+  zoom: 1
+  pause-before: 3s
+
+  &:hover
+    text-shadow: none
+    color: #000000
+    filter: none
+
+img.blur
+  -webkit-filter: blur(3px)
+  filter: blur(3px)

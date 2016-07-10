@@ -1,0 +1,26 @@
+.intro
+  position: relative
+  width: auto
+  height: auto
+  overflow: hidden
+  margin: auto
+  text-align: center
+
+  .intro-text
+    position: absolute
+    top: 40%
+    left: 10%
+    right: 10%
+    z-index: 1
+    margin: 0
+    color: $black
+    background: rgba(255, 255, 255, 0.95)
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
+  .intro .intro-text
+    top: 40%
+    left: 10%
+    right: 10%
+    background: rgba(255, 255, 255, 0.4)
+    -webkit-backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px)
