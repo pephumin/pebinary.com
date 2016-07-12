@@ -2,12 +2,16 @@
 <header>
   <div class="header-1">
     <div class="container">
-      <p><a href="{{ "/contact/" | prepend: site.baseurl }}" class="wiggle-button">Contact us</a></p>
+      <p>
+        <a href="{{ "/contact/" | prepend: site.baseurl }}" class="button">View demo</a>&nbsp;
+        <a href="{{ "/contact/" | prepend: site.baseurl }}" class="button wiggle-button">Contact us now!</a>
+      </p>
     </div>
   </div>
   <div class="header-2">
     <div class="container">
       <h1>{% include 0-base/logo.html %}</h1>
+      <p class="description">{{ site.description }}</p>
       <p class="thai-name">บริษัท พีอี ไบนารี่ จำกัด</p>
     </div>
   </div>

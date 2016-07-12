@@ -2,31 +2,33 @@
 ####### jekyll default vars
 ##########################################
 
-title:            "PE BINARY CO., LTD."
-email:            support@pebinary.com
-description:      "A mobile research company based in Bangkok, Thailand."
-markdown:         kramdown
-#highlighter:      rouge
-highlighter:      pygments
-permalink:        pretty
-source:           _source
-destination:      _site
-host:             localhost
-port:             4000
-#url:             http://pephumin.github.io
-baseurl:          /pebinary.com
-encoding:         utf-8
-timezone:         Asia/Bangkok
-exclude:          ['README.md', 'run', 'Gemfile', 'Gemfile.lock']
-gems:             ['jekyll-sitemap']
+title:                "PE BINARY CO., LTD."
+email:                support@pebinary.com
+description:          "A market research company specialised in mobile survey"
+markdown:             kramdown
+#highlighter:         rouge
+highlighter:          pygments
+permalink:            pretty
+source:               _source
+destination:          _site
+excerpt_separator:    <!--more-->
+host:                 localhost
+port:                 4000
+#url:                 http://pephumin.github.io
+baseurl:              /pebinary.com
+permalink:            /blog/:year/:month/:day/:title
+encoding:             utf-8
+timezone:             Asia/Bangkok
+exclude:              ['README.md', 'run', '.DS_Store', 'Gemfile', 'Gemfile.lock']
+gems:                 ['jekyll-sitemap']
 
 ##########################################
 ####### my custom vars
 ##########################################
 
 domain:
-  main-en:        http://www.pebinary.com
-  main-th:        http://www.pebinary.co.th
-  client:         http://www.binary.in.th
-  member:         http://www.siamsquare.org
-  support:        http://support.pebinary.com
+  main-en:            http://www.pebinary.com
+  main-th:            http://www.pebinary.co.th
+  client:             http://www.binary.in.th
+  member:             http://www.siamsquare.org
+  support:            http://support.pebinary.com

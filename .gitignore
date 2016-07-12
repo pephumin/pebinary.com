@@ -1,5 +1,7 @@
 _site
-_source/.jekyll-metadata
+.jekyll-metadata
 .DS_Store
+.sass-cache
 Icon%0D
 run
+_p

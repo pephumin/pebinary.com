@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   {% if site.github %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index follow">{% endif %}
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.homepage == true %}{{ page.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/icon/favicon.ico" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
