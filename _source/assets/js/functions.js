@@ -2,14 +2,14 @@
 
 $(document).ready(function() {
   var navOffset = $("nav").offset().top;
-  $("nav").wrap('<div class="nav-placeholder"></div>');
-  $(".nav-placeholder").height($("nav").outerHeight());
+  $(".navbar").wrap('<div class="nav-placeholder"></div>');
+  $(".nav-placeholder").height($(".navbar").outerHeight());
   $(window).scroll(function() {
       var scrollPos = $(window).scrollTop();
       if (scrollPos >= navOffset) {
-        $("nav").addClass("fixed");
+        $(".navbar").addClass("fixed");
       } else {
-        $("nav").removeClass("fixed");
+        $(".navbar").removeClass("fixed");
       }
   });
 });
@@ -39,3 +39,11 @@ $(document).ready(function() {
         return false
     })
 });
+
+// anchor link
+
+anchors.options = {
+  placement: 'right',
+  visible: 'hover'
+};
+anchors.add('h2, h3, h4');

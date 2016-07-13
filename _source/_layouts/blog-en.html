@@ -3,7 +3,7 @@ layout: main-en
 ---
 
 <div class="container">
-  <h1>Blogs</h1>
+  <h2>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss icon-rss"></i></a></small></h2>
   <div class="row">
     {% if page.fullwidth == true %}
     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 blog-content with-menu">
@@ -12,7 +12,7 @@ layout: main-en
     {% endif %}
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-          <h3 class="post-title" itemprop="name headline">{{ page.title }}</h3>
+          <h4 class="post-title" itemprop="name headline">{{ page.title }}</h4>
           <p class="post-meta">
             <i class="pe-pencil-square-o pe-fw"></i> Written by:
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -29,16 +29,11 @@ layout: main-en
           {{ content }}
         </div>
       </article>
+      <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button"><i class="pe-arrow-circle-left"></i> Go back to the main Blog</a></p>
     </div>
     {% if page.fullwidth == true %}
     <div class="col-xs-0 col-sm-3 col-md-3 col-lg-3 blog-menu">
-      <h3>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss icon-rss"></i></a></small></h3>
-      <p>
-        {% for post in site.posts %}
-          <i class="pe-angle-double-right"></i> <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-        {% endfor %}
-      </p>
-      <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}">[view all]</a></p>
+      {% include 5-others/bloghighlights.html %}
     </div>
     {% endif %}
   </div>

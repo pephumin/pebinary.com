@@ -6,8 +6,8 @@ title:                "PE BINARY CO., LTD."
 email:                support@pebinary.com
 description:          "A market research company specialised in mobile survey"
 markdown:             kramdown
-#highlighter:         rouge
-highlighter:          pygments
+highlighter:          rouge
+#highlighter:         pygments
 permalink:            pretty
 source:               _source
 destination:          _site
@@ -16,11 +16,13 @@ host:                 localhost
 port:                 4000
 #url:                 http://pephumin.github.io
 baseurl:              /pebinary.com
+paginate:             5
+paginate_path:        "/blog/:num/"
 permalink:            /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
 exclude:              ['README.md', 'run', '.DS_Store', 'Gemfile', 'Gemfile.lock']
-gems:                 ['jekyll-sitemap']
+gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from']
 
 ##########################################
 ####### my custom vars

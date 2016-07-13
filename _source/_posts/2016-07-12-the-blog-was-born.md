@@ -1,7 +1,6 @@
 ---
 layout: blog-en
 fullwidth: true
-permalink: /blog/:year/:month/:day/:title
 title: "The blog was born"
 date: 2016-07-12 20:38:07 +0700
 author: admin

@@ -46,27 +46,19 @@ em
 strong
   font-weight: bold
 
-// hr
-//   clear: both
-//   margin: 10px 0 30px
-//   height: 0
-//   border-top: solid $grey
-//   border-buttom: solid $grey
-//   // border-width: 1px 0 0
-
 hr
-  padding: 0
-  border: none
-  border-top: medium double $grey
-  color: $grey
-  text-align: center
-  width: 95%
+  height: 0
+  margin: 15px 0
+  overflow: hidden
+  background: transparent
+  border: 0
+  border-bottom: 1px solid $silver
 
-  &:after
-    content: "§"
-    display: inline-block
-    position: relative
-    top: -1.1rem
-    font-size: 1.5em
-    padding: 0 0.25em
-    background: $white
+hr:before
+  display: table
+  content: ""
+
+hr:after
+  display: table
+  clear: both
+  content: ""

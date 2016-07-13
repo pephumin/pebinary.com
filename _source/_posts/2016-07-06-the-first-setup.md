@@ -1,7 +1,6 @@
 ---
 layout: blog-en
 fullwidth: true
-permalink: /blog/:year/:month/:day/:title
 title: "The first setup"
 date: 2016-07-06 17:02:13 +0700
 author: admin

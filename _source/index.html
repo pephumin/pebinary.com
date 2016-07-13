@@ -11,11 +11,9 @@ homepage: true
   </div>
 </section>
 
-<hr>
+<br><br><br>
 
 <div class="container">
-  <h1>Welcome</h1>
-  <p>xxx</p>
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" align="center">
       <p><i class="pe-graduation-cap pe-4x"></i></p>
@@ -38,46 +36,12 @@ homepage: true
   </div>
 </div>
 
-<hr>
+<br><br><br>
 
-<section class="container">
-  <div class="jumbotron">
-    <h3>Mobile</h3>
-    <p>xxx</p>
-  </div>
-</section>
+{% include 1-home/slideshow.html %}
 
-<hr>
 
 <div class="container">
-  <h1>Blogs</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-  </ul>
-  <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-  </ul>
-  <p>{% post_url 2016-07-06-the-first-setup %}</p>
-  <p>[The First Setup]({% post_url 2016-07-06-the-first-setup %})</p>
-</div>
-
-<hr>
-
-<div class="container">
-  <h1>Why work with us?</h1>
-  {% include why.html %}
+  <h2>Why work with us?</h2>
+  {% include 1-home/why.html %}
 </div>
