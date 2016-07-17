@@ -1,0 +1,25 @@
+---
+layout: main-en
+title: Sitemap
+homepage: false
+section:
+permalink: /sitemap.html
+---
+
+<br><br>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2><i class="pe-map-o pe-fw"></i> Sitemap</h2>
+    <br>
+    <ul>
+      {% for page in site.pages %}
+      <li>{{ page.title }} (<a href="{{ page.url | prepend: site.baseurl }}">{{ page.url | prepend: site.baseurl }}</a>)</li>
+      {% endfor %}
+    </ul>
+    <br>
+    <p><a class="button-lg" href="/" role="button">Start here <i class="pe-arrow-circle-right pe-fw"></i></a></p>
+  </div>
+  <br>
+  <p class="text-center">If you wish to report this error to us, please <a href="{{ "/contact/" | prepend: site.baseurl }}">click here</a> <i class="pe-envelope-o pe-fw"></i></p>
+</div>

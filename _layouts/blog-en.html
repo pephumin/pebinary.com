@@ -1,0 +1,40 @@
+---
+layout: main-en
+---
+
+<div class="container">
+  <h2>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss icon-rss"></i></a></small></h2>
+  <div class="row">
+    {% if page.fullwidth == true %}
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
+    {% else %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
+    {% endif %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h4 class="post-title" itemprop="name headline">{{ page.title }}</h4>
+          <p class="post-meta">
+            <i class="pe-pencil-square-o pe-fw"></i> Written by:
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name"><strong>{{ page.author }}</strong></span>
+              {% if page.author-email %}<span itemprop="email">(<i class="pe-envelope-o pe-fw"></i> <a href="mailto:{{ page.author-email}}">{{ page.author-email}}</a>)</span>{% endif %}
+            </span>
+            <br><i class="pe-calendar-o pe-fw"></i> Date:<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time>
+            <br><i class="pe-clock-o pe-fw"></i> Time:<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
+            <br><i class="pe-globe pe-fw"></i> Location: {{ site.timezone }}
+          </p>
+        </header>
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+      </article>
+      <br><br>
+      <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button"><i class="pe-arrow-circle-left"></i> Go back to the main Blog</a></p>
+    </div>
+    {% if page.fullwidth == true %}
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
+      {% include 2-blog/highlights.html %}
+    </div>
+    {% endif %}
+  </div>
+</div>

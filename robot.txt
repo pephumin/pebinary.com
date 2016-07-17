@@ -1,0 +1,13 @@
+---
+title: robot.txt
+section:
+homepage: false
+---
+
+{% if site.github %}
+  User-agent: *
+  Disallow: /
+{% else %}
+  User-agent: *
+  Allow: /
+{% endif %}

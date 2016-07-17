@@ -1,0 +1,47 @@
+.contact-form
+
+  input
+    background: none
+    border: solid 2px $darkgrey
+    color: $darkgrey
+    padding: 10px 40px
+    font-size: 1.0rem
+    display: inline-block
+
+    &:focus, &:active
+      outline: none
+
+    &[type="text"],
+    &[type="email"]
+      border: none
+      border-bottom: solid 2px $darkgrey
+
+    // &[type="submit"]:active
+    //   color: white
+    //   background: $blue
+
+  .input-group
+    display: inline-block
+    margin-right: 20px
+    position: relative
+
+    input
+      padding: 15px 0px
+
+    label
+      position: absolute
+      top: 50%
+      left: 0px
+      -webkit-transform: translateY(-50%)
+      transform: translateY(-50%)
+      font-style: italic
+      color: $grey
+      pointer-events: none
+      -webkit-transition: all 0.15s ease-out 0s
+      transition: all 0.15s ease-out 0s
+
+    input
+      &:focus + label, &.has-value + label
+        top: -10px
+        font-size: 0.7rem
+        color: $grey

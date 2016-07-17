@@ -1,0 +1,59 @@
+\:root
+  font-size: 16px
+
+body
+  background-color: $white
+  font-family: 'ubuntu'
+  color: $darkgrey
+  line-height: 1.6
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+a
+  color: $blue
+  //color: inherit
+  text-decoration: none
+  outline: 0
+
+  //&:hover, &:focus
+  &:hover
+    text-decoration: none
+    color: lighten($blue, 20%)
+    //color: $blue
+
+.icon-rss
+  color: #ee802f
+
+.black
+  color: $black
+
+.silver
+  color: $silver
+
+.grey
+  color: $grey
+
+.darkgrey
+  color: $darkgrey
+
+.anchorjs-link
+  color: #FF5231
+  text-decoration: none
+
+  &:hover
+    color: $blue
+    text-decoration: none
+
+*:hover > .anchorjs-link
+  transition: color .25s linear
+
+.whoweare
+  p
+    font-size: 1.1rem
+
+.aboutus
+  color: inherit
+
+  a
+    color: $blue
+    text-decoration: underline

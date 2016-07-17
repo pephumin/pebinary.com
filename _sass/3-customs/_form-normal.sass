@@ -1,0 +1,146 @@
+.button
+  font-size: 0.6rem
+  color: $darkgrey
+  background-color: transparent
+  border: 1px solid $darkgrey
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $white
+    background-color: $grey
+    border: 1px solid $grey
+    border-color: transparent
+    outline: 0
+    text-decoration: none
+
+.button-x
+  font-size: 0.6rem
+  color: $white
+  background-color: $grey
+  border: 1px solid $grey
+  //background-color: transparent
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $darkgrey
+    background-color: transparent
+    border: 1px solid $darkgrey
+    outline: 0
+    text-decoration: none
+
+.blue-wiggle
+  color: $blue
+  background-color: transparent
+  border: 1px solid $blue
+  transition: all 0.3s ease-in-out
+  transform-origin: top right
+
+  &:hover
+    color: $white
+    background-color: $blue
+    border: 1px solid $blue
+    animation: wiggle 0.4s linear 1
+
+@keyframes wiggle
+  0%
+    transform: rotate(0deg)
+  20%
+    transform: rotate(8deg)
+  50%
+    transform: rotate(-8deg)
+  80%
+    transform: rotate(8deg)
+  100%
+    transform: rotate(0deg)
+
+.button-lg,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+  font-size: 1.0rem
+  color: $darkgrey
+  background-color: transparent
+  border: 2px solid $darkgrey
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  line-height: 30px
+  padding: 5px 25px
+  white-space: nowrap
+  border-radius: 6px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $white
+    background-color: $grey
+    border: 2px solid $grey
+    //border-color: transparent
+    outline: 0
+    text-decoration: none
+
+.button-lg-x,
+  font-size: 1.0rem
+  color: $white
+  background-color: $grey
+  border: 2px solid $grey
+  //border-color: transparent
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  line-height: 30px
+  padding: 5px 25px
+  white-space: nowrap
+  border-radius: 6px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $darkgrey
+    background-color: transparent
+    border: 2px solid $darkgrey
+    outline: 0
+    text-decoration: none

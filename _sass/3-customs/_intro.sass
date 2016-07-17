@@ -1,0 +1,44 @@
+.intro
+  margin-bottom: 60px
+  position: relative
+  width: auto
+  height: auto
+  overflow: hidden
+  margin: auto
+  text-align: center
+
+  .intro-text
+    position: absolute
+    bottom: 40%
+    left: 0%
+    right: 0%
+    padding: 0px 100px
+    z-index: 1
+    margin: 0
+    color: $black
+    background: rgba(255, 255, 255, 0.65)
+
+  .intro-text p
+    //margin-bottom: 20px
+    font-size: 1.2rem
+    line-height: 1.4
+
+@media (max-width: 768px)
+
+  .intro
+
+    .intro-text
+      bottom: 20%
+
+    .intro-text p
+      font-size: 1.0rem
+
+// @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
+//   .intro .intro-text
+//     top: 100px
+//     left: 0%
+//     right: 0%
+//     padding: 0px 100px
+//     background: rgba(255, 255, 255, 0.4)
+//     -webkit-backdrop-filter: blur(5px)
+//     backdrop-filter: blur(5px)
