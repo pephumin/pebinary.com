@@ -2,24 +2,44 @@
 layout: main-en
 title: Sitemap
 homepage: false
-section:
-permalink: /sitemap.html
+section: null
 ---
 
-<br><br>
-
 <div class="container">
-  <div class="jumbotron">
-    <h2><i class="pe-map-o pe-fw"></i> Sitemap</h2>
-    <br>
-    <ul>
-      {% for page in site.pages %}
-      <li>{{ page.title }} (<a href="{{ page.url | prepend: site.baseurl }}">{{ page.url | prepend: site.baseurl }}</a>)</li>
-      {% endfor %}
-    </ul>
-    <br>
-    <p><a class="button-lg" href="/" role="button">Start here <i class="pe-arrow-circle-right pe-fw"></i></a></p>
-  </div>
+
+  <h2><i class="pe-map-o pe-fw"></i> Sitemap</h2>
+  <br>
+
+  <h4>Main</h4>
+  {% include 0-base/pagelist.html section=null %}
+  <br>
+
+  <h4>Products</h4>
+  {% include 0-base/pagelist.html section='products' %}
+  <br>
+
+  <h4>Clients</h4>
+  {% include 0-base/pagelist.html section='clients' %}
+  <br>
+
+  <h4>Members</h4>
+  {% include 0-base/pagelist.html section='members' %}
+  <br>
+
+  <h4>About</h4>
+  {% include 0-base/pagelist.html section='about' %}
+  <br>
+
+  <h4>Contact</h4>
+  {% include 0-base/pagelist.html section='contact' %}
+  <br>
+
+  <h4>Blog</h4>
+  {% include 0-base/pagelist.html section='blog' %}
+  <br>
+
+  <!-- <p><a class="button-lg" href="/" role="button">Start here <i class="pe-arrow-circle-right pe-fw"></i></a></p> -->
+
   <br>
   <p class="text-center">If you wish to report this error to us, please <a href="{{ "/contact/" | prepend: site.baseurl }}">click here</a> <i class="pe-envelope-o pe-fw"></i></p>
 </div>

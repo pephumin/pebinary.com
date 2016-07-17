@@ -6,15 +6,12 @@ permalink: /contact/
 homepage: false
 ---
 
-<section class="intro">
-  <img src="{{ "/assets/img/2.jpg" | prepend: site.baseurl }}" class="img-responsive center-block">
-  <div class="intro-text">
-    <h2>Say goodbye to traditional market research.</h2>
-    <p class="lead">Consumer behaviour changes too quickly and this is where traditional research fails to keep pace. After waiting for months for get </p>
-  </div>
-</section>
+{% include 5-contact/intro.html %}
+
+<br>
 
 <div class="container">
-  {% include 5-others/contactform.html %}
-  {% include 5-others/map.html %}
+  {% include 5-contact/contactform.html %}
+  <br>
+  {% include 5-contact/map.html %}
 </div>

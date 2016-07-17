@@ -41,13 +41,28 @@
       color: $grey
       background-color: $white
       border: 1px dotted $silver
-      margin: 0 2px
+      margin: 0 1px
       border-radius: 4px
 
       &:hover,
       &:focus
         z-index: 2
         border: 1px solid $grey
+
+  .arrow >
+    a
+      z-index: 3
+      color: $silver
+      background-color: transparent
+      cursor: default
+      border: none
+
+      &:hover,
+      &:focus
+        z-index: 3
+        color: $grey
+        border: none
+        cursor: default
 
   .active >
     a

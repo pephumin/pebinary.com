@@ -18,17 +18,16 @@ homepage: false
           </header>
           <div class="post-excerpt">
             <p>{{ post.excerpt }}</p>
-            <p class="text-right"><a href="{{ post.url }}" class="button-x">Read <i class="pe-eye"></i></a></p>
+            <p class="text-right"><a href="{{ post.url }}" class="button-x">Read <i class="pe-newspaper-o"></i></a></p>
           </div>
         </article>
         <br>
       {% endfor %}
-
       {% if paginator.total_pages > 1 %}
       <div class="text-center">
         <ul class="blog-pagination">
           {% if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path }}"> <i class="pe-chevron-circle-left"></i></a></li>
+            <li class="arrow"><a href="{{ paginator.previous_page_path }}"> <i class="pe-backward pe-lg"></i></a></li>
           {% endif %}
           {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
@@ -40,15 +39,14 @@ homepage: false
             {% endif %}
           {% endfor %}
           {% if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path }}"> <i class="pe-chevron-circle-right"></i></a></li>
+            <li class="arrow"><a href="{{ paginator.next_page_path }}"> <i class="pe-forward pe-lg"></i></a></li>
           {% endif %}
         </ul>
       </div>
       {% endif %}
-
     </div>
     <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
-      {% include 2-blog/highlights.html %}
+      {% include 6-blog/highlights.html %}
     </div>
   </div>
 </div>

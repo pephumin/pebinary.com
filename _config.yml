@@ -8,7 +8,7 @@ description:          "A market research company specialised in mobile survey"
 markdown:             kramdown
 highlighter:          rouge
 #highlighter:         pygments
-permalink:            pretty
+#permalink:           pretty
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 4000
@@ -19,9 +19,9 @@ paginate_path:        "/blog/:num/"
 permalink:            /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
-include:              ['_pages']
-exclude:              ['README.md', 'run', '.DS_Store', 'Gemfile', 'Gemfile.lock']
+exclude:              ['README.md', 'run', '.DS_Store', 'Icon?', 'markdown.pl']
 gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from']
+
 
 ##########################################
 ####### my custom vars
