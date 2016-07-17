@@ -1,0 +1,63 @@
+.showcase
+  //margin: -15px -15px 20px
+  margin: 0
+
+  &::before
+    display: table
+    content: ""
+
+  &::after
+    display: table
+    clear: both
+    content: ""
+
+.showcase-item
+  float: right
+  //width: 305px
+  //height: 185px
+  width: 95%
+  height: 100%
+  padding: 20px
+  margin: 20px
+  //font-size: 14px
+  font-size: 0.9rem
+  color: inherit
+  border: 1px solid rgba(0, 0, 0, 0.075)
+  border-bottom-color: rgba(0, 0, 0, 0.125)
+  border-radius: 4px
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.05)
+  -webkit-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+
+  &:hover
+    text-decoration: none
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.15)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 15px rgba(0, 0, 0, 0.1)
+
+.showcase-item-header
+  height: 20px
+  //margin: -21px -21px 20px
+  margin: -21px -21px 20px
+  background-color: $white
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-top-left-radius: 4px
+  border-top-right-radius: 4px
+  opacity: 0.8
+  -webkit-transition: opacity 0.1s ease-in-out
+  transition: opacity 0.1s ease-in-out
+
+.showcase-item-title
+  margin-top: 0
+  margin-bottom: 5px
+  //font-size: 20px
+  font-size: 1.3rem
+  font-weight: normal
+  line-height: 1.2
+  color: #333
+
+.showcase-item-desc
+  display: block
+  margin-top: 15px
+  //font-size: 13px
+  font-size: 0.75rem
+  color: $darkgrey

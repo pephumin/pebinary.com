@@ -3,11 +3,12 @@ layout: main-en
 title: Sitemap
 homepage: false
 section: null
+permalink: /sitemap.html
 ---
 
 <div class="container">
 
-  <h2><i class="pe-map-o pe-fw"></i> Sitemap</h2>
+  <h2>Sitemap <i class="pe-sitemap pe-fw"></i></h2>
   <br>
 
   <h4>Main</h4>
@@ -26,7 +27,7 @@ section: null
   {% include 0-base/pagelist.html section='members' %}
   <br>
 
-  <h4>About</h4>
+  <h4>About us</h4>
   {% include 0-base/pagelist.html section='about' %}
   <br>
 
@@ -34,8 +35,12 @@ section: null
   {% include 0-base/pagelist.html section='contact' %}
   <br>
 
-  <h4>Blog</h4>
+  <h4>Blog <small>(pages)</small></h4>
   {% include 0-base/pagelist.html section='blog' %}
+  <br>
+
+  <h4>Blog <small>(written posts)</small></h4>
+  {% include 0-base/postlist.html %}
   <br>
 
   <!-- <p><a class="button-lg" href="/" role="button">Start here <i class="pe-arrow-circle-right pe-fw"></i></a></p> -->

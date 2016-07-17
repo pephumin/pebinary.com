@@ -1,0 +1,6 @@
+
+<ul>
+  {% for post in site.posts %}
+    <li>{{ post.title }} (<a href="{{ post.url | prepend: site.baseurl }}">{{ post.url | prepend: site.baseurl }}</a>) - <small>written {{ post.date | date: "%-d %b %Y" }} by {{ post.author }}</small></li>
+  {% endfor %}
+</ul>
