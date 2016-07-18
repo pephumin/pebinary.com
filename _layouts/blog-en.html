@@ -5,7 +5,7 @@ layout: main-en
 <div class="container">
   <h2>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss icon-rss"></i></a></small></h2>
   <div class="row">
-    {% if page.fullwidth == true %}
+    {% if page.quote %}
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
     {% else %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
@@ -29,11 +29,15 @@ layout: main-en
         </div>
       </article>
       <br><br>
-      <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button"><i class="pe-arrow-circle-left"></i> Go back to the main Blog</a></p>
+      <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button-x"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p>
     </div>
-    {% if page.fullwidth == true %}
+    {% if page.quote %}
     <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
-      {% include 6-blog/highlights.html %}
+      <aside class="blog-quote">
+        <div href="#" class="blog-quote-item">
+          <blockquote><i class="pe-quote-left"></i> {{ page.quote }} <i class="pe-quote-right"></i></blockquote>
+        </div>
+      </aside>
     </div>
     {% endif %}
   </div>

@@ -1,10 +1,10 @@
 ---
 layout: blog-en
-fullwidth: true
 title: "Carousel added"
 date: 2016-07-14 16:06:27 +0700
 author: admin
 author-email: admin@pebinary.com
+quote: null
 ---
 In order to make the website look more appeal to the general public, a carousel has been added.
 

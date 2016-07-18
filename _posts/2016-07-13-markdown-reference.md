@@ -10,12 +10,15 @@ A reference for some of the useful `Mark-down` examples. These would be a good r
 
 <!--more-->
 
+#### Section one
+
 HTML
 : Hypertext Markup Language, a standardized system for tagging text files.
 
 CSS
 : Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language
 
+#### Section two
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -24,8 +27,20 @@ CSS
 | zebra stripes | are neat      |    $1 |
 
 
-
 This is some text.[^1]. Other text.[^footnote].
+
+#### Section three
+
+this is now a code block [^footnote] (8 spaces indentation [^other-note])
+
+```
+This is some text not written in HTML but in another language!
+
+*[another language]: It's called Markdown
+*[HTML]: HyperTextMarkupLanguage
+```
+
+##### Foot Notes
 
 [^1]: Some *crazy* footnote definition.
 
@@ -37,16 +52,3 @@ This is some text.[^1]. Other text.[^footnote].
     or, naturally, simple paragraphs.
 
 [^other-note]:       no code block here (spaces are stripped away)
-
-[^codeblock-note]:
-
-
-this is now a code block (8 spaces indentation)
-
-
-        This is some text not written in HTML but in another language!
-
-        *[another language]: It's called Markdown
-
-        *[HTML]: HyperTextMarkupLanguage
-        {:.mega-big}

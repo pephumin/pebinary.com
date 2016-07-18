@@ -1,9 +1,12 @@
-<div class="blog-highlights">
+<aside class="blog-highlights">
   <h4>Blog highlights</h4>
-  <p><i class="pe-quote-left"></i> Some key highlighted blogs providing useful information to clients / members <i class="pe-quote-right"></i></p>
+  <p><q>Some key highlighted blogs providing useful information to clients / members</q></p>
   <p>
-    <i class="pe-angle-double-right"></i> <a href="{{ "/blog/2016/07/13/mark-down-reference" | prepend: site.baseurl }}">Mark down reference</a> <small>(13 Jul 2016)</small><br>
-    <i class="pe-angle-double-right"></i> <a href="{{ "/blog/2016/07/12/the-blog-was-born" | prepend: site.baseurl }}">The blog was born</a> <small>(12 Jul 2016)</small><br>
-    <i class="pe-angle-double-right"></i> <a href="{{ "/blog/2016/07/06/the-first-setup" | prepend: site.baseurl }}">The first setup</a> <small>(06 Jul 2016)</small><br>
+    <!-- <i class="pe-angle-double-right"></i> <a href="{{ "/blog/2016/07/13/mark-down-reference" | prepend: site.baseurl }}">Mark down reference</a> <small>(13 Jul 2016)</small><br> -->
+    <!-- <i class="pe-angle-double-right"></i> <a href="{{ "/blog/2016/07/12/the-blog-was-born" | prepend: site.baseurl }}">The blog was born</a> <small>(12 Jul 2016)</small><br>
+    <i class="pe-angle-double-right"></i> <a href="{{ "/blog/2016/07/06/the-first-setup" | prepend: site.baseurl }}">The first setup</a> <small>(06 Jul 2016)</small><br> -->
+    {% for highlight in site.data.blog-highlight-list %}
+    <i class="pe-angle-double-right"></i> <a href="{{ site.baseurl}}/blog/{{ highlight.datepost}}/{{ highlight.titlepost }}">{{ highlight.title }}</a> <small>({{ highlight.date }})</small><br>
+    {% endfor %}
   </p>
-</div>
+</aside>

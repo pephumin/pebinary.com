@@ -1,0 +1,11 @@
+- number: 2
+  title: "The blog was born"
+  titlepost: the-blog-was-born
+  date: 12 July 2016
+  datepost: 2016/07/12
+
+- number: 1
+  title: "The first setup"
+  titlepost: the-first-setup
+  date: 6 July 2016
+  datepost: 2016/07/06
