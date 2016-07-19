@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 });
 
-// contact form
+// contact form (lifted up version)
 
 $(function(){
   $('.contact-form .input-group input').focusout(function(){
