@@ -19,8 +19,8 @@ paginate_path:        "/blog/:num/"
 permalink:            /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
-exclude:              ['README.md', 'run', '.DS_Store', 'Icon?', 'markdown.pl', '_u', '_plugin']
-#gems:                ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from', 'geo_pattern']
+exclude:              ['README.md', 'run', '.DS_Store', 'Icon?', '_x']
+#gems:                ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from', 'jekyll-last-modified-at']
 gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from']
 
 ##########################################

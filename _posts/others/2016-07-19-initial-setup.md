@@ -4,8 +4,8 @@ title: "Trial on support portal"
 date: 2016-07-19 06:16:37 +0700
 author: admin
 author-email: admin@pebinary.com
-category: support
-tags: [support, setup]
+category: others
+tags: [others, setup]
 quote: null
 ---
 This is an initial setup aiming to serve as a trial for `support portal`, the support section of the website.

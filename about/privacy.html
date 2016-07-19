@@ -4,14 +4,13 @@ title: Privacy
 section: about
 permalink: /about/privacy.html
 homepage: false
-lastmodified: 2016-07-17 05:38:13 +0700
 ---
 
 <div class="container aboutus">
 
   <h2>Privacy Policy</h2>
 
-  <p class="grey"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ file.modified_time | date: "%A %-d %b %Y (GMT %z)" }}</p>
+  <p class="grey"><i class="pe-floppy-o pe-fw"></i> Last updated: {% last_modified_at %}</p>
 
   <p class="black">{% include 0-base/logo.html %}</p>
 
