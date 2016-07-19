@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="{{ site.encoding }}">
+  <title>{% if page.homepage == true %}{{ page.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/404.css" | prepend: site.baseurl }}">
+</head>
+
+<body>
+
+{{ content }}
+
+</body>
+</html>
