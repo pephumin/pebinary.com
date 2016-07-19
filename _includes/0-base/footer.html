@@ -1,6 +1,4 @@
 
-<br><br>
-
 <footer>
   <div class="footer-1">
     <div class="container">
@@ -25,13 +23,14 @@
     </div>
   </div>
   <div class="footer-3">
-    <div class="container">
-      <ul>
-        <li>Copyright <i class="pe-copyright pe-fw"></i> {{ site.time | date:"%Y" }}, <a href="{{ "/" | prepend: site.baseurl }}"><small><span class="black">{% include 0-base/logo.html %}</span></small></a>, All rights reserved.<li>
-        <li><i class="pe-lock pe-fw"></i> <a href="{{ "/about/privacy.html" | prepend: site.baseurl }}">Privacy</a><li>
-        <li><i class="pe-gavel pe-fw"></i> <a href="{{ "/about/tos.html" | prepend: site.baseurl }}">Terms</a><li>
-        <li><i class="pe-sitemap pe-fw"></i> <a href="{{ "/about/sitemap.html" | prepend: site.baseurl }}">Sitemap</a><li>
-      </ul>
-    </div>
+    <p class="container">
+      <i class="pe-copyright pe-fw"></i> Copyright {{ site.time | date:"%Y" }} <a href="{{ "/" | prepend: site.baseurl }}">&nbsp;
+      <small><span class="black">{% include 0-base/logo.html %}</span></small></a>&nbsp;
+      All rights reserved. &nbsp;
+      <a href="{{ "/about/privacy.html" | prepend: site.baseurl }}"><i class="pe-lock pe-fw"></i> Privacy</a>&nbsp;
+      <a href="{{ "/about/tos.html" | prepend: site.baseurl }}"><i class="pe-gavel pe-fw"></i> Terms</a>&nbsp;
+      <a href="{{ "/about/sitemap.html" | prepend: site.baseurl }}"><i class="pe-sitemap pe-fw"></i> Sitemap</a>&nbsp;
+      <a href="{{ "/sitemap.xml" | prepend: site.baseurl }}"><i class="pe-rss pe-fw icon-rss"></i> RSS</a>
+    </p>
   </div>
 </footer>

@@ -4,6 +4,8 @@ title: "The blog was born"
 date: 2016-07-12 20:38:07 +0700
 author: admin
 author-email: admin@pebinary.com
+category: blog
+tags: [blog, setup]
 quote: "Our blog can be accessed by either directly or indirectly (via atom)"
 ---
 Within a week right after the official website has been started, we have marked another step of progress by adding the official `blog` section to our website.

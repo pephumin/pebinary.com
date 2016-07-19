@@ -1,10 +1,12 @@
 ---
 layout: blog-en
-fullwidth: true
 title: "Mark-down reference"
 date: 2016-07-13 04:15:05 +0700
 author: admin
 author-email: admin@pebinary.com
+category: blog
+tags: [blog, markdown]
+quote: null
 ---
 A reference for some of the useful `Mark-down` examples. These would be a good reference for the usage in our website.
 

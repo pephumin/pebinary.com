@@ -19,9 +19,21 @@ layout: main-en
               <span itemprop="name"><strong>{{ page.author }}</strong></span>
               {% if page.author-email %}<span itemprop="email">(<i class="pe-envelope-o pe-fw"></i> <a href="mailto:{{ page.author-email}}">{{ page.author-email}}</a>)</span>{% endif %}
             </span>
-            <br><i class="pe-calendar-o pe-fw"></i> Date:<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time>
-            <br><i class="pe-clock-o pe-fw"></i> Time:<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
+            <br><i class="pe-calendar-o pe-fw"></i> Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time>
+            <br><i class="pe-clock-o pe-fw"></i> Time: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
             <br><i class="pe-globe pe-fw"></i> Location: {{ site.timezone }}
+            <br>Category:
+            {% if page.categories %}
+              {% for category in page.categories %}
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/blog/category/#{{ category | slugify }}">{{ category }}</a>
+              {% endfor %}
+            {% endif %}
+            <br>Tag:
+            {% if page.tags %}
+              {% for tag in page.tags %}
+                <i class="pe-bookmark-o pe-fw"></i> <a href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+              {% endfor %}
+            {% endif %}
           </p>
         </header>
         <div class="post-content" itemprop="articleBody">
@@ -34,7 +46,7 @@ layout: main-en
     {% if page.quote %}
     <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
       <aside class="blog-quote">
-        <div href="#" class="blog-quote-item">
+        <div class="blog-quote-item">
           <blockquote><i class="pe-quote-left"></i> {{ page.quote }} <i class="pe-quote-right"></i></blockquote>
         </div>
       </aside>
