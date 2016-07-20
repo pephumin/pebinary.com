@@ -5,6 +5,7 @@
 title:                "PE BINARY CO., LTD."
 email:                support@pebinary.com
 description:          "A market research company specialised in mobile survey"
+locale:               en-GB
 markdown:             kramdown
 highlighter:          rouge
 #highlighter:         pygments
@@ -19,9 +20,10 @@ paginate_path:        "/blog/:num/"
 permalink:            /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
-exclude:              ['README.md', 'run', '.DS_Store', 'Icon?', '_x']
+exclude:              ['README.md', 'run', '.DS_Store', 'Icon^M', '_x']
 #gems:                ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from', 'jekyll-last-modified-at']
 gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from']
+
 
 ##########################################
 ####### my custom vars
@@ -30,6 +32,6 @@ gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-fro
 domain:
   main-en:            http://www.pebinary.com
   main-th:            http://www.pebinary.co.th
-  client:             http://www.binary.in.th
+  client:             http://www.siamsquare.net
   member:             http://www.siamsquare.org
   support:            http://support.pebinary.com
