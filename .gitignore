@@ -4,5 +4,6 @@ _u
 .DS_Store
 .sass-cache
 Icon%0D
+Icon^M
 run
 markdown.pl
