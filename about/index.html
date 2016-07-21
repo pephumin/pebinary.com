@@ -1,28 +1,17 @@
 ---
 layout: main-en
-title: About us
+title: "About us"
 section: about
 permalink: /about/
 homepage: false
 ---
 
-<div class="container aboutus">
+{% include 5-about/intro.html %}
 
-  <h2>About us</h2>
+<br>
+
+<div class="container">
+  include 5-about/contactform.html
   <br>
-
-  <p class="lead">About us page</p>
-
-  <p class="lead">To be edited</p>
-
-  <p><a class="button-lg" href="/" role="button">Start here <i class="pe-angle-double-right pe-fw"></i></a></p>
-
-  <p>Add links:</p>
-
-  <ul>
-    <li>privacy.html</li>
-    <li>terms of service (tos.html)</li>
-  </ul>
-
-  <!-- <p class="text-center">If you wish to report this error to us, please <a href="{{ "/contact/" | prepend: site.baseurl }}">click here</a> <i class="pe-envelope-o pe-fw"></i></p> -->
+  include 5-about/map.html
 </div>
