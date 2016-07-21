@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% for entry in site.data.nav.topnav1 %}
+      {% for entry in site.data.navigation.topnav1 %}
         {% for folder in entry.folders %}
           {% for domain in site.data.domain %}
             {% if folder.host contains domain.name %}
@@ -20,7 +20,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        {% for entry in site.data.nav.topnav2 %}
+        {% for entry in site.data.navigation.topnav2 %}
           {% for folder in entry.folders %}
           <li class="dropdown">
             <a href="{{ folder.url | prepend: site.baseurl }}"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
@@ -44,7 +44,7 @@
         {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        {% for entry in site.data.nav.topnav3 %}
+        {% for entry in site.data.navigation.topnav3 %}
           {% for folder in entry.folders %}
           <li class="dropdown">
             <a href="{{ folder.url | prepend: site.baseurl }}"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
