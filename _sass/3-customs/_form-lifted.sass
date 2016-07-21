@@ -2,8 +2,8 @@
 
   input
     background: none
-    border: solid 2px $darkgrey
-    color: $darkgrey
+    border: solid 2px $grey
+    color: $grey
     padding: 10px 40px
     font-size: 1.0rem
     display: inline-block
@@ -14,7 +14,7 @@
     &[type="text"],
     &[type="email"]
       border: none
-      border-bottom: solid 2px $darkgrey
+      border-bottom: solid 2px $grey
 
     // &[type="submit"]:active
     //   color: white
@@ -35,7 +35,7 @@
       -webkit-transform: translateY(-50%)
       transform: translateY(-50%)
       font-style: italic
-      color: $grey
+      color: $lightgrey
       pointer-events: none
       -webkit-transition: all 0.15s ease-out 0s
       transition: all 0.15s ease-out 0s
@@ -44,4 +44,4 @@
       &:focus + label, &.has-value + label
         top: -10px
         font-size: 0.7rem
-        color: $grey
+        color: $lightgrey
