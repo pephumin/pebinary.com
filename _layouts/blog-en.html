@@ -9,16 +9,18 @@ layout: main-en
     {% else %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
     {% endif %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="keywords" content="{{ pages.tags | join: ',' }}" />
+        <meta itemprop="description" content="{{ content | strip_html | truncatewords: 40 }}" />
         <header class="post-header">
-          <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+          <h2 class="post-title" itemprop="headline">{{ page.title }}</h2>
           <p class="post-meta">
             <i class="pe-pencil-square-o pe-fw"></i> Written by:
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
               <span itemprop="name"><strong>{{ page.author }}</strong></span>
               {% if page.author-email %}<span itemprop="email">(<i class="pe-envelope-o pe-fw"></i> <a href="mailto:{{ page.author-email}}">{{ page.author-email}}</a>)</span>{% endif %}
             </span>
-            <br><i class="pe-calendar-o pe-fw"></i> Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time>
+            <br><i class="pe-calendar-o pe-fw"></i> Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time> ({{ page.date | timeago }})
             <br><i class="pe-clock-o pe-fw"></i> Time: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
             <br><i class="pe-globe pe-fw"></i> Location: {{ site.timezone }}
             <br>Category:
@@ -39,8 +41,8 @@ layout: main-en
           {{ content }}
         </div>
       </article>
-      <br><br>
-      <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button-x"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p>
+      <p class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">{{ site.title }}</p>
+      <p class="blog-back"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button-x"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p>
     </div>
     {% if page.quote %}
     <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
