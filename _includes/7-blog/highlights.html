@@ -16,7 +16,7 @@
     {% endfor %}
   </div>
   <h4>Tags</h4>
-  <p>
+  <p class="blog-tags">
     {% for tag in site.tags %}
       {% assign sorted_posts = tag[0] | reverse %}
       <i class="pe-tag pe-fw"></i> <a href="/blog/tag/#{{ tag | first | slugify }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
