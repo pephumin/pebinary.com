@@ -9,12 +9,12 @@
     {% endfor %}
   </p>
   <h4>Categories</h4>
-  <p>
+  <div class="list-group">
     {% for category in site.categories %}
       {% assign sorted_posts = category[0] | reverse %}
-      <i class="pe-folder-open-o pe-fw"></i> <a href="/blog/category/#{{ category | first | slugify }}">{{ category[0] | replace:'-', ' ' }}</a> ({{ category | last | size }})
+      <a href="/blog/category/#{{ category | first | slugify }}" class="list-group-item">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
     {% endfor %}
-  </p>
+  </div>
   <h4>Tags</h4>
   <p>
     {% for tag in site.tags %}
