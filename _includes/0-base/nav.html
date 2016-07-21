@@ -15,11 +15,7 @@
           {% elsif folder.host == "client" %}{% assign host = site.domain.client %}
           {% elsif folder.host == "support" %}{% assign host = site.domain.support %}
           {% endif %}
-          {% if folder.urlexternal %}
-            <a href="{{ folder.urlexternal | prepend: host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
-          {% else %}
-            <a href="{{ folder.url | prepend: host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
-          {% endif %}
+          <a href="{{ folder.url | prepend: host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
         {% endfor %}
       {% endfor %}
     </div>
@@ -28,7 +24,7 @@
         {% for entry in site.data.nav.topnav2 %}
           {% for folder in entry.folders %}
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
+            <a href="{{ folder.url | prepend: site.baseurl }}" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
             <ul class="dropdown-menu">
               {% for item in folder.items %}
                 {% if item.host == "baseurl" %}{% assign host = site.baseurl %}
@@ -53,7 +49,7 @@
         {% for entry in site.data.nav.topnav3 %}
           {% for folder in entry.folders %}
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
+            <a href="{{ folder.url | prepend: site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
             <ul class="dropdown-menu">
                 {% for item in folder.items %}
                   {% if item.host == "baseurl" %}{% assign host = site.baseurl %}

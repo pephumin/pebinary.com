@@ -110,12 +110,12 @@ topnav3:
     - title: "About us"
       icon: object-group
       host: baseurl
-      url: "/members/"
+      url: "/about/"
       items:
         - title: "Contact us"
           icon: envelope-o
           host: baseurl
-          url: "/contat/"
+          url: "/contact/"
         - title: "Map to our office"
           icon: map-marker
           host: baseurl
