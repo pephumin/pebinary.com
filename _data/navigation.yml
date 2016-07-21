@@ -75,7 +75,7 @@ topnav2:
           url: "/login"
 
     - title: "Clients"
-      icon: user
+      icon: briefcase
       host: main-en
       url: "/clients/"
       items:
@@ -108,7 +108,7 @@ topnav3:
 - title:
   folders:
     - title: "About us"
-      icon: object-group
+      icon: logo
       host: main-en
       url: "/about/"
       items:
@@ -132,3 +132,21 @@ topnav3:
           icon: university
           host: support
           url: "/"
+
+footer:
+- title: "Privacy"
+  icon: lock
+  host: main-en
+  url: "/about/privacy.html"
+- title: "Terms"
+  icon: gavel
+  host: main-en
+  url: "/about/tos.html"
+- title: "Sitemap"
+  icon: sitemap
+  host: main-en
+  url: "/about/sitemap.html"
+- title: "RSS"
+  icon: rss
+  host: main-en
+  url: "/sitemap.xml"
