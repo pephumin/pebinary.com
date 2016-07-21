@@ -9,69 +9,78 @@ tags: [music]
 quote: null
 ---
 
-### The Hanging Tree (Original Acoustic) [^1]
+**The Hanging Tree (Original Acoustic)** [^1]
 
-Are you, are you
-Coming to the tree
-Where they strung up a man
-They say who murdered three.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
 
-Are you, are you
-Coming to the tree
-Where the dead man called out
-For his love to flee.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
 
-Are you, are you
-Coming to the tree
-Where I told you to run,
-So we'd both be free.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
+Are you, are you coming to the tree?
 
-Are you, are you
-Coming to the tree
-Wear a necklace of hope,
-Side by side with me.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
+Where they strung up a man they say who murdered three
 
-Are you, are you
-Coming to the tree
-Where I told you to run,
-So we'd both be free.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
+Strange things did happen here no stranger would it be
 
-Are you, are you
-Coming to the tree
-Where they strung up a man
-They say who murdered three.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
+If we met at midnight in the hanging tree
 
-Are you, are you
-Coming to the tree
-Where the dead man called out
-For his love to flee.
-Strange things did happen here
-No stranger would it be
-If we met at midnight
-In the hanging tree
+
+
+Are you, are you coming to the tree?
+
+Where the dead man called out for his love to flee
+
+Strange things did happen here no stranger would it be
+
+If we met at midnight in the hanging tree
+<!--more-->
+
+
+Are you, are you coming to the tree?
+
+Where I told you to run so we'd both be free
+
+Strange things did happen here no stranger would it be
+
+If we met at midnight in the hanging tree
+
+
+
+Are you, are you coming to the tree?
+
+Wear a necklace of hope side by side with me
+
+Strange things did happen here no stranger would it be
+
+If we met at midnight in the hanging tree
+
+
+
+Are you, are you coming to the tree?
+
+Where I told you to run so we'd both be free
+
+Strange things did happen here no stranger would it be
+
+If we met at midnight in the hanging tree
+
+
+
+Are you, are you coming to the tree?
+
+Where they strung up a man they say who murdered three
+
+Strange things did happen here no stranger would it be
+
+If we met at midnight in the hanging tree
+
+
+
+Are you, are you coming to the tree?
+
+Where the dead man called out for his love to flee
+
+Strange things did happen here no stranger would it be
+
+If we met at midnight in the hanging tree
+
+
 
 [^1]: James Newton Howard feat. Jennifer Lawrence
