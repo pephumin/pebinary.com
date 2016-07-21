@@ -3,8 +3,6 @@ _u
 .jekyll-metadata
 .DS_Store
 .sass-cache
-Icon%0D
-Icon^M
-Icon
+Icon?
 run
 markdown.pl
