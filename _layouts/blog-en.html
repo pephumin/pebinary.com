@@ -3,7 +3,6 @@ layout: main-en
 ---
 
 <div class="container">
-  <h2>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss icon-rss"></i></a></small></h2>
   <div class="row">
     {% if page.quote %}
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
@@ -12,7 +11,7 @@ layout: main-en
     {% endif %}
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-          <h4 class="post-title" itemprop="name headline">{{ page.title }}</h4>
+          <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
           <p class="post-meta">
             <i class="pe-pencil-square-o pe-fw"></i> Written by:
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -31,7 +30,7 @@ layout: main-en
             <br>Tag:
             {% if page.tags %}
               {% for tag in page.tags %}
-                <i class="pe-bookmark-o pe-fw"></i> <a href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+                <i class="pe-tag pe-fw"></i> <a href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
               {% endfor %}
             {% endif %}
           </p>

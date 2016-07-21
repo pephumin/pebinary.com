@@ -9,7 +9,7 @@ tags: [music]
 quote: null
 ---
 
-### Sing Me To Sleep (Original Acoustic) [^1]
+**Song: Sing Me To Sleep (Original Acoustic)** [^1]
 
 Wait a second, let me catch my breath
 Remind me how it feels to hear your voice
@@ -22,6 +22,8 @@ Anything for you
 Yesterday got away
 Melodies stuck inside your head
 A song in every breath
+
+<!--more-->
 
 Sing me to sleep now
 Sing me to sleep
