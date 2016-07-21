@@ -8,54 +8,71 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="{{ "/" | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-home pe-fw"></i> Home</a>
+      {% for entry in site.data.nav.topnav1 %}
+        {% for folder in entry.folders %}
+          {% if folder.host == "baseurl" %}{% assign host = site.baseurl" %}
+          {% elsif folder.host == "member" %}{% assign host = site.domain.member %}
+          {% elsif folder.host == "client" %}{% assign host = site.domain.client %}
+          {% elsif folder.host == "support" %}{% assign host = site.domain.support %}
+          {% endif %}
+          {% if folder.urlexternal %}
+            <a href="{{ folder.urlexternal | prepend: host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
+          {% else %}
+            <a href="{{ folder.url | prepend: host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="{{ "/products/" | prepend: site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-cube pe-fw"></i> Products <i class="pe-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ "/products/A.html" | prepend: site.baseurl }}"><i class="pe-magnet pe-fw"></i> Poduct A</a></li>
-            <li><a href="{{ "/products/B.html" | prepend: site.baseurl }}"><i class="pe-magnet pe-fw"></i> Poduct B</a></li>
-            <li><a href="{{ "/products/C.html" | prepend: site.baseurl }}"><i class="pe-magnet pe-fw"></i> Poduct C</a></li>
-            <li><a href="{{ "/products/D.html" | prepend: site.baseurl }}"><i class="pe-magnet pe-fw"></i> Poduct D</a></li>
-            <li><a href="{{ "/products/E.html" | prepend: site.baseurl }}"><i class="pe-magnet pe-fw"></i> Poduct E</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="https://itunes.apple.com/en/app/"><i class="pe-cloud-download pe-fw"></i> Get the app</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="{{ "/members/" | prepend: site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-user pe-fw"></i> Members <i class="pe-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ "/members/benefits.html" | prepend: site.baseurl }}"><i class="pe-thumbs-o-up pe-fw"></i> Member benefits</a></li>
-            <li><a href="{{ "/members/rewards.html" | prepend: site.baseurl }}"><i class="pe-diamond pe-fw"></i> Reward program</a></li>
-            <li><a href="{{ "/members/" | prepend: site.domain.support }}"><i class="pe-file-text-o pe-fw"></i> Member manual</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="{{ "/signup/" | prepend: site.domain.member }}"><i class="pe-user-plus pe-fw"></i> Create an account</a></li>
-            <li><a href="{{ "/login/" | prepend: site.domain.member }}"><i class="pe-sign-in pe-fw"></i> Sign-in</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="{{ "/clients/" | prepend: site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-briefcase pe-fw"></i> Clients <i class="pe-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ "/clients/benefits.html" | prepend: site.baseurl }}"><i class="pe-thumbs-o-up pe-fw"></i> Client benefits</a></li>
-            <li><a href="{{ "/clients/testimonials.html" | prepend: site.baseurl }}"><i class="pe-commenting-o pe-fw"></i> Testimonial</a></li>
-            <li><a href="{{ "/clients/" | prepend: site.domain.support }}"><i class="pe-file-text-o pe-fw"></i> Client manual</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="{{ "/login/" | prepend: site.domain.client }}"><i class="pe-sign-in pe-fw"></i> Sign-in</a></li>
-          </ul>
-        </li>
+        {% for entry in site.data.nav.topnav2 %}
+          {% for folder in entry.folders %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              {% for item in folder.items %}
+                {% if item.host == "baseurl" %}{% assign host = site.baseurl %}
+                {% elsif item.host == "member" %}{% assign host = site.domain.member %}
+                {% elsif item.host == "client" %}{% assign host = site.domain.client %}
+                {% elsif item.host == "support" %}{% assign host = site.domain.support %}
+                {% endif %}
+                {% if item.title == "separator" %}
+                <li role="separator" class="divider"></li>
+                {% elsif item.urlexternal %}
+                <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                {% else %}
+                <li><a href="{{ item.url | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="{{ "/about/" | prepend: site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-object-group pe-fw"></i> About us <i class="pe-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ "/contact/" | prepend: site.baseurl }}"><i class="pe-envelope-o pe-fw"></i> Contact us</a></li>
-            <li><a href="{{ "/contact/map.html" | prepend: site.baseurl }}"><i class="pe-map-marker pe-fw"></i> Map to our office</a></li>
-            <li><a href="{{ "/blog/" | prepend: site.baseurl }}"><i class="pe-pencil-square-o pe-fw"></i> Blog</a></li>
-            <li><a href="{{ "/" | prepend: site.domain.support }}"><i class="pe-university pe-fw"></i> Knowledge library</a></li>
-          </ul>
-        </li>
+        {% for entry in site.data.nav.topnav3 %}
+          {% for folder in entry.folders %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                {% for item in folder.items %}
+                  {% if item.host == "baseurl" %}{% assign host = site.baseurl %}
+                  {% elsif item.host == "member" %}{% assign host = site.domain.member %}
+                  {% elsif item.host == "client" %}{% assign host = site.domain.client %}
+                  {% elsif item.host == "support" %}{% assign host = site.domain.support %}
+                  {% endif %}
+                  {% if item.title == "separator" %}
+                  <li role="separator" class="divider"></li>
+                  {% elsif item.urlexternal %}
+                  <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                  {% else %}
+                  <li><a href="{{ item.url | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        {% endfor %}
       </ul>
     </div>
   </div>

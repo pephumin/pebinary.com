@@ -1,0 +1,134 @@
+
+topnav1:
+- title:
+  folders:
+    - title: "Home"
+      icon: home
+      host: baseurl
+      url: "/"
+
+topnav2:
+- title:
+  folders:
+    - title: "Products"
+      icon: cube
+      host: baseurl
+      url: "/products/"
+      items:
+        - title: "Product A"
+          icon: magnet
+          host: baseurl
+          url: "/products/A.html"
+        - title: "Product B"
+          icon: magnet
+          host: baseurl
+          url: "/products/B.html"
+        - title: "Product C"
+          icon: magnet
+          host: baseurl
+          url: "/products/C.html"
+        - title: "Product D"
+          icon: magnet
+          host: baseurl
+          url: "/products/D.html"
+        - title: "Product E"
+          icon: magnet
+          host: baseurl
+          url: "/products/E.html"
+        - title: separator
+          icon:
+          host:
+          url:
+        - title: "Get the app"
+          icon: cloud-download
+          host:
+          urlexternal: "https://itunes.apple.com/en/app/"
+
+    - title: "Members"
+      icon: user
+      host: baseurl
+      url: "/members/"
+      items:
+        - title: "Member benefits"
+          icon: thumbs-o-up
+          host: baseurl
+          url: "/members/benefits.html"
+        - title: "Reward program"
+          icon: diamond
+          host: baseurl
+          url: "/members/rewards.html"
+        - title: "Member manual"
+          icon: file-text-o
+          host: support
+          url: "/members/"
+        - title: separator
+          icon:
+          host:
+          url:
+        - title: "Create an account"
+          icon: user-plus
+          host: member
+          url: "/sign-up"
+        - title: "Your account"
+          icon: sign-in
+          host: member
+          url: "/login"
+
+    - title: "Clients"
+      icon: user
+      host: baseurl
+      url: "/clients/"
+      items:
+        - title: "Client benefits"
+          icon: thumbs-o-up
+          host: baseurl
+          url: "/clients/benefits.html"
+        - title: "Testimonials"
+          icon: commenting-o
+          host: baseurl
+          url: "/clients/testimonials.html"
+        - title: "Client manual"
+          icon: file-text-o
+          host: support
+          url: "/clients/"
+        - title: separator
+          icon:
+          host:
+          url:
+        - title: "Request for an account"
+          icon: user-plus
+          host: baseurl
+          url: "/contact/"
+        - title: "Your account"
+          icon: sign-in
+          host: client
+          url: "/login"
+
+topnav3:
+- title:
+  folders:
+    - title: "About us"
+      icon: object-group
+      host: baseurl
+      url: "/members/"
+      items:
+        - title: "Contact us"
+          icon: envelope-o
+          host: baseurl
+          url: "/contat/"
+        - title: "Map to our office"
+          icon: map-marker
+          host: baseurl
+          url: "/contact/map.html"
+        - title: "Blog"
+          icon: pencil-square-o
+          host: baseurl
+          url: "/blog/"
+        - title: separator
+          icon:
+          host:
+          url:
+        - title: "Knowledge library"
+          icon: university
+          host: support
+          url: "/"
