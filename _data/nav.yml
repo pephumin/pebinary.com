@@ -4,7 +4,7 @@ topnav1:
   folders:
     - title: "Home"
       icon: home
-      host: baseurl
+      host: main-en
       url: "/"
 
 topnav2:
@@ -12,28 +12,28 @@ topnav2:
   folders:
     - title: "Products"
       icon: cube
-      host: baseurl
+      host: main-en
       url: "/products/"
       items:
         - title: "Product A"
           icon: magnet
-          host: baseurl
+          host: main-en
           url: "/products/A.html"
         - title: "Product B"
           icon: magnet
-          host: baseurl
+          host: main-en
           url: "/products/B.html"
         - title: "Product C"
           icon: magnet
-          host: baseurl
+          host: main-en
           url: "/products/C.html"
         - title: "Product D"
           icon: magnet
-          host: baseurl
+          host: main-en
           url: "/products/D.html"
         - title: "Product E"
           icon: magnet
-          host: baseurl
+          host: main-en
           url: "/products/E.html"
         - title: separator
           icon:
@@ -46,16 +46,16 @@ topnav2:
 
     - title: "Members"
       icon: user
-      host: baseurl
+      host: main-en
       url: "/members/"
       items:
         - title: "Member benefits"
           icon: thumbs-o-up
-          host: baseurl
+          host: main-en
           url: "/members/benefits.html"
         - title: "Reward program"
           icon: diamond
-          host: baseurl
+          host: main-en
           url: "/members/rewards.html"
         - title: "Member manual"
           icon: file-text-o
@@ -76,16 +76,16 @@ topnav2:
 
     - title: "Clients"
       icon: user
-      host: baseurl
+      host: main-en
       url: "/clients/"
       items:
         - title: "Client benefits"
           icon: thumbs-o-up
-          host: baseurl
+          host: main-en
           url: "/clients/benefits.html"
         - title: "Testimonials"
           icon: commenting-o
-          host: baseurl
+          host: main-en
           url: "/clients/testimonials.html"
         - title: "Client manual"
           icon: file-text-o
@@ -97,7 +97,7 @@ topnav2:
           url:
         - title: "Request for an account"
           icon: user-plus
-          host: baseurl
+          host: main-en
           url: "/contact/"
         - title: "Your account"
           icon: sign-in
@@ -109,20 +109,20 @@ topnav3:
   folders:
     - title: "About us"
       icon: object-group
-      host: baseurl
+      host: main-en
       url: "/about/"
       items:
         - title: "Contact us"
           icon: envelope-o
-          host: baseurl
+          host: main-en
           url: "/contact/"
         - title: "Map to our office"
           icon: map-marker
-          host: baseurl
+          host: main-en
           url: "/contact/map.html"
         - title: "Blog"
           icon: pencil-square-o
-          host: baseurl
+          host: main-en
           url: "/blog/"
         - title: separator
           icon:

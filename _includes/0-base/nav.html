@@ -10,12 +10,11 @@
       </button>
       {% for entry in site.data.nav.topnav1 %}
         {% for folder in entry.folders %}
-          {% if folder.host == "baseurl" %}{% assign host = site.baseurl" %}
-          {% elsif folder.host == "member" %}{% assign host = site.domain.member %}
-          {% elsif folder.host == "client" %}{% assign host = site.domain.client %}
-          {% elsif folder.host == "support" %}{% assign host = site.domain.support %}
-          {% endif %}
-          <a href="{{ folder.url | prepend: host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
+          {% for domain in site.data.domain %}
+            {% if folder.host contains domain.name %}
+              <a href="{{ folder.url | prepend: domain.host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
       {% endfor %}
     </div>
@@ -24,20 +23,19 @@
         {% for entry in site.data.nav.topnav2 %}
           {% for folder in entry.folders %}
           <li class="dropdown">
-            <a href="{{ folder.url | prepend: site.baseurl }}" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
+            <a href="{{ folder.url | prepend: site.baseurl }}"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
             <ul class="dropdown-menu">
               {% for item in folder.items %}
-                {% if item.host == "baseurl" %}{% assign host = site.baseurl %}
-                {% elsif item.host == "member" %}{% assign host = site.domain.member %}
-                {% elsif item.host == "client" %}{% assign host = site.domain.client %}
-                {% elsif item.host == "support" %}{% assign host = site.domain.support %}
-                {% endif %}
                 {% if item.title == "separator" %}
                 <li role="separator" class="divider"></li>
                 {% elsif item.urlexternal %}
                 <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
                 {% else %}
-                <li><a href="{{ item.url | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                  {% for domain in site.data.domain %}
+                    {% if item.host contains domain.name %}
+                      <li><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
                 {% endif %}
               {% endfor %}
             </ul>
@@ -49,22 +47,21 @@
         {% for entry in site.data.nav.topnav3 %}
           {% for folder in entry.folders %}
           <li class="dropdown">
-            <a href="{{ folder.url | prepend: site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
+            <a href="{{ folder.url | prepend: site.baseurl }}"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }} <i class="pe-caret-down"></i></a>
             <ul class="dropdown-menu">
-                {% for item in folder.items %}
-                  {% if item.host == "baseurl" %}{% assign host = site.baseurl %}
-                  {% elsif item.host == "member" %}{% assign host = site.domain.member %}
-                  {% elsif item.host == "client" %}{% assign host = site.domain.client %}
-                  {% elsif item.host == "support" %}{% assign host = site.domain.support %}
-                  {% endif %}
-                  {% if item.title == "separator" %}
-                  <li role="separator" class="divider"></li>
-                  {% elsif item.urlexternal %}
-                  <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                  {% else %}
-                  <li><a href="{{ item.url | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                  {% endif %}
-                {% endfor %}
+              {% for item in folder.items %}
+                {% if item.title == "separator" %}
+                <li role="separator" class="divider"></li>
+                {% elsif item.urlexternal %}
+                <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                {% else %}
+                  {% for domain in site.data.domain %}
+                    {% if item.host contains domain.name %}
+                      <li><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
             </ul>
           </li>
           {% endfor %}

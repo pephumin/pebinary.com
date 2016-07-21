@@ -1,0 +1,14 @@
+- name: main-en
+  host: 
+
+- name: main-th
+  host: http://www.pebinary.co.th
+
+- name: member
+  host: http://www.siamsquare.org
+
+- name: client
+  host: http://www.siamsquare.net
+
+- name: support
+  host: http://support.pebinary.com
