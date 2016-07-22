@@ -22,7 +22,7 @@ encoding:             utf-8
 timezone:             Asia/Bangkok
 google_analytics:     yes
 exclude:              ['README.md', 'run', '.DS_Store', 'Icon?', '_x']
-gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-redirect-from', 'jekyll-timeago']
+gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-timeago']
 
 
 ##########################################
