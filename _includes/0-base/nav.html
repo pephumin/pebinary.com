@@ -12,7 +12,7 @@
         {% for folder in entry.folders %}
           {% for domain in site.data.domain %}
             {% if folder.host contains domain.name %}
-              <a href="{{ folder.url | prepend: domain.host }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
+              <a href="{{ folder.url | prepend: domain.host | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-{{ folder.icon }} pe-fw"></i> {{ folder.title }}</a>
             {% endif %}
           {% endfor %}
         {% endfor %}
@@ -29,9 +29,9 @@
                 {% if item.title == "separator" %}
                 <li role="separator" class="divider"></li>
                 {% elsif item.urlexternal %}
-                <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                <li><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
                 {% else %}
-                  {% for domain in site.data.domain %}
+                  {% for domain in site.data.domains %}
                     {% if item.host contains domain.name %}
                       <li><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
                     {% endif %}
@@ -53,9 +53,9 @@
                 {% if item.title == "separator" %}
                 <li role="separator" class="divider"></li>
                 {% elsif item.urlexternal %}
-                <li><a href="{{ item.urlexternal | prepend: host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+                <li><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
                 {% else %}
-                  {% for domain in site.data.domain %}
+                  {% for domain in site.data.domains %}
                     {% if item.host contains domain.name %}
                       <li><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
                     {% endif %}

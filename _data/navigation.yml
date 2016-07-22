@@ -36,12 +36,8 @@ topnav2:
           host: main-en
           url: "/products/E.html"
         - title: separator
-          icon:
-          host:
-          url:
         - title: "Get the app"
           icon: cloud-download
-          host:
           urlexternal: "https://itunes.apple.com/en/app/"
 
     - title: "Members"
@@ -62,9 +58,6 @@ topnav2:
           host: support
           url: "/members/"
         - title: separator
-          icon:
-          host:
-          url:
         - title: "Create an account"
           icon: user-plus
           host: member
@@ -92,9 +85,6 @@ topnav2:
           host: support
           url: "/clients/"
         - title: separator
-          icon:
-          host:
-          url:
         - title: "Request for an account"
           icon: user-plus
           host: main-en
@@ -125,9 +115,6 @@ topnav3:
           host: main-en
           url: "/blog/"
         - title: separator
-          icon:
-          host:
-          url:
         - title: "Knowledge library"
           icon: university
           host: support

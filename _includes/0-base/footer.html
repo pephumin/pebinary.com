@@ -27,8 +27,8 @@
       <i class="pe-copyright pe-fw"></i> Copyright {{ site.time | date:"%Y" }} <a href="{{ "/" | prepend: site.baseurl }}">&nbsp;
       <small><span class="black">{% include 0-base/logo.html %}</span></small></a>&nbsp;
       All rights reserved.&nbsp;
-      {% for footer in site.data.navigation.footer %}{% for domain in site.data.domain %}{% if footer.host contains domain.name %}
-        <a href="{{ footer.url | prepend: domain.host }}"><i class="pe-{{ footer.icon }} pe-fw"></i> {{ footer.title }}</a>&nbsp;
+      {% for footer in site.data.navigation.footer %}{% for domain in site.data.domains %}{% if footer.host contains domain.name %}
+        <a href="{{ footer.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }} pe-fw"></i> {{ footer.title }}</a>&nbsp;
       {% endif %}{% endfor %}{% endfor %}
     </p>
   </div>
