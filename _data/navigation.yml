@@ -1,138 +1,139 @@
 
 topnav1:
-- title:
-  folders:
-    - title: "Home"
-      icon: home
-      host: main-en
-      url: "/"
+
+- title: "Home"
+  icon: home
+  host: main-en
+  url: "/"
 
 topnav2:
-- title:
-  folders:
-    - title: "Products"
-      icon: cube
-      host: main-en
-      url: "/products/"
-      items:
-        - title: "Product A"
-          icon: magnet
-          host: main-en
-          url: "/products/A.html"
-        - title: "Product B"
-          icon: magnet
-          host: main-en
-          url: "/products/B.html"
-        - title: "Product C"
-          icon: magnet
-          host: main-en
-          url: "/products/C.html"
-        - title: "Product D"
-          icon: magnet
-          host: main-en
-          url: "/products/D.html"
-        - title: "Product E"
-          icon: magnet
-          host: main-en
-          url: "/products/E.html"
-        - title: separator
-        - title: "Get the app"
-          icon: cloud-download
-          urlexternal: "https://itunes.apple.com/en/app/"
 
-    - title: "Members"
-      icon: user
+- title: "Products"
+  icon: cube
+  host: main-en
+  url: "/products/"
+  items:
+    - title: "Product A"
+      icon: magnet
       host: main-en
+      url: "/products/A.html"
+    - title: "Product B"
+      icon: magnet
+      host: main-en
+      url: "/products/B.html"
+    - title: "Product C"
+      icon: magnet
+      host: main-en
+      url: "/products/C.html"
+    - title: "Product D"
+      icon: magnet
+      host: main-en
+      url: "/products/D.html"
+    - title: "Product E"
+      icon: magnet
+      host: main-en
+      url: "/products/E.html"
+    - title: separator
+    - title: "Get the app"
+      icon: cloud-download
+      urlexternal: "https://itunes.apple.com/en/app/"
+
+- title: "Members"
+  icon: user
+  host: main-en
+  url: "/members/"
+  items:
+    - title: "Member benefits"
+      icon: thumbs-o-up
+      host: main-en
+      url: "/members/benefits.html"
+    - title: "Reward program"
+      icon: diamond
+      host: main-en
+      url: "/members/rewards.html"
+    - title: "Member manual"
+      icon: file-text-o
+      host: support
       url: "/members/"
-      items:
-        - title: "Member benefits"
-          icon: thumbs-o-up
-          host: main-en
-          url: "/members/benefits.html"
-        - title: "Reward program"
-          icon: diamond
-          host: main-en
-          url: "/members/rewards.html"
-        - title: "Member manual"
-          icon: file-text-o
-          host: support
-          url: "/members/"
-        - title: separator
-        - title: "Create an account"
-          icon: user-plus
-          host: member
-          url: "/sign-up"
-        - title: "Your account"
-          icon: sign-in
-          host: member
-          url: "/login"
+    - title: separator
+    - title: "Create an account"
+      icon: user-plus
+      host: member
+      url: "/sign-up"
+    - title: "Your account"
+      icon: sign-in
+      host: member
+      url: "/login"
 
-    - title: "Clients"
-      icon: briefcase
+- title: "Clients"
+  icon: briefcase
+  host: main-en
+  url: "/clients/"
+  items:
+    - title: "Client benefits"
+      icon: thumbs-o-up
       host: main-en
+      url: "/clients/benefits.html"
+    - title: "Testimonials"
+      icon: commenting-o
+      host: main-en
+      url: "/clients/testimonials.html"
+    - title: "Client manual"
+      icon: file-text-o
+      host: support
       url: "/clients/"
-      items:
-        - title: "Client benefits"
-          icon: thumbs-o-up
-          host: main-en
-          url: "/clients/benefits.html"
-        - title: "Testimonials"
-          icon: commenting-o
-          host: main-en
-          url: "/clients/testimonials.html"
-        - title: "Client manual"
-          icon: file-text-o
-          host: support
-          url: "/clients/"
-        - title: separator
-        - title: "Request for an account"
-          icon: user-plus
-          host: main-en
-          url: "/contact/"
-        - title: "Your account"
-          icon: sign-in
-          host: client
-          url: "/login"
+    - title: separator
+    - title: "Request for an account"
+      icon: user-plus
+      host: main-en
+      url: "/contact/"
+    - title: "Your account"
+      icon: sign-in
+      host: client
+      url: "/login"
 
 topnav3:
-- title:
-  folders:
-    - title: "About us"
-      icon: logo
+
+- title: "About us"
+  icon: logo
+  host: main-en
+  url: "/about/"
+  items:
+    - title: "Contact us"
+      icon: envelope-o
       host: main-en
-      url: "/about/"
-      items:
-        - title: "Contact us"
-          icon: envelope-o
-          host: main-en
-          url: "/contact/"
-        - title: "Map to our office"
-          icon: map-marker
-          host: main-en
-          url: "/contact/map.html"
-        - title: "Blog"
-          icon: pencil-square-o
-          host: main-en
-          url: "/blog/"
-        - title: separator
-        - title: "Knowledge library"
-          icon: university
-          host: support
-          url: "/"
+      url: "/contact/"
+    - title: "Map to our office"
+      icon: map-marker
+      host: main-en
+      url: "/contact/map.html"
+    - title: "Blog"
+      icon: pencil-square-o
+      host: main-en
+      url: "/blog/"
+    - title: separator
+    - title: "Knowledge library"
+      icon: university
+      host: support
+      url: "/"
 
 footer:
+
 - title: "Privacy"
   icon: lock
   host: main-en
   url: "/about/privacy.html"
+
 - title: "Terms"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
+
 - title: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
+  
 - title: "RSS"
   icon: rss
   host: main-en
