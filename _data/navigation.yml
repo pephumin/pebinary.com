@@ -59,7 +59,7 @@ topnav2:
     - title: "Create an account"
       icon: user-plus
       host: member
-      url: "/sign-up"
+      url: "/join"
     - title: "Your account"
       icon: sign-in
       host: member
@@ -83,9 +83,9 @@ topnav2:
       host: support
       url: "/clients/"
     - title: separator
-    - title: "Request for an account"
+    - title: "Request for access"
       icon: user-plus
-      host: main-en
+      host: client
       url: "/contact/"
     - title: "Your account"
       icon: sign-in
@@ -133,7 +133,7 @@ footer:
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
-  
+
 - title: "RSS"
   icon: rss
   host: main-en
