@@ -1,0 +1,58 @@
+// Usage
+//
+// Square version
+//
+// <div class="text-center">
+//   <label class="switch"><input type="checkbox"><div class="switchslider"></div></label>
+// </div>
+//
+// Round version
+//
+// <div class="text-center">
+//   <label class="switch"><input type="checkbox"><div class="switchslider round"></div></label>
+// </div>
+
+.switch
+  position: relative
+  display: inline-block
+  width: 60px
+  height: 30px
+
+  input
+    display: none
+
+.switchslider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $silver
+  -webkit-transition: .4s
+  transition: .4s
+  &:before
+    position: absolute
+    content: ""
+    height: 26px
+    width: 26px
+    left: 4px
+    bottom: 2px
+    background-color: $white
+    -webkit-transition: .4s
+    transition: .4s
+
+input
+  &:checked + .switchslider
+    background-color: $green
+  &:focus + .switchslider
+    box-shadow: 0 0 1px $green
+  &:checked + .switchslider:before
+    -webkit-transform: translateX(26px)
+    -ms-transform: translateX(26px)
+    transform: translateX(26px)
+
+.switchslider.round
+  border-radius: 30px
+  &:before
+    border-radius: 50%

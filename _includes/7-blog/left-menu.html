@@ -20,4 +20,9 @@
       <i class="pe-tag pe-fw"></i> <a href="/blog/tag/#{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
     {% endfor %}
   </p>
+   <!-- <div class="text-center">
+     <label class="switch"><input type="checkbox"><div class="switchslider round"></div></label>
+     <label class="switch"><input type="checkbox"><div class="switchslider"></div></label>
+     <label class="switch"><input type="checkbox"><div class="switchslider round"></div></label>
+   </div> -->
 </aside>

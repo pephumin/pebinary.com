@@ -24,8 +24,8 @@ fullwidth: false
   			<ul>
   				{% for post in sorted_posts limit:10 %}
   					{% if post.categories contains category[0] %}
-  						<li>
-  							<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small><br>
+  						<li class="useicon">
+  							<p class="label-text"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small><br>
     							<span class="small">Preview: {{ post.excerpt | strip_html }}</small></span>
   							</p>
   						</li>
@@ -38,7 +38,7 @@ fullwidth: false
   </div>
   {% unless page.fullwidth %}
   <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
-  	{% include 7-blog/highlights.html %}
+  	{% include 7-blog/left-menu.html %}
   </div>
   {% endunless %}
   </div>
