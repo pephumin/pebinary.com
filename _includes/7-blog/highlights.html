@@ -2,10 +2,8 @@
   <h4>Blog highlights</h4>
   <p><q>Some key highlighted blogs providing useful information to clients / members</q></p>
   <p>
-    {% for highlight in site.data.blog-highlight-list %}
-      <i class="pe-angle-double-right"></i>
-      <a href="{{ "/blog/" | append: highlight.datepost | append: "/" | append: highlight.titlepost | prepend: site.baseurl }}">{{ highlight.title }}</a>
-      <small>({{ highlight.date }})</small><br>
+    {% for highlight in site.data.blog-highlights %}
+      <i class="pe-angle-double-right"></i> <a href="{{ "/blog/" | append: highlight.datepost | append: "/" | append: highlight.titlepost | prepend: site.baseurl }}">{{ highlight.title }}</a> <small>({{ highlight.date }})</small><br>
     {% endfor %}
   </p>
   <h4>Categories</h4>
