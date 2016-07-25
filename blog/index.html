@@ -6,8 +6,12 @@ homepage: false
 fullwidth: false
 ---
 
-<div class="container">
+<section class="container blog">
+
   <h2>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss"></i></a></small></h2>
+  <p>Our weblogs (i.e. Blogs) contain all updated information about our company from different perspectives including the internal system development to the external market development. We update our weblogs from time to time when there is an important occasion to be recorded.</p>
+  <br>
+
   <div class="row">
     {% if page.fullwidth %}
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
@@ -71,4 +75,5 @@ fullwidth: false
     </div>
 		{% endunless %}
   </div>
-</div>
+
+</section>
