@@ -1,17 +1,16 @@
 .carousel
   height: 500px
-  margin-top: 60px
-  margin-bottom: 60px
 
 .carousel-caption
   z-index: 10
-  //text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
   text-shadow: none
+  bottom: 15%
+
+.carousel-caption h2
+  font-size: 1.8rem
 
 .carousel-caption p
-  margin-bottom: 20px
   font-size: 1.2rem
-  line-height: 1.4
 
 .carousel .item
   height: 500px
@@ -44,7 +43,6 @@
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
     background-repeat: repeat-x
-    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
 
   &.right
     left: auto
@@ -53,7 +51,6 @@
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
     background-repeat: repeat-x
-    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
 
   &:hover, &:focus
     outline: 0
@@ -81,15 +78,21 @@
 @media (max-width: 768px)
 
   .carousel
-    height: 300px
+    height: 400px
+
+  .carousel-caption
+    z-index: 10
+    text-shadow: none
+    bottom: 10%
+
+  .carousel-caption h2
+    font-size: 1.5rem
 
   .carousel-caption p
-    margin-bottom: 20px
     font-size: 1.0rem
-    line-height: 1.4
 
   .carousel .item
-    height: 300px
+    height: 400px
 
   .carousel-inner > .item > img
-    height: 300px
+    height: 400px
