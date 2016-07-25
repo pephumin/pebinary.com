@@ -5,12 +5,12 @@ date: 2016-07-17 06:10:32 +0700
 author: admin
 author-email: admin@pebinary.com
 category: blog
-tags: [blog, setup, legal documents]
+tags: [website]
 quote: "These documents will still needed to be fully revised soon"
 ---
-The initial of three required legal documents has been conducted.
+Three `legal documents` have been added to our website.
 
-These three documents are listed as follows:
+These documents are listed as follows:
 
 - [Privacy Policy]
 - [Terms of Service]
