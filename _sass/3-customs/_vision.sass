@@ -1,0 +1,36 @@
+.vision
+
+  h2
+
+    &:hover
+      color: $darkgreen
+
+  p
+    font-size: 1.1rem
+
+    &:hover
+      color: $darkgreen
+
+  span.pe-stack
+    color: $darkgreen
+
+    &:hover
+      color: $green
+      -webkit-animation: shake 0.7s ease-in-out
+      -moz-animation: shake 0.7s ease-in-out
+      -ms-animation: shake 0.7s ease-in-out
+      -o-animation: shake 0.7s ease-in-out
+      animation: shake 0.7s ease-in-out
+
+@keyframes shake
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+
+  40%, 60%
+    transform: translate3d(4px, 0, 0)
