@@ -2,11 +2,7 @@
   position: relative
   padding-top: 0
   margin: 0 auto
-  //margin-bottom: 60px
-  //width: auto
-  //height: auto
   overflow: hidden
-  //margin: auto
   text-align: center
 
   .landing-img
@@ -24,26 +20,27 @@
     //background: rgba(255, 255, 255, 0.65)
 
   .landing-text
-    //margin-bottom: 20px
     font-size: 1.2rem
     line-height: 1.4
     text-align: left
 
   .landing-form
     color: $white
-    //background: rgba(255, 255, 255, 0.20)
+    border-collapse: separate
 
     .button-lg-x
       margin: 20px auto
       display: block
       width: 100%
 
-    .input-group
+    .input-group .form-control
       position: relative
+      z-index: 2
+      float: left
+      width: 100%
+      margin-bottom: 0
       display: table
       border-collapse: separate
-      margin: 10px auto
-      // padding: 30px auto
 
     .input-group-addon
       padding: 6px 12px
@@ -56,6 +53,9 @@
       width: 1%
       white-space: nowrap
       vertical-align: middle
+
+    .margin-bottom
+      margin-bottom: 10px !important
 
     .form-control
       height: 50px
