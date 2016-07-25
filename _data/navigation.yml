@@ -17,26 +17,32 @@ topnav2:
       icon: magnet
       host: main-en
       url: "/products/A.html"
+      disable: true
     - title: "Product B"
       icon: magnet
       host: main-en
       url: "/products/B.html"
+      disable: true
     - title: "Product C"
       icon: magnet
       host: main-en
       url: "/products/C.html"
+      disable: true
     - title: "Product D"
       icon: magnet
       host: main-en
       url: "/products/D.html"
+      disable: true
     - title: "Product E"
       icon: magnet
       host: main-en
       url: "/products/E.html"
+      disable: true
     - title: separator
     - title: "Get the app"
       icon: cloud-download
       urlexternal: "https://itunes.apple.com/en/app/"
+      disable: true
 
 - title: "Members"
   icon: user
@@ -47,23 +53,28 @@ topnav2:
       icon: thumbs-o-up
       host: main-en
       url: "/members/benefits.html"
+      disable: false
     - title: "Reward program"
       icon: diamond
       host: main-en
       url: "/members/rewards.html"
+      disable: false
     - title: "Member manual"
       icon: file-text-o
       host: support
       url: "/members/"
+      disable: true
     - title: separator
     - title: "Create an account"
       icon: user-plus
       host: member
       url: "/join"
+      disable: false
     - title: "Your account"
       icon: sign-in
       host: member
       url: "/login"
+      disable: false
 
 - title: "Clients"
   icon: briefcase
@@ -74,23 +85,28 @@ topnav2:
       icon: thumbs-o-up
       host: main-en
       url: "/clients/benefits.html"
+      disable: false
     - title: "Testimonials"
       icon: commenting-o
       host: main-en
       url: "/clients/testimonials.html"
+      disable: true
     - title: "Client manual"
       icon: file-text-o
       host: support
       url: "/clients/"
+      disable: true
     - title: separator
     - title: "Request for access"
       icon: user-plus
       host: client
       url: "/contact/"
+      disable: false
     - title: "Your account"
       icon: sign-in
       host: client
       url: "/login"
+      disable: false
 
 topnav3:
 
@@ -103,19 +119,23 @@ topnav3:
       icon: envelope-o
       host: main-en
       url: "/contact/"
+      disable: false
     - title: "Map to our office"
       icon: map-marker
       host: main-en
       url: "/contact/map.html"
+      disable: false
     - title: "Blog"
       icon: pencil-square-o
       host: main-en
       url: "/blog/"
+      disable: false
     - title: separator
     - title: "Knowledge library"
       icon: university
       host: support
       url: "/"
+      disable: true
 
 footer:
 
@@ -123,18 +143,22 @@ footer:
   icon: lock
   host: main-en
   url: "/about/privacy.html"
+  disable: false
 
 - title: "Terms"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
+  disable: false
 
 - title: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
+  disable: false
 
 - title: "RSS"
   icon: rss
   host: main-en
   url: "/sitemap.xml"
+  disable: false
