@@ -16,11 +16,13 @@ fullwidth: false
 		{% endif %}
 
       <h4><i class="pe-archive"></i> Archive of Blogs</h4>
+      <p>
       {% if page.type contains "category" %}
-        <p>Showing blogs in {{ page.type }}:&nbsp; <i class="pe-folder-open-o"></i> {{ page.title }}</p>
+        Showing blogs in {{ page.type }}:&nbsp; <i class="pe-folder-open-o"></i> {{ page.title }}<br>
       {% elsif page.type contains "tag" %}
-        <p>Showing blogs in {{ page.type }}:&nbsp; <i class="pe-tag"></i> {{ page.title }}</p>
+        Showing blogs in {{ page.type }}:&nbsp; <i class="pe-tag"></i> {{ page.title }}<br>
       {% endif %}
+      Sorted by date <i class="pe-sort-amount-desc pe-fw"></i></p>
       <ul class="posts">
         {% for post in page.posts %}
           <li class="useicon">
@@ -35,7 +37,7 @@ fullwidth: false
               <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
             {% endfor %}
             </span><br>
-            <span class="small">Preview: {{ post.excerpt | strip_html }}</small></span>
+            <span class="small">Preview:&nbsp; {{ post.excerpt | strip_html }}</small></span>
             </p>
           </li>
         {% endfor %}
