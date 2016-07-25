@@ -10,14 +10,14 @@
   <div class="list-group">
     {% for category in site.categories %}
       {% assign sorted_posts = category[0] | reverse %}
-      <a href="/blog/category/#{{ category | first | slugify | prepend: site.baseurl }}" class="list-group-item">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
+      <a href="/blog/category/{{ category | first | slugify | prepend: site.baseurl }}" class="list-group-item">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
     {% endfor %}
   </div>
   <h4>Tags</h4>
   <p class="blog-tags">
     {% for tag in site.tags %}
       {% assign sorted_posts = tag[0] | reverse %}
-      <i class="pe-tag pe-fw"></i> <a href="/blog/tag/#{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
+      <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
     {% endfor %}
   </p>
    <!-- <div class="text-center">

@@ -23,16 +23,16 @@ layout: main-en
             <br><i class="pe-calendar-o pe-fw"></i> Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time> ({{ page.date | timeago }})
             <br><i class="pe-clock-o pe-fw"></i> Time: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
             <br><i class="pe-globe pe-fw"></i> Location: {{ site.timezone }}
-            <br>Category:
+            <br>Category:&nbsp;
             {% if page.categories %}
               {% for category in page.categories %}
-                <i class="pe-folder-open-o pe-fw"></i> <a href="/blog/category/#{{ category | slugify }}">{{ category }}</a>
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/blog/category/{{ category | slugify }}">{{ category }}</a>
               {% endfor %}
             {% endif %}
-            <br>Tag:
+            <br>Tag:&nbsp;
             {% if page.tags %}
               {% for tag in page.tags %}
-                <i class="pe-tag pe-fw"></i> <a href="/blog/tag/#{{ tag | slugify }}">{{ tag }}</a>
+                <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
               {% endfor %}
             {% endif %}
           </p>

@@ -16,14 +16,22 @@ port:                 4000
 #url:                 http://pephumin.github.io
 baseurl:              /pebinary.com
 paginate:             5
-paginate_path:        "/blog/:num/"
+paginate_path:        /blog/:num/
 permalink:            /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
 google_analytics:     yes
 exclude:              ['README.md', 'run', '.DS_Store', 'Icon?', '_x']
-gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-timeago']
+gems:                 ['jekyll-paginate', 'jekyll-sitemap', 'jekyll-timeago', 'jekyll-archives']
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: /blog/category/:name/
+    tag: /blog/tag/:name/
 
 ##########################################
 ####### my custom vars
