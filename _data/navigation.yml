@@ -90,7 +90,7 @@ topnav2:
       icon: commenting-o
       host: main-en
       url: "/clients/testimonials.html"
-      disable: true
+      disable: false
     - title: "Client manual"
       icon: file-text-o
       host: support
