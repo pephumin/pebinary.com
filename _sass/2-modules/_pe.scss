@@ -148,7 +148,10 @@ i {
   vertical-align: middle;
 }
 .pe-stack-1x,
-.pe-stack-2x {
+.pe-stack-2x,
+.pe-stack-3x,
+.pe-stack-4x,
+.pe-stack-5x {
   position: absolute;
   left: 0;
   width: 100%;
@@ -159,6 +162,15 @@ i {
 }
 .pe-stack-2x {
   font-size: 2em;
+}
+.pe-stack-3x {
+  font-size: 3em;
+}
+.pe-stack-4x {
+  font-size: 4em;
+}
+.pe-stack-5x {
+  font-size: 5em;
 }
 .pe-inverse {
   color: #FFFFFF;
