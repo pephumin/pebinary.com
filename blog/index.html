@@ -39,7 +39,7 @@ fullwidth: false
                   <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>&nbsp;
                 {% endfor %}
               {% endif %}
-            <br><i class="pe-clock-o pe-fw"></i> Estimated reading time:
+            <br><i class="pe-clock-o pe-fw"></i> Reading time:
               {% assign words = post.content | number_of_words %}
               {% if words < 360 %}
                 1 minute ({{ words }} words)
