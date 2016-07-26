@@ -7,10 +7,9 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:
+published: true
 ---
 A reference for some of the useful `Mark-down` examples. These would be a good reference for the usage in our website.
-
-<!--more-->
 
 #### Section one
 

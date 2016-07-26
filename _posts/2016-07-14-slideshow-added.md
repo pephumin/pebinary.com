@@ -7,6 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:
+published: true
 ---
 In order to make the website look more appeal to the general public, a `slideshow`[^note] has been added.
 

@@ -7,6 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote: "These documents will still needed to be fully revised soon"
+published: true
 ---
 Three `legal documents` have been added to our website.
 

@@ -7,6 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:
+published: true
 ---
 Today we mark another new step to success by successfully developing the `official website`. Although there are still a lot to go, but we are proud to present the first version of our website where the key template is done with a few key pages completed.
 

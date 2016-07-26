@@ -7,6 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [company]
 quote:
+published: true
 ---
 Today we start the process of `company registration` which is aimed to be completed within this month (July 2016).
 
