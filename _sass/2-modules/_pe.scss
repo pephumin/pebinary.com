@@ -3,15 +3,11 @@
   font-family: "pe";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pe/pe.eot?pe");
-  src: url("../fonts/pe/pe.eot?pe#iefix")format("embedded-opentype"),
-       url("../fonts/pe/pe.woff?pe") format("woff"),
-       url("../fonts/pe/pe.ttf?pe") format("truetype"),
-       url("../fonts/pe/pe.svg#pe") format("svg");
+  src: url("../fonts/pe.woff?pe") format("woff");
 }
 
 i {
-  font-family: 'pe' !important;
+  font-family: "pe" !important;
   display: inline-block;
   font: normal normal normal 14px/1 pe;
   font-size: inherit;

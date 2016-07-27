@@ -1,23 +1,19 @@
 
 @font-face {
   font-family: 'neon';
-  src: url('../fonts/others/neon.ttf') format('truetype');
+  src: url('../fonts/neon.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "boon";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/boon/boon.eot?") format("eot"),
-       url("../fonts/boon/boon.woff2") format("woff2"),
-       url("../fonts/boon/boon.woff") format("woff"),
-       url("../fonts/boon/boon.ttf") format("truetype"),
-       url("../fonts/boon/boon.svg#boon") format("svg");
+  src: url("../fonts/boon.woff") format("woff");
 }
 
 @font-face {
   font-family: "ubuntu";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/others/ubuntu.woff") format("woff");
+  src: url("../fonts/ubuntu.woff") format("woff");
 }
