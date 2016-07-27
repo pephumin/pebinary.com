@@ -38,7 +38,7 @@ layout: main-en
           </p>
         </header>
         <div class="post-content" itemprop="articleBody">
-          {{ content }}
+          {{ content | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' }}
         </div>
         <p class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">

@@ -7,7 +7,7 @@
   .label-text::before
     content: "\f101"
     font-family: "pe"
-    //display: inline-block
+    display: inline-block
     margin-right: 5px
 
   .post-title
@@ -19,6 +19,20 @@
       color: inherit
       &:hover
         color: $blue
+
+  li.checkbox
+    list-style-type: none
+    margin-left: -10px
+    line-height: 1.4
+
+  li.checkbox > input[type="checkbox"] > .input-label:before
+    content: "\f096"
+    font-family: "pe"
+    display: inline-block
+    margin-right: 5px
+
+  li.checkbox > input[type="checkbox"]:checked > .input-label:before
+    content: "\f046"
 
   .post-meta
     color: $lightgrey
