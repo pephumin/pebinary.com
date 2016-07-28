@@ -51,7 +51,7 @@ jekyll-archives:
 ####### my custom vars
 ##########################################
 
-domain:
+domains:
   main-en:            http://www.pebinary.com
   main-th:            http://www.pebinary.co.th
   client:             http://www.siamsquare.net
