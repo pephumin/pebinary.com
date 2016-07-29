@@ -37,6 +37,7 @@ gems:
   - jekyll-sitemap
   - jekyll-timeago
   - jekyll-archives
+  #- jekyll-geo-pattern
 
 jekyll-archives:
   enabled:
