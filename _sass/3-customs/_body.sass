@@ -56,6 +56,78 @@ del
 
 i.pe-heart
   color: $red
+  animation: beat .80s infinite alternate
+  -webkit-transform-origin: center
+  -moz-transform-origin: center
+  -o-transform-origin: center
+  -ms-transform-origin: center
+  transform-origin: center
+
+@keyframes beat
+  0%
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    transform: scale(0.8)
+  30%
+    -webkit-transform: scale(0.9)
+    -moz-transform: scale(0.9)
+    -o-transform: scale(0.9)
+    -ms-transform: scale(0.9)
+    transform: scale(0.9)
+  40%
+    -webkit-transform: scale(1.05)
+    -moz-transform: scale(1.05)
+    -o-transform: scale(1.05)
+    -ms-transform: scale(1.05)
+    transform: scale(1.05)
+  60%
+    -webkit-transform: scale(0.7)
+    -moz-transform: scale(0.7)
+    -o-transform: scale(0.7)
+    -ms-transform: scale(0.7)
+    transform: scale(0.7)
+  70%
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    transform: scale(0.8)
+  80%
+    -webkit-transform: scale(1.06)
+    -moz-transform: scale(1.06)
+    -o-transform: scale(1.06)
+    -ms-transform: scale(1.06)
+    transform: scale(1.06)
+  100%
+    -webkit-transform: scale(0.9)
+    -moz-transform: scale(0.9)
+    -o-transform: scale(0.9)
+    -ms-transform: scale(0.9)
+    transform: scale(0.9)
+
+
+//
+// @-moz-keyframes beat
+//  to
+//    -moz-transform: scale(1.4)
+//    transform: scale(1.4)
+//
+// @-webkit-keyframes beat
+//  to
+//    -webkit-transform: scale(1.4)
+//    transform: scale(1.4)
+//
+// @-ms-keyframes beat
+//  to
+//    -ms-transform: scale(1.4)
+//    transform: scale(1.4)
+//
+// @-o-keyframes beat
+//  to
+//    -o-transform: scale(1.4)
+//    transform: scale(1.4)
 
 i.pe-tag
   color: $lightgrey
