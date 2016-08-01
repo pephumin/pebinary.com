@@ -9,10 +9,10 @@ permalink: /404.html
 <section class="dialog">
   <h2>Oh no! The page is not found <i class="pe-warning pe-fw"></i></h2>
   <p>We have found an error due to the page that you were looking for doesn't exist.</p>
-  <p>Are you sure you have entered the web address (URL) correctly?</p>
-  <p>
+  <p class="big">Are you sure you have entered the web address (URL) correctly?</p>
+  <p class="small">
     <a href="{{ "/" | prepend: site.baseurl }}">Click here</a> to go back to the front page <i class="pe-home pe-fw"></i> or
     <a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a> <i class="pe-envelope-o pe-fw"></i> to report this problem.
   </p>
-  <p class="text-center">{% include 0-base/logo.html %}</p>
+  <p class="text-center">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</p>
 </section>
