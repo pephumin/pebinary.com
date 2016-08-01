@@ -2,15 +2,48 @@
   position: relative
   padding-top: 0
   margin: 0 auto
+  height: 500px
   overflow: hidden
   text-align: center
 
-  .landing-img
+  img
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 100%
+    height: 500px
     filter: blur(7px)
+
+  .landing-control
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: 15%
+    opacity: 0.9
+    filter: alpha(opacity = 90)
+    font-size: 30px
+    color: $white
+    text-align: center
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+    background-color: transparent
+
+    &.left
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
+      background-repeat: repeat-x
+
+    &.right
+      left: auto
+      right: 0
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
+      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
 
   .landing-headline
     position: absolute
-    top: 20%
+    bottom: 20%
     left: 0%
     right: 0%
     padding: 0px 40px
@@ -20,9 +53,14 @@
     //background: rgba(255, 255, 255, 0.65)
 
   .landing-text
-    font-size: 1.2rem
     line-height: 1.4
     text-align: left
+
+  .landing-text h2
+    font-size: 1.8rem
+
+  .landing-text p
+    font-size: 1.2rem
 
   .landing-form
     color: $white
@@ -45,10 +83,10 @@
     .input-group-addon
       padding: 6px 12px
       line-height: 1
-      color: #555555
+      color: $grey
       text-align: center
-      background-color: #eeeeee
-      border: 1px solid #ccc
+      background-color: none
+      border: 1px solid $silver
       border-radius: 4px
       width: 1%
       white-space: nowrap
@@ -61,18 +99,32 @@
       height: 50px
       padding: 6px 12px
       line-height: 1.42857
-      color: #555555
-      background-color: #fff
+      color: $grey
+      background-color: $white
       background-image: none
-      border: 1px solid #ccc
+      border: 1px solid $silver
       border-radius: 4px
 
-// @media (max-width: 768px)
-//
-//   .landing
-//
-//     .landing-text
-//       bottom: 20%
-//
-//     .landing-text p
-//       font-size: 1.0rem
+@media (max-width: 768px)
+
+  .landing
+    height: 350px
+
+    img
+      height: 350px
+
+    .landing-text
+      text-align: center
+
+    .landing-text h2
+      font-size: 1.4rem
+
+    .landing-text p
+      font-size: 0.9rem
+
+    .landing-form
+
+      .button-lg-x
+        margin: 10px auto
+        //display: block
+        //width: 100%

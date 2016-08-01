@@ -1,29 +1,36 @@
 
 <section class="landing">
-  <img src="{{ "/assets/img/carousel/c7.jpg" | prepend: site.baseurl }}" class="img-responsive landing-img">
+  <img src="{{ "/assets/img/carousel/c5.jpg" | prepend: site.baseurl }}" class="img-responsive">
   <div class="row landing-headline">
-    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 landing-text">
-      <h2>We only need days to deliver you the consumer insights</h2>
-      <p class="lead">As the world now changes very quickly so waiting for months to get basic consumer insights is no longer acceptable. We can deliver you survey results within days.</p>
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 landing-text">
+      <h2>Let us show the modern way of conducting market research</h2>
+      <p class="hidden-xs">Why spending more with traditional research when there is an alternative option that is quicker and cheaper?
+        Contact us today and we will make sure you get the top priority service from us.</p>
     </div>
-    <div class="hidden-xs hidden-sm col-md-5 col-lg-5 landing-form">
+    <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 landing-form">
       <form class="form" role="form" method="post" action="#" accept-charset="utf-8">
         <div class="input-group margin-bottom">
+          <span class="input-group-addon"><i class="pe-user pe-fw"></i></span>
+          <input type="text" name="name" class="form-control" placeholder="Your name">
+        </div>
+        <div class="input-group margin-bottom">
           <span class="input-group-addon"><i class="pe-envelope-o pe-fw"></i></span>
-          <input type="text" name="username" class="form-control" placeholder="email@company.com">
+          <input type="text" name="email" class="form-control" placeholder="email@company.com">
         </div>
         <div class="input-group margin-bottom">
           <span class="input-group-addon"><i class="pe-key pe-fw"></i></span>
           <input type="password" name="password" class="form-control" placeholder="Password">
         </div>
-        <div class="checkbox">
+        <!-- <div class="checkbox">
           <label><input type="checkbox"> Remember me</label>
-        </div>
-        <button type="submit" class="button-lg-x">Sign in</button>
+        </div> -->
+        <button type="submit" class="button-lg-x">contact us <i class="pe-envelope-o pe-fw"></i></button>
       </form>
     </div>
-    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg landing-form">
-      <button type="submit" class="button-lg">submit <i class="pe-check-circle-o"></i></button>
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg landing-form">
+      <a href="{{ "/contact/" | prepend: site.baseurl }}" class="button-lg-x">Contact us <i class="pe-envelope-o pe-fw"></i></a>
     </div>
   </div>
+  <div class="left landing-control"></div>
+  <div class="right landing-control"></div>
 </section>

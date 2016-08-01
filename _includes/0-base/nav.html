@@ -11,7 +11,7 @@
       {% for entry in site.data.navigation.topnav1 %}
         {% for domain in site.data.domains %}
           {% if entry.host contains domain.name %}
-            <a href="{{ entry.url | prepend: domain.host | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
+      <a href="{{ entry.url | prepend: domain.host | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
           {% endif %}
         {% endfor %}
       {% endfor %}
@@ -19,56 +19,48 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         {% for entry in site.data.navigation.topnav2 %}
-          <li class="dropdown">
-            <a href="{{ entry.url | prepend: site.baseurl }}"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
-            <ul class="dropdown-menu">
-              {% for item in entry.items %}
-                {% if item.disable %}{% assign disable = "disabled" %}{% else %}{% assign disable = "" %}{% endif %}
-                {% if item.title == "separator" %}
-                <li role="separator" class="divider"></li>
-                {% elsif item.urlexternal %}
-                <li class="{{ disable }}"><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                {% else %}
-                  {% for domain in site.data.domains %}
-                    {% if item.host contains domain.name %}
-                      {% if item.host == "main-en" %}
-                        <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                      {% else %}
-                        <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
+        <li class="dropdown">
+          <a href="{{ entry.url | prepend: site.baseurl }}"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            {% for item in entry.items %}
+            {% if item.disable %}{% assign disable = "disabled" %}{% else %}{% assign disable = "" %}{% endif %}
+            {% if item.title == "separator" %}
+            <li role="separator" class="divider"></li>
+            {% elsif item.urlexternal %}
+            <li class="{{ disable }}"><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+            {% else %}
+            {% for domain in site.data.domains %}{% if item.host contains domain.name %}{% if item.host == "main-en" %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+            {% else %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+            {% endif %}{% endif %}{% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
         {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {% for entry in site.data.navigation.topnav3 %}
-          <li class="dropdown">
-            <a href="{{ entry.url | prepend: site.baseurl }}"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
-            <ul class="dropdown-menu">
-              {% for item in entry.items %}
-                {% if item.disable %}{% assign disable = "disabled" %}{% else %}{% assign disable = "" %}{% endif %}
-                {% if item.title == "separator" %}
-                <li role="separator" class="divider"></li>
-                {% elsif item.urlexternal %}
-                <li class="{{ disable }}"><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                {% else %}
-                  {% for domain in site.data.domains %}
-                    {% if item.host contains domain.name %}
-                      {% if item.host == "main-en" %}
-                        <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                      {% else %}
-                        <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
+        <li class="dropdown">
+          <a href="{{ entry.url | prepend: site.baseurl }}"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            {% for item in entry.items %}
+            {% if item.disable %}{% assign disable = "disabled" %}{% else %}{% assign disable = "" %}{% endif %}
+            {% if item.title == "separator" %}
+            <li role="separator" class="divider"></li>
+            {% elsif item.urlexternal %}
+            <li class="{{ disable }}"><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+            {% else %}
+            {% for domain in site.data.domains %}{% if item.host contains domain.name %}{% if item.host == "main-en" %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+            {% else %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
+            {% endif %}{% endif %}{% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
         {% endfor %}
       </ul>
     </div>

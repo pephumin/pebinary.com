@@ -3,45 +3,16 @@
   <div class="header-1">
     <div class="container">
 
-      <a class="modal-link button" data-toggle="modal" data-target="#demo"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a>
-
-      <div class="modal fade" id="demo" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">Survey demonstration</h4>
-            </div>
-
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">{% include 0-base/iphone.html %}</div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 details">
-                  <h4>Try it yourself</h4>
-                  <p>On the left is the sample of a survey using our online research platform.</p>
-                  <p>And this is how the survey is actually displayed to respondent, in this case will be displayed based on a screen of smartphone.</p>
-                  <p>Please try completing this example by yourself so you will understand how the whole process will be taken.</p>
-                  <p>Once you have completed this survey, this diaglog box will be automatically closed.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="button-x" data-dismiss="modal">Close <i class="pe-remove"></i></button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
+      <!-- <a class="modal-link button" data-toggle="modal" data-target="#demo"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a> -->
+      {% comment %} include 0-base/_demo.html {% endcomment %}
+      <a class="button" href="#"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a>
       <a href="{{ "/contact/" | prepend: site.baseurl }}" class="button blue-wiggle">Contact <span class="hidden-xs hidden-sm">us</span> <i class="pe-envelope-o pe-fw"></i></a>
     </div>
   </div>
 
   <div class="header-2">
     <div class="container">
-      <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% include 0-base/logo.html %}</a></h1>
+      <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a></h1>
       <p class="description">{{ site.description }}</p>
       <p class="thai-name"><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">บริษัท พีอี ไบนารี่ จำกัด</a></p>
     </div>

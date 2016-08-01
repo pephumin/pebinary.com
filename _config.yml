@@ -1,6 +1,12 @@
-##########################################
-####### jekyll default vars
-##########################################
+############################################################
+#      ____  ______   ____  _____   _____    ______  __    #
+#     / __ \/ ____/  / __ )/  _/ | / /   |  / __ \ \/ /    #
+#    / /_/ / __/    / __  |/ //  |/ / /| | / /_/ /\  /     #
+#   / ____/ /___   / /_/ // // /|  / ___ |/ _, _/ / /      #
+#  /_/   /_____/  /_____/___/_/ |_/_/  |_/_/ |_| /_/       #
+#                                                          #
+############################################################
+
 
 title:                "PE BINARY CO., LTD."
 email:                support@pebinary.com
@@ -24,7 +30,14 @@ highlighter:          rouge
 #highlighter:         pygments
 
 kramdown:
-  input: GFM
+  input:              GFM
+
+domains:
+  main-en:            http://www.pebinary.com
+  main-th:            http://www.pebinary.co.th
+  client:             http://www.siamsquare.net
+  member:             http://www.siamsquare.org
+  support:            http://support.pebinary.com
 
 exclude:
   - README.md
@@ -48,13 +61,10 @@ jekyll-archives:
     category: /blog/category/:name/
     tag: /blog/tag/:name/
 
-##########################################
-####### my custom vars
-##########################################
-
-domains:
-  main-en:            http://www.pebinary.com
-  main-th:            http://www.pebinary.co.th
-  client:             http://www.siamsquare.net
-  member:             http://www.siamsquare.org
-  support:            http://support.pebinary.com
+compress_html:
+  clippings: []
+  comments: ["<!-- ", " -->"]
+  endings: []
+  startings: []
+  blanklines: true
+  profile: false
