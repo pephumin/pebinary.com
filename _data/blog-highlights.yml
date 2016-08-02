@@ -1,17 +1,11 @@
 - number: 3
   title: "Company registration completed"
-  titlepost: company-registration-completed
-  date: 27 July 2016
-  datepost: 2016/07/27
+  timestamp: 2016-07-27 14:51:05 +0700
 
 - number: 2
   title: "The blog was born"
-  titlepost: the-blog-was-born
-  date: 12 July 2016
-  datepost: 2016/07/12
+  timestamp: 2016-07-12 20:38:07 +0700
 
 - number: 1
   title: "The first setup"
-  titlepost: the-first-setup
-  date: 6 July 2016
-  datepost: 2016/07/06
+  timestamp: 2016-07-06 17:02:13 +0700

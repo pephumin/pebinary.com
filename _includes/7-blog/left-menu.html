@@ -3,7 +3,10 @@
         <p><q>Some key highlighted blogs providing useful information to clients / members</q></p>
         <p>
           {% for highlight in site.data.blog-highlights %}
-          <i class="pe-angle-double-right"></i> <a href="{{ "/blog/" | append: highlight.datepost | append: "/" | append: highlight.titlepost | prepend: site.baseurl }}">{{ highlight.title }}</a> <small>({{ highlight.date }})</small><br>
+          {% assign title = highlight.title | slugify %}
+          {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
+          {% assign url = "/blog/" | append: date | append: "/" | append: title %}
+          <i class="pe-angle-double-right"></i> <a href="{{ url | prepend: site.baseurl }}">{{ highlight.title }}</a> <small>({{ highlight.timestamp | timeago }})</small><br>
           {% endfor %}
         </p>
         <h4>Categories</h4>
