@@ -35,6 +35,6 @@ Below is the detail of our bank information.
 
 
 [Kasikorn Bank]: http://www.kasikornbank.com
-[kbank-logo]: /assets/img/others/kasikorn.gif "Kasikorn Bank logo"
+[kbank-logo]: {{ "/assets/img/others/kasikorn.gif" | prepend: site.baseurl }} "Kasikorn Bank logo"
 [Seacon Square]: http://www.seaconsquare.com
-[seacon-logo]: /assets/img/others/seaconsquare.gif "Seacon Square logo"
+[seacon-logo]: {{ "/assets/img/others/seaconsquare.gif" | prepend: site.baseurl }} "Seacon Square logo"

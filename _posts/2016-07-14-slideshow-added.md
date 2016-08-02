@@ -21,6 +21,6 @@ Currently this section use picture size 1280x500 pixels.
 
 While we currently use `filter` effect by [CSS3] to make pictures blur, we may consider making all pictures blurred from the original photoshop source for a guarantee of consistency output to all viewers from different type of we browsers.
 
-[Front Page]: /
+[Front Page]: {{ "/" | prepend: site.baseurl }}
 [CSS3]: http://www.w3.org/TR/CSS/
 [^note]: The slideshow function is built by using carousel

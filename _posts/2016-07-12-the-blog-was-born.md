@@ -23,7 +23,7 @@ And for those who prefer the backend access, we also provide specific access at 
 
 To access the atom syndication, just look for this sign [<i class="pe-rss icon-rss"></i>] which should be seen quite obviously in every page under the blog section.
 
-[Blog]: /blog/
-[Blog RSS]: /blog/atom.xml
+[Blog]: {{ "/blog/" | prepend: site.baseurl }}
+[Blog RSS]: {{ "/blog/atom.xml" | prepend: site.baseurl }}
 [atom]: http://atomenabled.org
-[<i class="pe-rss icon-rss"></i>]: /blog/atom.xml
+[<i class="pe-rss icon-rss"></i>]: {{ "/blog/atom.xml" | prepend: site.baseurl }}

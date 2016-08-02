@@ -77,7 +77,7 @@ And below are the electronic copies of the completed paperwork that we have got 
 
 
 [Department of Business Development, Ministry of Commerce]: http://www.dbd.go.th
-[dbd-logo]: /assets/img/others/dbd.jpg "Department of Business Development logo"
+[dbd-logo]: {{ "/assets/img/others/dbd.jpg" | prepend: site.baseurl }} "Department of Business Development logo"
 
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
-[rd-logo]: /assets/img/others/rd.png "The Revenue Department logo"
+[rd-logo]: {{ "/assets/img/others/rd.png" | prepend: site.baseurl }} "The Revenue Department logo"
