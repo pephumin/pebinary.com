@@ -13,6 +13,9 @@ Now we have the bank account for the company which is a combination of both savi
 
 We use [Kasikorn Bank] since it is the only bank we always use.
 
+![Kasikorn Bank logo][logo]
+
+
 | Information        | Details             |
 |:-------------------|:--------------------|
 | Account number     | **xxx-x-xxxxx-x**   |
@@ -22,3 +25,4 @@ We use [Kasikorn Bank] since it is the only bank we always use.
 | SWIFT code         | **KASITHBK**        |
 
 [Kasikorn Bank]: http://www.kasikornbank.com
+[logo]: /assets/img/others/kasikorn.gif "Kasikorn Bank logo"

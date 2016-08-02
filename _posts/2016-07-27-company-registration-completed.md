@@ -21,7 +21,7 @@ And below are the electronic copies of the completed paperwork regarding to the 
 <div class="row">
   <div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
 
-<a class="modal-link" data-toggle="modal" data-target="#RA"><img src="{{ "/assets/img/r/RAs.png" | prepend: site.baseurl }}" class="img-responsive"></a>
+<a class="modal-link" data-toggle="modal" data-target="#RA"><img src="{{ "/assets/img/registration/RAs.png" | prepend: site.baseurl }}" class="img-responsive"></a>
 <div class="modal fade" id="RA" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -30,7 +30,7 @@ And below are the electronic copies of the completed paperwork regarding to the 
         <h4 class="modal-title">Company registration document (front)</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ "/assets/img/r/RA.png" | prepend: site.baseurl }}" class="img-responsive center-block">
+        <img src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}" class="img-responsive center-block">
       </div>
       <div class="modal-footer">
         <button type="button" class="button-x" data-dismiss="modal">Close <i class="pe-remove"></i></button>
@@ -42,7 +42,7 @@ And below are the electronic copies of the completed paperwork regarding to the 
   </div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
-<a class="modal-link" data-toggle="modal" data-target="#RB"><img src="{{ "/assets/img/r/RBs.png" | prepend: site.baseurl }}" class="img-responsive"></a>
+<a class="modal-link" data-toggle="modal" data-target="#RB"><img src="{{ "/assets/img/registration/RBs.png" | prepend: site.baseurl }}" class="img-responsive"></a>
 <div class="modal fade" id="RB" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -51,7 +51,7 @@ And below are the electronic copies of the completed paperwork regarding to the 
         <h4 class="modal-title">Company registration document (back)</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ "/assets/img/r/RB.png" | prepend: site.baseurl }}" class="img-responsive center-block">
+        <img src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}" class="img-responsive center-block">
       </div>
       <div class="modal-footer">
         <button type="button" class="button-x" data-dismiss="modal">Close <i class="pe-remove"></i></button>
