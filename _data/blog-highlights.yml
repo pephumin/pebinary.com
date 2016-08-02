@@ -1,5 +1,9 @@
+- number: 4
+  title: "Bank account"
+  timestamp: 2016-08-02 01:14:25 +0700
+
 - number: 3
-  title: "Company registration completed"
+  title: "Company registration"
   timestamp: 2016-07-27 14:51:05 +0700
 
 - number: 2

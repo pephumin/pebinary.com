@@ -15,6 +15,7 @@ layout: main-en
         <header class="post-header">
           <h2 class="post-title" itemprop="headline">{{ page.title }}</h2>
           <p class="post-meta">
+            {% if page.icon %}<i class="{{ page.icon }} pe-2x pull-right blue"></i>{% endif %}
             <i class="pe-pencil-square-o pe-fw"></i> Written by:
             <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
               <span itemprop="name"><strong>{{ page.author }}</strong></span>
@@ -38,7 +39,7 @@ layout: main-en
           </p>
         </header>
         <div class="post-content" itemprop="articleBody">
-          {{ content | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' }}
+          {{ content | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' | replace: '<img src', '<img class="img-responsive" src' }}
         </div>
         <p class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">

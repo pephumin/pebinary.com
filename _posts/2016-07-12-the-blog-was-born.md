@@ -7,8 +7,10 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote: "Our blog can be accessed by either directly or indirectly (via atom)"
+icon: pe-pencil-square-o
 published: true
 ---
+
 Within a week right after the official website has been started, we have marked another step of progress by adding the official `blog` section to our website.
 
 This will be the place where we log all the progress / update that we make to the website.
