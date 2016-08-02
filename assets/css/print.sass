@@ -1,15 +1,14 @@
-.aboutus
+---
+---
+
+@import '1-tools/vars'
+
+.printing
   color: inherit
 
   a
     color: $blue
     text-decoration: underline
-
-  // .except
-  //
-  //   a
-  //     color: inherit
-  //     text-decoration: none
 
   a.except1
 
@@ -21,10 +20,8 @@
     color: $blue
     text-decoration: underline
 
-.modal-link
-  cursor: pointer
+// a:not(:local-link):after
+//   content: " <" attr(href) "> "
 
-.modal-title
-
-.modal-footer
-  padding: 10px
+// a[href^=http]:after
+//   content: " (" attr(href) ") "

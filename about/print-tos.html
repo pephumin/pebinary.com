@@ -1,10 +1,12 @@
 ---
-layout: main-en
+layout: print-en
 title: "Terms of Service"
 section: about
-permalink: /about/tos.html
+permalink: /about/print-tos.html
+original: /about/tos.html
 homepage: false
 timestamp: 2016-08-02 21:56:08 +0700
+printing: true
 ---
 
 <section class="container aboutus">
@@ -48,8 +50,6 @@ timestamp: 2016-08-02 21:56:08 +0700
   <p>By continuing to access or use our service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the service.</p>
 
   <h4>Contact us</h4>
-  <p>If you have any questions about this privacy policy, please <i class="pe-envelope-o pe-fw"></i> <a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a>.</p>
-
-  <p class="pull-right printing">[<a class="except1" href="{{ "/about/print-tos.html" | prepend: site.baseurl }}">View in printing mode <i class="pe-print pe-fw pe-lg"></i></a>]</p>
+  <p>If you have any questions about this privacy policy, please <i class="pe-envelope-o pe-fw"></i> {% if page.printing %}<strong>contact us</strong> (<a href="{{ "/contact/" | prepend: site.domains.main-en }}">{{ "/contact/" | prepend: site.domains.main-en }}</a>){% else %}<a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a>{% endif %}.</p>
 
 </section>
