@@ -50,7 +50,7 @@ fullwidth: false
           </p>
         </header>
         <div class="post-excerpt">
-          {{ post.excerpt | tidy }}
+          {{ post.excerpt | tidy | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' | replace: '<img src', '<img class="img-responsive" src' }}
           <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}" class="button-x">Read <i class="pe-arrow-circle-right pe-fw"></i></a></p>
         </div>
         <div class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">{{ site.title }}</div>

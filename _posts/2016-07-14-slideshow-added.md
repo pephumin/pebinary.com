@@ -7,8 +7,10 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:
+icon: pe-fast-forward
 published: true
 ---
+
 In order to make the website look more appeal to the general public, a `slideshow`[^note] has been added.
 
 While it is first developed and installed to the [Front Page], it may be considered to be included in some other pages in the future as well.
