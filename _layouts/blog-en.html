@@ -26,13 +26,13 @@ layout: main-en
             <br>Category:&nbsp;
             {% if page.categories %}
               {% for category in page.categories %}
-                <i class="pe-folder-open-o pe-fw"></i> <a href="/blog/category/{{ category | slugify }}">{{ category }}</a>
+                <i class="pe-folder-open-o pe-fw"></i> <a href="/blog/category/{{ category | slugify | prepend: site.baseurl }}">{{ category }}</a>
               {% endfor %}
             {% endif %}
             <br>Tag:&nbsp;
             {% if page.tags %}
               {% for tag in page.tags %}
-                <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+                <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | slugify | prepend: site.baseurl }}">{{ tag }}</a>
               {% endfor %}
             {% endif %}
           </p>
