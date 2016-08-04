@@ -21,7 +21,7 @@ This process started two days ago (25 July 2016) and it has finally completed to
 
 As we have heard a lot about how difficult it could be to deal with government sector, we decided to hire a third party to conduct this particular process for us. And as expected, it involves with a lot of paperwork and signatures.
 
-Although we have done the registration with the [Department of Business Development, Ministry of Commerce], there is still another **important** step in this process to be completed, which is the registration on the Value Added Tax (VAT) with [The Revenue Department, Ministry of Finance].
+Although we have done the registration with the [Department of Business Development, Ministry of Commerce], **there is still another important step in this process to be completed**, which is the registration on the Value Added Tax (VAT) with [The Revenue Department, Ministry of Finance].
 
 
 ![The Revenue Department logo][rd-logo]
