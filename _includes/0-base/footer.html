@@ -23,17 +23,21 @@
     </div>
   </div>
   <div class="footer-3">
-    <p class="container">
+    <div class="container">
       <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
       <a href="{{ "/" | prepend: site.baseurl }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
       <span class="hidden-xs hidden-sm">All rights reserved.</span><br>
+      <nav class="footer">
       {% for footer in site.data.navigation.footer %}
       {% for domain in site.data.domains %}
       {% if footer.host contains domain.name %}
-      <a href="{{ footer.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> {{ footer.title }}</a>&nbsp;
+      {% unless footer.disable %}
+      <a href="{{ footer.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;
+      {% endunless %}
       {% endif %}
       {% endfor %}
       {% endfor %}
-    </p>
+      </nav>
+    </div>
   </div>
 </footer>

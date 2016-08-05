@@ -14,7 +14,7 @@ topnav2:
   url: "/products/"
   items:
     - title: header
-      text: "Our product offers"
+      text: "Our offers"
     - title: "Products"
       icon: cubes
       host: main-en
@@ -62,7 +62,7 @@ topnav2:
   url: "/members/"
   items:
     - title: header
-      text: "Information specific to members"
+      text: "Information for members"
     - title: "Members"
       icon: user
       host: main-en
@@ -103,7 +103,7 @@ topnav2:
   url: "/clients/"
   items:
     - title: header
-      text: "Information specific to clients"
+      text: "Information for clients"
     - title: "Clients"
       icon: briefcase
       host: main-en
@@ -146,7 +146,7 @@ topnav3:
   url: "/about/"
   items:
     - title: header
-      text: "Information specific to us"
+      text: "Our information"
     - title: "About us"
       icon: building-o
       host: main-en
@@ -172,7 +172,7 @@ topnav3:
       disable: true
     - title: separator
     - title: header
-      text: "Check the updates"
+      text: "Read our updates"
     - title: "Blog"
       icon: pencil-square-o
       host: main-en
@@ -182,27 +182,32 @@ topnav3:
 footer:
 
 - title: "Privacy policy"
+  stitle: "Privacy"
   icon: lock
   host: main-en
   url: "/about/privacy.html"
   disable: false
 - title: "Terms of services"
+  stitle: "TOS"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
   disable: false
 - title: "Terms & conditions"
+  stitle: "Terms"
   icon: balance-scale
   host: main-en
   url: "/about/terms.html"
   disable: false
 - title: "Sitemap"
+  stitle: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
   disable: false
-- title: "RSS"
-  icon: rss
+- title: "Search engine"
+  stitle: "Search"
+  icon: globe
   host: main-en
   url: "/sitemap.xml"
-  disable: false
+  disable: true
