@@ -11,9 +11,11 @@ icon: pe-bank
 published: true
 ---
 
-Now we have a bank account for the company.
+Now we have a bank account for the company (5 August 2016).
 
-It is in fact a combination of current account and saving account - under the same company name.
+After spending quite a lot of efforts in preparing documents that are required by the bank, a new bank account has been finally opended. As it is the account to be used purely for the business, we have decided to open it under ***current account*** (e.g. using cheque for making payments or withdrawing money from this account).
+
+And to further enhancing the banking experience, we have also applied for the account to be accessible with the internet. We hope this will give a more flexibility to account usage in the future especially for the balance checking and some quick money transfer. But be noted that at this stage, we still do not know if money transfer can be done with the internet access. We shall wait and see on this.
 
 The bank we chose is as expected which is [Kasikorn Bank], the only bank that we always use.
 
@@ -21,7 +23,7 @@ The bank we chose is as expected which is [Kasikorn Bank], the only bank that we
 ![Kasikorn Bank logo][kbank-logo]
 
 
-And we chose the branch that is located in the shopping mall, [Seacon Square]. This means it will allow us to do some transactions, if any at all, **outside** the office hours.
+And we chose the branch that is located in the shopping mall, [Seacon Square] (it is a new branch which is located on the third floor). The key reason we choose the bank branch that is located in the shopping mall is because their operating hours are more flexible and we may be able to have some transactions, if any at all, done **outside** the regular office hours.
 
 
 ![Seacon Square logo][seacon-logo]
@@ -29,7 +31,7 @@ And we chose the branch that is located in the shopping mall, [Seacon Square]. T
 
 <!--more-->
 
-***To be honest, we were quite surprised on how many documents the bank actually required for just opening a new bank account. They asked for a lot of documents upfront, plus a lot of filling and signing included for those documents. We found it was quite painful and not much less than what we experenced with the government sector. We hope moving forward it would not be much of the paperwork needed anymore.***
+**To be honest, we were quite surprised on how many documents the bank actually required for just opening a new bank account. They asked for a lot of documents upfront, plus a lot of filling and signing included for those documents. We found it was quite painful and not much less than what we experenced with the government sector. We hope moving forward it would not be much of the paperwork needed anymore.**
 
 Below is the detail of our bank information.
 
@@ -39,7 +41,7 @@ Below is the detail of our bank information.
 | Account name       | PE BINARY CO., LTD. |
 | Bank name          | [Kasikorn Bank]     |
 | Bank branch        | [Seacon Square] II  |
-| SWIFT code         | **KASITHBK**        |
+| SWIFT code         | *KASITHBK*          |
 
 
 [Kasikorn Bank]: http://www.kasikornbank.com

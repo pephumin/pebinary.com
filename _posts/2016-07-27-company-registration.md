@@ -19,7 +19,9 @@ Today we mark another big step progress to our company history. We have successf
 
 This process started two days ago (25 July 2016) and it has finally completed today (27 July 2016).
 
-As we have heard a lot about how difficult it could be to deal with government sector, we decided to hire a third party to conduct this particular process for us. And as expected, it involves with a lot of paperwork and signatures.
+As we have heard from many people on how really difficult it could be to deal with this government sector, we decided to hire a third party to conduct this particular process for us. And as expected, it involves with a lot of paperwork and signatures.
+
+In fact our first impression with the [Department of Business Development, Ministry of Commerce] was not really positive since the company name reservation that we did online had faced an unexpected difficulty which was the requirement from their website to be accessed with only [Microsoft Internet Explorer] Version 9. How really unprofessional it could be.  
 
 Although we have done the registration with the [Department of Business Development, Ministry of Commerce], **there is still another important step in this process to be completed**, which is the registration on the Value Added Tax (VAT) with [The Revenue Department, Ministry of Finance].
 
@@ -81,3 +83,5 @@ And below are the electronic copies of the completed paperwork that we have got 
 
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
 [rd-logo]: {{ "/assets/img/others/rd.png" | prepend: site.baseurl }} "The Revenue Department logo"
+
+[Microsoft Internet Explorer]: https://en.wikipedia.org/wiki/Internet_Explorer
