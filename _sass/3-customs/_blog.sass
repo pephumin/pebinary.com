@@ -23,13 +23,17 @@
   li.checkbox
     list-style-type: none
     margin-left: -10px
-    line-height: 1.4
+    line-height: 1.2
 
   li.checkbox > input[type="checkbox"] > .input-label:before
     content: "\f096"
     font-family: "pe"
     display: inline-block
     margin-right: 5px
+
+  li.checkbox > input[type="checkbox"]:checked + .input-label
+    text-decoration: line-through
+    color: $lightgrey
 
   li.checkbox > input[type="checkbox"]:checked > .input-label:before
     content: "\f046"
