@@ -19,11 +19,5 @@ This means we need someone to build a sign for us very quickly.
 
 The sign will basically be the logo of the company plus the full company name.
 
-- [ ] List 1
-- [x] List 2
-- [x] List 3
-- [ ] List 4
-- [ ] List 5
-
 
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
