@@ -1,7 +1,7 @@
 ---
 layout: blog-en
 title: "Bank account"
-date: 2016-08-02 01:14:25 +0700
+date: 2016-08-05 14:24:57 +0700
 author: admin
 author-email: admin@pebinary.com
 category: blog
@@ -30,7 +30,7 @@ Below is the detail of our bank information.
 | Account number     | **xxx-x-xxxxx-x**   |
 | Account name       | PE BINARY CO., LTD. |
 | Bank name          | [Kasikorn Bank]     |
-| Bank branch        | [Seacon Square]     |
+| Bank branch        | [Seacon Square] II  |
 | SWIFT code         | **KASITHBK**        |
 
 
