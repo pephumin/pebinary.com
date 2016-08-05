@@ -1,6 +1,6 @@
 ---
 layout: main-en
-title: "Terms and Conditions"
+title: "Terms and conditions"
 section: about
 permalink: /about/terms.html
 homepage: false
@@ -10,7 +10,8 @@ timestamp: 2016-08-02 21:56:08 +0700
 <section class="container aboutus">
 
   <h2>{{ page.title }}</h2>
-  <i class="pe-balance-scale pe-3x pull-right blue"></i>
+
+  <span class="pe-stack pe-3x pull-right"><i class="pe-square pe-stack-2x"></i><i class="pe-balance-scale pe-stack-1x pe-inverse"></i></span>
 
   <p class="orange"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ page.timestamp | date: "%A %d %B %Y" }} ({{ page.timestamp | timeago }})</p>
 
@@ -69,6 +70,27 @@ timestamp: 2016-08-02 21:56:08 +0700
   <h4>Contact us</h4>
   <p>If you have any questions about this privacy policy, please <i class="pe-envelope-o pe-fw"></i> <a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a>.</p>
 
-  <p class="pull-right printing">[<a class="except1" href="{{ "/about/print-terms.html" | prepend: site.baseurl }}">View in printing mode <i class="pe-print pe-fw pe-lg"></i></a>]</p>
+</section>
 
+<section class="container viewoption">
+  <div class="row">
+    <div class="col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center">
+      <!-- <a href="{{ "/about/terms.html" | prepend: site.baseurl }}"> -->
+        <i class="pe-picture-o pe-2x"></i><br>
+        View Full Graphic Mode
+      <!-- </a> -->
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+      <a href="{{ "/about/print-terms.html" | prepend: site.baseurl }}">
+        <i class="pe-print pe-2x"></i><br>
+        View Printing Mode
+      </a>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+      <a href="{{ "/assets/pdf/terms.pdf" | prepend: site.baseurl }}">
+        <i class="pe-file-pdf-o pe-2x"></i><br>
+        Download PDF Version
+      </a>
+    </div>
+  </div>
 </section>
