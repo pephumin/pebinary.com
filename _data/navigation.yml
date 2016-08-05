@@ -9,10 +9,24 @@ topnav1:
 topnav2:
 
 - title: "Products"
-  icon: cube
+  icon: cubes
   host: main-en
   url: "/products/"
   items:
+    - title: header
+      text: "Our product offers"
+    - title: "Products"
+      icon: cubes
+      host: main-en
+      url: "/products/"
+      disable: false
+    - title: "Get the app"
+      icon: cloud-download
+      urlexternal: "https://itunes.apple.com/en/app/"
+      disable: true
+    - title: separator
+    - title: header
+      text: "Syndicate research"
     - title: "Product A"
       icon: magnet
       host: main-en
@@ -23,25 +37,23 @@ topnav2:
       host: main-en
       url: "/products/B.html"
       disable: true
+    - title: separator
+    - title: header
+      text: "Customised research"
     - title: "Product C"
-      icon: magnet
+      icon: cube
       host: main-en
       url: "/products/C.html"
       disable: true
     - title: "Product D"
-      icon: magnet
+      icon: cube
       host: main-en
       url: "/products/D.html"
       disable: true
     - title: "Product E"
-      icon: magnet
+      icon: cube
       host: main-en
       url: "/products/E.html"
-      disable: true
-    - title: separator
-    - title: "Get the app"
-      icon: cloud-download
-      urlexternal: "https://itunes.apple.com/en/app/"
       disable: true
 
 - title: "Members"
@@ -49,6 +61,13 @@ topnav2:
   host: main-en
   url: "/members/"
   items:
+    - title: header
+      text: "Information specific to members"
+    - title: "Members"
+      icon: user
+      host: main-en
+      url: "/members/"
+      disable: false
     - title: "Member benefits"
       icon: thumbs-o-up
       host: main-en
@@ -65,6 +84,8 @@ topnav2:
       url: "/members/"
       disable: true
     - title: separator
+    - title: header
+      text: "Join our membership"
     - title: "Create an account"
       icon: user-plus
       host: member
@@ -81,6 +102,13 @@ topnav2:
   host: main-en
   url: "/clients/"
   items:
+    - title: header
+      text: "Information specific to clients"
+    - title: "Clients"
+      icon: briefcase
+      host: main-en
+      url: "/clients/"
+      disable: false
     - title: "Client benefits"
       icon: thumbs-o-up
       host: main-en
@@ -97,6 +125,8 @@ topnav2:
       url: "/clients/"
       disable: true
     - title: separator
+    - title: header
+      text: "Work with us"
     - title: "Request for access"
       icon: user-plus
       host: client
@@ -115,48 +145,62 @@ topnav3:
   host: main-en
   url: "/about/"
   items:
+    - title: header
+      text: "Information specific to us"
+    - title: "About us"
+      icon: building-o
+      host: main-en
+      url: "/about/"
+      disable: false
     - title: "Contact us"
       icon: envelope-o
       host: main-en
       url: "/contact/"
       disable: false
-    - title: "Map to our office"
+    - title: "Our office"
       icon: map-marker
       host: main-en
       url: "/contact/map.html"
       disable: false
-    - title: "Blog"
-      icon: pencil-square-o
-      host: main-en
-      url: "/blog/"
-      disable: false
     - title: separator
+    - title: header
+      text: "Dedicate support site"
     - title: "Knowledge library"
       icon: university
       host: support
       url: "/"
       disable: true
+    - title: separator
+    - title: header
+      text: "Check the updates"
+    - title: "Blog"
+      icon: pencil-square-o
+      host: main-en
+      url: "/blog/"
+      disable: false
 
 footer:
 
-- title: "Privacy"
+- title: "Privacy policy"
   icon: lock
   host: main-en
   url: "/about/privacy.html"
   disable: false
-
-- title: "Terms"
+- title: "Terms of services"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
   disable: false
-
+- title: "Terms & conditions"
+  icon: balance-scale
+  host: main-en
+  url: "/about/terms.html"
+  disable: false
 - title: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
   disable: false
-
 - title: "RSS"
   icon: rss
   host: main-en
