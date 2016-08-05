@@ -28,10 +28,10 @@ fullwidth: false
           <p class="post-meta">
             <span class="darkgreen"><i class="pe-newspaper-o pe-fw"></i> Reading time:
               {% assign words = post.content | number_of_words %}
-              {% if words < 360 %}
+              {% if words < 240 %}
                 1 minute</span> ({{ words }} words)
               {% else %}
-                {{ words | divided_by:180 }} minutes</span> ({{ words }} words)
+                {{ words | divided_by:120 }} minutes</span> ({{ words }} words)
               {% endif %}
             <br>
             <i class="pe-calendar-o pe-fw"></i> Posted: <time datetime="{{ post.date | timeago }}" itemprop="datePublished">{{ post.date | timeago }}</time> by
