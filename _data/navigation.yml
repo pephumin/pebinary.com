@@ -19,10 +19,14 @@ topnav2:
       icon: cubes
       host: main-en
       url: "/products/"
+      label: false
+      badge: false
       disable: false
     - title: "Get the app"
       icon: cloud-download
       urlexternal: "https://itunes.apple.com/en/app/"
+      label: false
+      badge: false
       disable: true
     - title: separator
     - title: header
@@ -31,11 +35,15 @@ topnav2:
       icon: magnet
       host: main-en
       url: "/products/A.html"
+      label: false
+      badge: false
       disable: true
     - title: "Product B"
       icon: magnet
       host: main-en
       url: "/products/B.html"
+      label: false
+      badge: false
       disable: true
     - title: separator
     - title: header
@@ -44,16 +52,22 @@ topnav2:
       icon: cube
       host: main-en
       url: "/products/C.html"
+      label: false
+      badge: false
       disable: true
     - title: "Product D"
       icon: cube
       host: main-en
       url: "/products/D.html"
+      label: false
+      badge: false
       disable: true
     - title: "Product E"
       icon: cube
       host: main-en
       url: "/products/E.html"
+      label: false
+      badge: false
       disable: true
 
 - title: "Members"
@@ -67,21 +81,29 @@ topnav2:
       icon: user
       host: main-en
       url: "/members/"
+      label: false
+      badge: false
       disable: false
     - title: "Member benefits"
       icon: thumbs-o-up
       host: main-en
       url: "/members/benefits.html"
+      label: false
+      badge: false
       disable: false
     - title: "Reward program"
       icon: diamond
       host: main-en
       url: "/members/rewards.html"
+      label: false
+      badge: false
       disable: false
     - title: "Member manual"
       icon: file-text-o
       host: support
       url: "/members/"
+      label: false
+      badge: false
       disable: true
     - title: separator
     - title: header
@@ -90,11 +112,15 @@ topnav2:
       icon: user-plus
       host: member
       url: "/join"
+      label: false
+      badge: false
       disable: false
     - title: "Your account"
       icon: sign-in
       host: member
       url: "/login"
+      label: false
+      badge: false
       disable: false
 
 - title: "Clients"
@@ -108,21 +134,29 @@ topnav2:
       icon: briefcase
       host: main-en
       url: "/clients/"
+      label: false
+      badge: false
       disable: false
     - title: "Client benefits"
       icon: thumbs-o-up
       host: main-en
       url: "/clients/benefits.html"
+      label: "updated"
+      badge: false
       disable: false
     - title: "Testimonials"
       icon: commenting-o
       host: main-en
       url: "/clients/testimonials.html"
+      label: false
+      badge: false
       disable: false
     - title: "Client manual"
       icon: file-text-o
       host: support
       url: "/clients/"
+      label: false
+      badge: false
       disable: true
     - title: separator
     - title: header
@@ -131,11 +165,15 @@ topnav2:
       icon: user-plus
       host: client
       url: "/contact/"
+      label: false
+      badge: false
       disable: false
     - title: "Your account"
       icon: sign-in
       host: client
       url: "/login"
+      label: false
+      badge: false
       disable: false
 
 topnav3:
@@ -151,16 +189,22 @@ topnav3:
       icon: building-o
       host: main-en
       url: "/about/"
+      label: "updated"
+      badge: false
       disable: false
     - title: "Contact us"
       icon: envelope-o
       host: main-en
       url: "/contact/"
+      label: false
+      badge: false
       disable: false
     - title: "Our office"
       icon: map-marker
       host: main-en
       url: "/contact/map.html"
+      label: false
+      badge: false
       disable: false
     - title: separator
     - title: header
@@ -169,6 +213,8 @@ topnav3:
       icon: university
       host: support
       url: "/"
+      label: false
+      badge: false
       disable: true
     - title: separator
     - title: header
@@ -177,6 +223,8 @@ topnav3:
       icon: pencil-square-o
       host: main-en
       url: "/blog/"
+      label: false
+      badge: true
       disable: false
 
 footer:

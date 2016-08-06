@@ -27,7 +27,11 @@
             {% elsif item.urlexternal %}
             <li class="{{ disable }}"><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
             {% else %}
-            {% for domain in site.data.domains %}{% if item.host contains domain.name %}{% if item.host == "main-en" %}
+            {% for domain in site.data.domains %}{% if item.host contains domain.name %}{% if item.host == "main-en" and item.badge %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} <span class="badge">{{ site.posts | size }}</span></a></li>
+            {% elsif item.host == "main-en" and item.label %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} <span class="label">{{ item.label }}</span></a></li>
+            {% elsif item.host == "main-en" %}
             <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
             {% else %}
             <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
@@ -52,7 +56,11 @@
             {% elsif item.urlexternal %}
             <li class="{{ disable }}"><a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
             {% else %}
-            {% for domain in site.data.domains %}{% if item.host contains domain.name %}{% if item.host == "main-en" %}
+            {% for domain in site.data.domains %}{% if item.host contains domain.name %}{% if item.host == "main-en" and item.badge %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} <span class="badge">{{ site.posts | size }}</span></a></li>
+            {% elsif item.host == "main-en" and item.label %}
+            <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} <span class="label">{{ item.label }}</span></a></li>
+            {% elsif item.host == "main-en" %}
             <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
             {% else %}
             <li class="{{ disable }}"><a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
