@@ -68,3 +68,22 @@ compress_html:
   startings: []
   blanklines: true
   profile: false
+
+jekyll_timeago:
+  depth: 1
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: 'and'
+  suffix: 'ago'
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'in'
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'
