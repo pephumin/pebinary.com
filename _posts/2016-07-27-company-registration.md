@@ -46,7 +46,7 @@ And below are the electronic copies of the completed paperwork that we have got 
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Company registration document (front)</h4>
           </div>
-          <div class="modal-body">
+          <div class="modal-body text-center">
             <img src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}" class="img-responsive center-block">
           </div>
           <div class="modal-footer">
@@ -65,7 +65,7 @@ And below are the electronic copies of the completed paperwork that we have got 
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Company registration document (back)</h4>
           </div>
-          <div class="modal-body">
+          <div class="modal-body text-center">
             <img src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}" class="img-responsive center-block">
           </div>
           <div class="modal-footer">
@@ -77,11 +77,8 @@ And below are the electronic copies of the completed paperwork that we have got 
   </div>
 </div>
 
-
 [Department of Business Development, Ministry of Commerce]: http://www.dbd.go.th
 [dbd-logo]: {{ "/assets/img/others/dbd.jpg" | prepend: site.baseurl }} "Department of Business Development logo"
-
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
 [rd-logo]: {{ "/assets/img/others/rd.png" | prepend: site.baseurl }} "The Revenue Department logo"
-
 [Microsoft Internet Explorer]: https://en.wikipedia.org/wiki/Internet_Explorer
