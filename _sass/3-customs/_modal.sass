@@ -38,9 +38,8 @@
 
 .modal-content
   position: relative
-  background-color: $silver
-  border: 1px solid $lightgrey
-  border: 1px solid rgba(0, 0, 0, 0.2)
+  background-color: $white
+  border: 1px dotted $lightgrey
   border-radius: 6px
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5)
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5)
@@ -54,7 +53,7 @@
   bottom: 0
   left: 0
   z-index: 1040
-  background-color: $black
+  background-color: $navy
 
   &.fade
     opacity: 0
@@ -66,7 +65,7 @@
 
 .modal-header
   padding: 15px
-  border-bottom: 1px solid #e5e5e5
+  border-bottom: 1px dotted $lightgrey
 
   &:before
     content: " "
@@ -89,25 +88,20 @@
   position: relative
   padding: 15px
 
-  .iphone
-    //width: 350px
-    //height: 100%
-    background-image: url("/assets/img/iPhone.svg")
-    background-repeat: no-repeat
-    //background-size: cover
-    //width: 70%
-    //height: 0
-    padding: 0
-    padding-bottom: calc(100% * 3 / 4)
-
-  .details
-    text-align: left
-    padding: 0px 20px
+  // .iphone
+  //   background-image: url("/assets/img/iPhone.svg")
+  //   background-repeat: no-repeat
+  //   padding: 0
+  //   padding-bottom: calc(100% * 3 / 4)
+  //
+  // .details
+  //   text-align: left
+  //   padding: 0px 20px
 
 .modal-footer
   padding: 15px
   text-align: right
-  border-top: 1px solid #e5e5e5
+  border-top: 1px dotted $lightgrey
 
   &:before
     content: " "
