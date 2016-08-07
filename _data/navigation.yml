@@ -186,7 +186,7 @@ topnav3:
     - title: header
       text: "Our information"
     - title: "About us"
-      icon: building-o
+      icon: graduation-cap
       host: main-en
       url: "/about/"
       label: "updated"
