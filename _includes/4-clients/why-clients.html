@@ -7,41 +7,13 @@
 
   <div class="row">
 
+    {% for entry in site.data.why.clients %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <p><i class="pe-rocket pe-2x pe-why"></i></p>
-      <h4>Super-fast result</h4>
-      <p>Survey result is typically estimated to be available within 5-7 days after the data collection has begun</p>
+      <p><i class="pe-{{ entry.icon }} pe-2x pe-why"></i></p>
+      <h4>{{ entry.title }}</h4>
+      <p>{{ entry.description }}</p>
     </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <p><i class="pe-money pe-2x pe-why"></i></p>
-      <h4>Cost effective solution</h4>
-      <p>Compared with traditional market research, we are significantly cheaper - credits to the automations we develop</p>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <p><i class="pe-globe pe-2x pe-why"></i></p>
-      <h4>Wide audience coverage</h4>
-      <p>Our panel includes variety types of consumers including those who are difficult to reach such as rural upcountry consumers</p>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <p><i class="pe-area-chart pe-2x pe-why"></i></p>
-      <h4>Output format of choice</h4>
-      <p>Results are provided in multiple formats e.g. dashboard & charting (PPT/PDF), tabulation (XLS), raw data (CSV/DAT)</p>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <p><i class="pe-key pe-2x pe-why"></i></p>
-      <h4>24/7 access</h4>
-      <p>Set up, manage, monitor, or even view the most updated result from anywhere at anytime per your convenience</p>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <p><i class="pe-puzzle-piece pe-2x pe-why"></i></p>
-      <h4>Customise team permission</h4>
-      <p>Choose to assign different access permissions to different team members such as manager, researcher, DP</p>
-    </div>
+    {% endfor %}
 
   </div>
 
