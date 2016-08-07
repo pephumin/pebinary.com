@@ -7,7 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:
-icon: pe-cogs
+icon: cogs
 published: true
 ---
 

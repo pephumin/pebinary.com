@@ -7,7 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [company]
 quote:
-icon: pe-map-signs
+icon: map-signs
 published: true
 ---
 

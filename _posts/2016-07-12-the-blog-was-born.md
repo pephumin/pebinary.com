@@ -7,7 +7,7 @@ author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote: "Our blog can be accessed by either directly or indirectly (via atom)"
-icon: pe-pencil-square-o
+icon: pencil-square-o
 published: true
 ---
 
