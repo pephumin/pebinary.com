@@ -29,7 +29,7 @@ members:
 clients:
 
 - title: "Super-fast result"
-  description: "Results are typically available within a week after the data collection has begun"
+  description: "Results are typically available within a week after the data collection has begun <sup id=\"fnref:3\"><a href=\"#fn:3\" class=\"footnote\">3</a></sup>"
   icon: rocket
   disable: false
 - title: "Cost effective"
