@@ -52,6 +52,9 @@ hr:after
 del
   color: $lightgrey
 
+pre
+  color: $white-shadow
+
 .anchorjs-link
   color: #FF5231
   text-decoration: none
@@ -223,7 +226,7 @@ span.pe-stack
     transform: translate3d(4px, 0, 0)
 
 .badge
-  display: inline-block
+  display: inline
   min-width: 10px
   padding: 3px 7px
   font-size: 12px
@@ -233,7 +236,8 @@ span.pe-stack
   vertical-align: middle
   white-space: nowrap
   text-align: center
-  background-color: $c-thaiairways
+  //background-color: $c-thaiairways
+  background-color: $c-scb
   border-radius: 10px
   &:empty
     display: none
@@ -252,6 +256,14 @@ span.pe-stack
   border-radius: 0.25rem
   &:empty
     display: none
+
+.note
+  font-size: 0.7rem
+  color: $red
+
+.footnote,
+.reversefootnote
+  color: $red
 
 .chart
   width: 300px
