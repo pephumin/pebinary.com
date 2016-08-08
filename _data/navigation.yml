@@ -97,7 +97,7 @@ topnav2:
       url: "/members/rewards.html"
       label: false
       badge: false
-      disable: false
+      disable: true
     - title: "Member manual"
       icon: file-text-o
       host: support
@@ -141,7 +141,7 @@ topnav2:
       icon: thumbs-o-up
       host: main-en
       url: "/clients/benefits.html"
-      label: "updated"
+      label: "new"
       badge: false
       disable: false
     - title: "Testimonials"
@@ -150,7 +150,7 @@ topnav2:
       url: "/clients/testimonials.html"
       label: false
       badge: false
-      disable: false
+      disable: true
     - title: "Client manual"
       icon: file-text-o
       host: support
@@ -189,7 +189,7 @@ topnav3:
       icon: graduation-cap
       host: main-en
       url: "/about/"
-      label: "updated"
+      label: false
       badge: false
       disable: false
     - title: "Contact us"
@@ -223,7 +223,7 @@ topnav3:
       icon: pencil-square-o
       host: main-en
       url: "/blog/"
-      label: false
+      label: "updated"
       badge: true
       disable: false
 
