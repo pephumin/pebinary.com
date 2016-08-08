@@ -6,7 +6,7 @@
           {% assign title = highlight.title | slugify %}
           {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
           {% assign url = "/blog/" | append: date | append: "/" | append: title %}
-          <i class="pe-angle-double-right"></i> <a href="{{ url | prepend: site.baseurl }}">{{ highlight.title }}</a> <small>({{ highlight.timestamp | timeago }})</small><br>
+          <i class="pe-angle-double-right"></i> <a href="{{ url | prepend: site.baseurl }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small><br>
           {% endfor %}
         </p>
         <h4>Categories</h4>
