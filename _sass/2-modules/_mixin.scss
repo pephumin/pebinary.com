@@ -42,3 +42,74 @@
 		src: $src;
 	}
 }
+
+// Others
+
+@mixin opacity($v) {
+	  $v100 : $v * 100;
+	  opacity: $v;
+	filter: "alpha(opacity=" + $v100 + ")";
+	-ms-filter: "alpha(opacity=" + $v100 + ")";
+	-khtml-opacity: $v;
+	-moz-opacity: $v;
+}
+
+@mixin gpu() {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+@mixin transition($s) {
+	-webkit-transition: $s;
+	-moz-transition: $s;
+	-o-transition: $s;
+	-ms-transition: $s;
+	transition: $s;
+}
+
+@mixin transitionTimingFunction($s) {
+	-webkit-transition-timing-function: $s;
+	-moz-transition-timing-function: $s;
+	-o-transition-timing-function: $s;
+	-ms-transition-timing-function: $s;
+	transition-timing-function: $s;
+}
+
+@mixin transitionDuration($s) {
+	-webkit-transition-duration: $s;
+	-moz-transition-duration: $s;
+	-o-transition-duration: $s;
+	-ms-transition-duration: $s;
+	transition-duration: $s;
+}
+
+@mixin transitionPropertyTransform() {
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+@mixin borderRadius($v) {
+	-webkit-border-radius: $v;
+	-moz-border-radius: $v;
+	border-radius: $v;
+}
+
+@mixin inlineBlock(){
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+@mixin boxSizingBorder() {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(/Scripts/boxsizing.htc);
+}
