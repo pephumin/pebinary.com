@@ -24,7 +24,7 @@ require 'geo_pattern'
 pattern = GeoPattern.generate('phumin', patterns: [:sine_waves, :xes])
 # puts pattern.to_base64
 puts pattern.to_data_uri
-{% endhighlight %}{% endcapture %}{% include fixlinenos.html %}{{ output }}
+{% endhighlight %}{% endcapture %}{% include 0-base/fixlinenos.html %}{{ output }}
 
 #### Type 2 - without the line numbers shown
 
