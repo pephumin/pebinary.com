@@ -26,6 +26,7 @@ fullwidth: false
         <header class="post-header">
           <h4 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
           <p class="post-meta">
+            {% if post.icon %}<span class="darkgreen"><i class="pe-{{ post.icon }} pe-lg pull-right"></i></span>{% endif %}
             <span class="darkgreen"><i class="pe-newspaper-o pe-fw"></i> Reading time:
               {% assign words = post.content | number_of_words %}
               {% if words < 240 %}
@@ -51,7 +52,7 @@ fullwidth: false
         </header>
         <div class="post-excerpt">
           {{ post.excerpt | tidy | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' | replace: '<img src', '<img class="img-responsive" src' }}
-          <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}" class="button-x">Read <i class="pe-arrow-circle-right pe-fw"></i></a></p>
+          <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}" class="button">Read more <i class="pe-map-o pe-fw"></i></a></p>
         </div>
         <div class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">{{ site.title }}</div>
       </article>
