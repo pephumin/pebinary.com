@@ -31,17 +31,43 @@ And we chose the branch that is located in the shopping mall, [Seacon Square] (i
 
 <!--more-->
 
-**To be honest, we were quite surprised on how many documents the bank actually required for just opening a new bank account. They asked for a lot of documents upfront, plus a lot of filling and signing included for those documents. We found it was quite painful and not much less than what we experenced with the government sector. We hope moving forward it would not be much of the paperwork needed anymore.**
+**To be honest, we were quite surprised on how many documents the bank actually required for just opening a new bank account. They asked for a lot of documents upfront, plus a lot of filling and signing included for those documents. We found it was quite painful and not much less than what we experienced with the government sector. We hope moving forward it would not be much of the paperwork needed anymore.**
 
 Below is the detail of our bank information.
 
-| Information        | Details             |
-|:-------------------|:--------------------|
-| Account number     | **015-3-76960-5**   |
-| Account name       | PE BINARY CO., LTD. |
-| Bank name          | [Kasikorn Bank]     |
-| Bank branch        | [Seacon Square] II  |
-| SWIFT code         | *KASITHBK*          |
+
+<div class="table-responsive">
+<table class="table table-hover">
+  <tr>
+    <th class="bg-info">Information</th>
+    <th class="bg-info">Details</th>
+  </tr>
+  <tr>
+    <td>Account number</td>
+    <td><strong>015-3-76960-5</strong></td>
+  </tr>
+  <tr>
+    <td>Account name</td>
+    <td>PE BINARY CO., LTD.</td>
+  </tr>
+  <tr>
+    <td>Account type</td>
+    <td>Current account Bank]</td>
+  </tr>
+  <tr>
+    <td>Bank name</td>
+    <td><a href="http://www.kasikornbank.com">Kasikorn Bank</a></td>
+  </tr>
+<tr>
+    <td>Bank branch</td>
+    <td><a href="http://www.seaconsquare.com">Seacon Square</a> II</td>
+  </tr>
+  <tr>
+    <td>SWIFT code</td>
+    <td><strong>KASITHBK</strong></td>
+  </tr>
+</table>
+</div>
 
 
 [Kasikorn Bank]: http://www.kasikornbank.com

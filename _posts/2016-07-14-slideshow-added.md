@@ -96,7 +96,6 @@ Below is the example of how the `slideshow` looks like.
 
 **And please be noted that it is just an example and therefore we only show with a smaller size than the actual one we put on the front page.**
 
-
 Currently this section only uses one size of the picture which is 1280x500 pixel. ~~And instead of placing the blur effect directly to the pictures, we currently use `filter` effect by [CSS3] to make them look blur. However we may consider making all pictures blurred from the original photoshop source for a guarantee of consistency output to all viewers from different type of web browsers.~~
 
 **We have finally built-in all the pictures in this section as well as other sections with blur effect. And the effect itself is called `Gaussian Blur` in [Adobe Photoshop].**
