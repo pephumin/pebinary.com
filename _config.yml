@@ -44,6 +44,8 @@ exclude:
   - run
   - .DS_Store
   - Icon?
+  - Gemfile
+  - Gemfile.lock
 
 gems:
   - jekyll-paginate
