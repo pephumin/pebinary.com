@@ -220,7 +220,7 @@ topnav3:
     - title: header
       text: "Read our updates"
     - title: "Blog"
-      icon: pencil-square-o
+      icon: pencil
       host: main-en
       url: "/blog/"
       label: "updated"
