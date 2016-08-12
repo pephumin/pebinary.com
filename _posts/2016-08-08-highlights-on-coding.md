@@ -8,7 +8,7 @@ category: blog
 tags: [website]
 quote:
 icon: code
-published: true
+published: false
 ---
 
 There are two types of code highlights to be selected from.
