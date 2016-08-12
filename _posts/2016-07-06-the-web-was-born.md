@@ -27,10 +27,10 @@ And to be more specific, the [HTML] we use is the most advanced version which is
     <td align="center"><img src="{{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
   </tr>
   <tr>
-    <td align="center"><small><a href="http://www.w3.org/TR/html5/">HTML5</a></small></td>
-    <td align="center"><small><a href="http://www.w3.org/TR/CSS/">CSS3</a></small></td>
-    <td align="center"><small><a href="https://www.ruby-lang.org">Ruby</a></small></td>
-    <td align="center"><small><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></small></td>
+  <td align="center"><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a></small></td>
+  <td align="center"><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a></small></td>
+  <td align="center"><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a></small></td>
+  <td align="center"><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a></small></td>
   </tr>
 </table>
 
