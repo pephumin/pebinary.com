@@ -1,8 +1,6 @@
 _site
-_u
 .jekyll-metadata
 .DS_Store
 .sass-cache
 Icon?
 run
-markdown.pl
