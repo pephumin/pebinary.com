@@ -1,28 +1,16 @@
 .blog-content
 
-  li.useicon
-    list-style-type: none
-    margin-left: -30px
-
-  .label-text::before
-    content: "\f101"
-    font-family: "pe"
-    display: inline-block
-    margin-right: 5px
-
   .post-title
     padding-bottom: 10px
     color: inherit
-    //border-bottom: 1px solid $silver
-
     a
       color: inherit
       &:hover
-        color: $blue
+        color: $darkindigo
 
   li.checkbox
     list-style-type: none
-    margin-left: -10px
+    margin: 0px 0px 0px -10px
     line-height: 1.2
 
   li.checkbox > input[type="checkbox"] > .input-label:before
@@ -48,10 +36,19 @@
     border-radius: 4px
 
     a
-      color: inherit
+      color: $lightgrey
       text-decoration: underline
       &:hover
-        color: $blue
+        color: $darkindigo
+
+    .post-icon
+      color: $darkgreen
+
+  .post-excerpt
+    a
+      color: $indigo
+      &:hover
+        color: $orange
 
   .blog-publisher
     display: none
@@ -68,8 +65,14 @@
     ul
       list-style-type: none
 
-    // q
-    //   color: $orange
+    q
+      color: $plum
+
+    a
+      color: $indigo
+      text-decoration: none
+      &:hover
+        color: $orange
 
   .blog-quote
     margin: 0 auto
@@ -181,3 +184,64 @@
         color: $lightgrey
         background-color: $white
         cursor: not-allowed
+
+.blog-button
+  font-size: 0.6rem
+  color: $indigo
+  background-color: transparent
+  border: 1px solid $indigo
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $white
+    background-color: $indigo
+    border: 1px solid $indigo
+    border-color: transparent
+    outline: 0
+    text-decoration: none
+
+.blog-button-x
+  font-size: 0.6rem
+  color: $white
+  //background-color: rgba($indigo, 0.7)
+  //border: 1px solid rgba($indigo, 0.7)
+  background-color: $indigo
+  border: 1px solid $indigo
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $indigo
+    background-color: transparent
+    border: 1px solid $indigo
+    outline: 0
+    text-decoration: none

@@ -10,21 +10,22 @@ homepage: false
   color: inherit
 
   a
-    color: $blue
+    color: lighten($indigo, 20%)
     text-decoration: underline
 
-  a.except1
+    &:hover
+      color: $indigo
 
+  a.except1
     color: inherit
     text-decoration: none
 
-  a.except2
+    &:hover
+      color: $blue
 
-    color: $blue
+  a.except2
+    color: lighten($indigo, 20%)
     text-decoration: underline
 
-// a:not(:local-link):after
-//   content: " <" attr(href) "> "
-
-// a[href^=http]:after
-//   content: " (" attr(href) ") "
+    &:hover
+      color: $indigo

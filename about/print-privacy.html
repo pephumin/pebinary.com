@@ -15,7 +15,7 @@ printing: true
 
   <span class="pe-stack pe-3x pull-right"><i class="pe-square-o pe-stack-2x"></i><i class="pe-lock pe-stack-1x"></i></span>
 
-  <p class="orange"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ page.timestamp | date: "%A %d %B %Y" }} ({{ page.timestamp | timeago }})</p>
+  <p class="lastupdate"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ page.timestamp | date: "%A %d %B %Y" }} ({{ page.timestamp | timeago }})</p>
 
   <p class="big black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</p>
 

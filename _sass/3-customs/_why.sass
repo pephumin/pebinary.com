@@ -6,13 +6,75 @@
   p
     font-size: 0.9rem
 
-
 @media (max-width: 768px)
 
   .why
 
     h2
       font-size: 1.2rem
+      line-height: 1
 
     p
       font-size: 0.75rem
+      line-height: 1.2
+
+.why-button
+  font-size: 0.6rem
+  color: $indigo
+  background-color: transparent
+  border: 1px solid $indigo
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $white
+    background-color: $indigo
+    border: 1px solid $indigo
+    border-color: transparent
+    outline: 0
+    text-decoration: none
+
+.why-button-x
+  font-size: 0.6rem
+  color: $white
+  //background-color: rgba($indigo, 0.7)
+  //border: 1px solid rgba($indigo, 0.7)
+  background-color: $indigo
+  border: 1px solid $indigo
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $indigo
+    background-color: transparent
+    border: 1px solid $indigo
+    outline: 0
+    text-decoration: none
