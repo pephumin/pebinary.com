@@ -25,21 +25,22 @@
     font-size: 30px
     color: $white
     text-align: center
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+    text-shadow: 0 1px 2px transparentize($black, 0.4)
     background-color: transparent
 
     &.left
-      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
+      background-image: -webkit-linear-gradient(left, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
+      background-image: -o-linear-gradient(left, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
+      background-image: linear-gradient(to right, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
       background-repeat: repeat-x
 
     &.right
       left: auto
       right: 0
-      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
+      background-image: -webkit-linear-gradient(left, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
+      background-image: -o-linear-gradient(left, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
+      background-image: linear-gradient(to right, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
+      background-repeat: repeat-x
 
   .landing-headline
     position: absolute
@@ -50,7 +51,6 @@
     z-index: 1
     margin: 0
     color: $white
-    //background: rgba(255, 255, 255, 0.65)
 
   .landing-text
     line-height: 1.4
@@ -117,16 +117,14 @@
       text-align: center
 
     .landing-text h2
-      font-size: 1.4rem
-      line-height: 1
+      font-size: 1.3rem
+      line-height: 1.0
 
     .landing-text p
-      font-size: 0.9rem
-      line-height: 1.2
+      font-size: 0.85rem
+      line-height: 1.0
 
     .landing-form
 
       .button-lg-x
         margin: 10px auto
-        //display: block
-        //width: 100%

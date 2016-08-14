@@ -36,38 +36,42 @@ And we chose the branch that is located in the shopping mall, [Seacon Square] (i
 Below is the detail of our bank information.
 
 
-<div class="table-responsive">
+
 <table class="table table-hover">
+  <thead>
+    <tr class="bg-info">
+      <th>Information</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Account number</td>
+      <td><strong>015-3-76960-5</strong></td>
+    </tr>
+    <tr>
+      <td>Account name</td>
+      <td>PE BINARY CO., LTD.</td>
+    </tr>
+    <tr>
+      <td>Account type</td>
+      <td>Current account Bank]</td>
+    </tr>
+    <tr>
+      <td>Bank name</td>
+      <td><a href="http://www.kasikornbank.com">Kasikorn Bank</a></td>
+    </tr>
   <tr>
-    <th class="bg-info">Information</th>
-    <th class="bg-info">Details</th>
-  </tr>
-  <tr>
-    <td>Account number</td>
-    <td><strong>015-3-76960-5</strong></td>
-  </tr>
-  <tr>
-    <td>Account name</td>
-    <td>PE BINARY CO., LTD.</td>
-  </tr>
-  <tr>
-    <td>Account type</td>
-    <td>Current account Bank]</td>
-  </tr>
-  <tr>
-    <td>Bank name</td>
-    <td><a href="http://www.kasikornbank.com">Kasikorn Bank</a></td>
-  </tr>
-<tr>
-    <td>Bank branch</td>
-    <td><a href="http://www.seaconsquare.com">Seacon Square</a> II</td>
-  </tr>
-  <tr>
-    <td>SWIFT code</td>
-    <td><strong>KASITHBK</strong></td>
-  </tr>
+      <td>Bank branch</td>
+      <td><a href="http://www.seaconsquare.com">Seacon Square</a> II</td>
+    </tr>
+    <tr>
+      <td>SWIFT code</td>
+      <td><strong>KASITHBK</strong></td>
+    </tr>
+    </tbody>
 </table>
-</div>
+
 
 
 [Kasikorn Bank]: http://www.kasikornbank.com

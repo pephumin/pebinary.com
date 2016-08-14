@@ -1,13 +1,13 @@
 .text-blur
   text-shadow: 0 0 8px #000000
-  color: rgba(255, 255, 255, 0)
+  color: transparentize($darkgrey, 0.5)
   //filter: DXImageTransform.Microsoft.Blur(pixelradius=2);
   zoom: 1
   pause-before: 3s
 
   &:hover
     text-shadow: none
-    color: #000000
+    color: $white
     filter: none
 
 img.blur

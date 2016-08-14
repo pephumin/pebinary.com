@@ -1,8 +1,8 @@
 .navbar
   font-family: 'ubuntu'
   font-size: 16px
-  background: rgba(255, 255, 255, 0.9)
-  border-bottom: 1px solid rgba(153, 153, 153, 0.4)
+  background: transparentize($white, 0.1)
+  border-bottom: 1px solid transparentize($grey, 0.7)
   z-index: 1000
   position: relative
   //overflow: visible
@@ -35,19 +35,14 @@
         background-color: transparent
 
     .active > a
-      color: #555
+      color: $darkgrey
       &:hover, &:focus
         color: $grey
 
     .disabled > a
-      color: #ccc
+      color: $silver
       background-color: transparent
       cursor: pointer
-
-      // &:hover, &:focus
-      //   color: #ccc
-      //   background-color: transparent
-      //   cursor: pointer
 
   .navbar-toggle
     border: 1px solid $grey

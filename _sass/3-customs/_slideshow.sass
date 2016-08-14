@@ -23,28 +23,6 @@
   left: 0
   min-width: 100%
   height: 500px
-  //filter: blur(7px)
-
-// .carousel-example
-//   height: 300px
-//   position: relative
-//
-// .carousel-caption-example > h2
-//   font-size: 1.3rem
-//   line-height: 1
-//
-// .carousel-caption-example > p
-//   font-size: 1.0rem
-//
-// .carousel-example .item-example
-//   height: 300px
-//
-// .carousel-inner-example > .item-example > img
-//   position: absolute
-//   top: 0
-//   left: 0
-//   min-width: 100%
-//   height: 300px
 
 .carousel-control
   position: absolute
@@ -57,21 +35,21 @@
   font-size: 30px
   color: $white
   text-align: center
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+  text-shadow: 0 1px 2px transparentize($black, 0.4)
   background-color: transparent
 
   &.left
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%)
+    background-image: -webkit-linear-gradient(left, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
+    background-image: -o-linear-gradient(left, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
+    background-image: linear-gradient(to right, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
     background-repeat: repeat-x
 
   &.right
     left: auto
     right: 0
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%)
+    background-image: -webkit-linear-gradient(left, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
+    background-image: -o-linear-gradient(left, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
+    background-image: linear-gradient(to right, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
     background-repeat: repeat-x
 
   &:hover, &:focus
@@ -119,23 +97,3 @@
 
   .carousel-inner > .item > img
     height: 350px
-
-  // .carousel-example
-  //   height: 300px
-  //
-  // .carousel-caption-example > h2
-  //   font-size: 1.0rem
-  //   line-height: 1
-  //
-  // .carousel-caption-example > p
-  //   font-size: 0.8rem
-  //
-  // .carousel-example .item-example
-  //   height: 300px
-  //
-  // .carousel-inner-example > .item-example > img
-  //   position: absolute
-  //   top: 0
-  //   left: 0
-  //   min-width: 100%
-  //   height: 300px

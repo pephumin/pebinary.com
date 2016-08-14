@@ -41,8 +41,8 @@
   background-color: $white
   border: 1px dotted $lightgrey
   border-radius: 6px
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5)
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5)
+  -webkit-box-shadow: 0 3px 9px transparentize($black, 0.5)
+  box-shadow: 0 3px 9px transparentize($black, 0.5)
   background-clip: padding-box
   outline: 0
 
@@ -87,16 +87,7 @@
 .modal-body
   position: relative
   padding: 15px
-
-  // .iphone
-  //   background-image: url("/assets/img/iPhone.svg")
-  //   background-repeat: no-repeat
-  //   padding: 0
-  //   padding-bottom: calc(100% * 3 / 4)
-  //
-  // .details
-  //   text-align: left
-  //   padding: 0px 20px
+  text-align: center
 
 .modal-footer
   padding: 15px
@@ -140,8 +131,8 @@
     margin: 30px auto
 
   .modal-content
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+    -webkit-box-shadow: 0 5px 15px transparentize($black, 0.5)
+    box-shadow: 0 5px 15px transparentize($black, 0.5)
 
   .modal-sm
     width: 300px
