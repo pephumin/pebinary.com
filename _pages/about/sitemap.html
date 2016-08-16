@@ -10,7 +10,7 @@ permalink: /about/sitemap.html
 
   <h2>Sitemap</h2>
 
-  <span class="pe-stack pe-3x pull-right"><i class="pe-square-o pe-stack-2x"></i><i class="pe-sitemap pe-stack-1x"></i></span>
+  {% capture stack %}{% include 0-base/stack.html icon = "sitemap" shape = "square-o" size = "3" title = page.title position = "pull-right" %}{% endcapture %}{{ stack | rstrip }}
 
   <h3>Main</h3>
   {% include 0-base/pagelist.html section = null %}

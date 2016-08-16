@@ -1,19 +1,17 @@
 ---
-layout: print-en
+layout: main-en
 title: "Privacy policy"
 section: about
-permalink: /about/print-privacy.html
-original: /about/privacy.html
+permalink: /about/privacy.html
 homepage: false
 timestamp: 2016-08-02 21:56:08 +0700
-printing: true
 ---
 
 <section class="container aboutus">
 
   <h2>{{ page.title }}</h2>
 
-  <span class="pe-stack pe-3x pull-right"><i class="pe-square-o pe-stack-2x"></i><i class="pe-lock pe-stack-1x"></i></span>
+  {% capture stack %}{% include 0-base/stack.html icon = "lock" shape = "square" size = "3" title = page.title position = "pull-right" inverse = "true" %}{% endcapture %}{{ stack | rstrip }}
 
   <p class="lastupdate"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ page.timestamp | date: "%A %d %B %Y" }} ({{ page.timestamp | timeago }})</p>
 
@@ -23,7 +21,7 @@ printing: true
   <p><small class="black">{{ logo | rstrip }}</small> (<em>"us"</em>, <em>"we"</em>, or <em>"our"</em>) operates the <a href="{{ site.domains.main-en }}">{{ site.domains.main-en }}</a> website (the <em>"Service"</em>).</p>
   <p>This page informs you of our policies regarding the collection, use and disclosure of personal information when you use our service.</p>
   <p>We will not use or share your information with anyone except as described in this privacy policy.</p>
-  <p>We use your personal information for providing and improving the service. By using the service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this privacy policy, terms used in this privacy policy have the same meanings as in our {% if page.printing %}<strong>Terms and Conditions</strong> (<a href="{{ "/about/terms.html" | prepend: site.domains.main-en }}">{{ "/about/terms.html" | prepend: site.domains.main-en }}</a>){% else %}<a href="{{ "/about/terms.html" | prepend: site.baseurl }}">Terms and Conditions</a>{% endif %}, accessible at <a href="{{ site.domains.main-en }}">{{ site.domains.main-en }}</a></p>
+  <p>We use your personal information for providing and improving the service. By using the service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this privacy policy, terms used in this privacy policy have the same meanings as in our <a href="{{ "/about/terms.html" | prepend: site.baseurl }}">Terms and Conditions</a>, accessible at <a href="{{ site.domains.main-en }}">{{ site.domains.main-en }}</a></p>
 
   <h4>Information collection and use</h4>
   <p>While using our service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your email address and name (<em>"Personal Information"</em>).</p>
@@ -55,6 +53,29 @@ printing: true
   <p>You are advised to review this privacy policy periodically for any changes. Changes to this privacy policy are effective when they are posted on this page.</p>
 
   <h4>Contact us</h4>
-  <p>If you have any questions about this privacy policy, please <i class="pe-envelope-o pe-fw"></i> {% if page.printing %}<strong>contact us</strong> (<a href="{{ "/contact/" | prepend: site.domains.main-en }}">{{ "/contact/" | prepend: site.domains.main-en }}</a>){% else %}<a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a>{% endif %}.</p>
+  <p>If you have any questions about this privacy policy, please <i class="pe-envelope-o pe-fw"></i> <a href="{{ "/contact/" | prepend: site.baseurl }}">contact us</a>.</p>
 
+</section>
+
+<section class="container viewoption">
+  <div class="row">
+    <div class="col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center silver">
+      <!-- <a href="{{ "/about/privacy.html" | prepend: site.baseurl }}"> -->
+        <i class="pe-picture-o pe-2x"></i><br>
+        View Full Graphic Mode
+      <!-- </a> -->
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+      <a href="{{ "/about/print-privacy.html" | prepend: site.baseurl }}">
+        <i class="pe-print pe-2x"></i><br>
+        View Printing Mode
+      </a>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+      <a href="{{ "/assets/pdf/privacy.pdf" | prepend: site.baseurl }}">
+        <i class="pe-file-pdf-o pe-2x"></i><br>
+        Download PDF Version
+      </a>
+    </div>
+  </div>
 </section>

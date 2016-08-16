@@ -39,6 +39,10 @@ domains:
   member:             http://www.siamsquare.org
   support:            http://support.pebinary.com
 
+include:
+  - _pages
+  - API
+
 exclude:
   - README.md
   - run
@@ -52,42 +56,41 @@ gems:
   - jekyll-sitemap
   - jekyll-timeago
   - jekyll-archives
-  #- jekyll-geo-pattern
 
 jekyll-archives:
   enabled:
     - categories
     - tags
-  layout: archive
+  layout:             archive
   permalinks:
-    category: /blog/category/:name/
-    tag: /blog/tag/:name/
-  limit: 5
-  fullwidth: false
+    category:         /blog/category/:name/
+    tag:              /blog/tag/:name/
+  limit:              5
+  fullwidth:          false
 
 compress_html:
-  clippings: []
-  comments: ["<!-- ", " -->"]
-  endings: []
-  startings: []
-  blanklines: true
-  profile: false
+  clippings:          []
+  comments:           ["<!-- ", " -->"]
+  endings:            []
+  startings:          []
+  blanklines:         true
+  profile:            false
 
 jekyll_timeago:
-  depth: 1
-  today: 'today'
-  yesterday: 'yesterday'
-  tomorrow: 'tomorrow'
-  and: 'and'
-  suffix: 'ago'
-  prefix: ''
-  suffix_future: ''
-  prefix_future: 'in'
-  years: 'years'
-  year: 'year'
-  months: 'months'
-  month: 'month'
-  weeks: 'weeks'
-  week: 'week'
-  days: 'days'
-  day: 'day'
+  depth:              1
+  today:              "today"
+  yesterday:          "yesterday"
+  tomorrow:           "tomorrow"
+  and:                "and"
+  suffix:             "ago"
+  prefix:             ""
+  suffix_future:      ""
+  prefix_future:      "in"
+  years:              "years"
+  year:               "year"
+  months:             "months"
+  month:              "month"
+  weeks:              "weeks"
+  week:               "week"
+  days:               "days"
+  day:                "day"

@@ -13,7 +13,7 @@ printing: true
 
   <h2>{{ page.title }}</h2>
 
-  <span class="pe-stack pe-3x pull-right"><i class="pe-square-o pe-stack-2x"></i><i class="pe-balance-scale pe-stack-1x"></i></span>
+  {% capture stack %}{% include 0-base/stack.html icon = "balance-scale" shape = "square-o" size = "3" title = page.title position = "pull-right" %}{% endcapture %}{{ stack | rstrip }}
 
   <p class="lastupdate"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ page.timestamp | date: "%A %d %B %Y" }} ({{ page.timestamp | timeago }})</p>
 
