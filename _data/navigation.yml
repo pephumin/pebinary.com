@@ -20,12 +20,14 @@ topnav2:
       host: main-en
       url: "/products/"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Get the app"
       icon: cloud-download
       urlexternal: "https://itunes.apple.com/en/app/"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: separator
@@ -36,6 +38,7 @@ topnav2:
       host: main-en
       url: "/products/A.html"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: "Product B"
@@ -43,6 +46,7 @@ topnav2:
       host: main-en
       url: "/products/B.html"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: separator
@@ -53,6 +57,7 @@ topnav2:
       host: main-en
       url: "/products/C.html"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: "Product D"
@@ -60,6 +65,7 @@ topnav2:
       host: main-en
       url: "/products/D.html"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: "Product E"
@@ -67,6 +73,7 @@ topnav2:
       host: main-en
       url: "/products/E.html"
       label: false
+      label-color: false
       badge: false
       disable: true
 
@@ -82,6 +89,7 @@ topnav2:
       host: main-en
       url: "/members/"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Member benefits"
@@ -89,6 +97,7 @@ topnav2:
       host: main-en
       url: "/members/benefits.html"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Reward program"
@@ -96,13 +105,15 @@ topnav2:
       host: main-en
       url: "/members/rewards.html"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: "Member manual"
       icon: file-text-o
-      host: support
+      host: support-en
       url: "/members/"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: separator
@@ -113,6 +124,7 @@ topnav2:
       host: member
       url: "/join"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Your account"
@@ -120,6 +132,7 @@ topnav2:
       host: member
       url: "/login"
       label: false
+      label-color: false
       badge: false
       disable: false
 
@@ -134,7 +147,8 @@ topnav2:
       icon: briefcase
       host: main-en
       url: "/clients/"
-      label: false
+      label: "checked"
+      label-color: "green"
       badge: false
       disable: false
     - title: "Client benefits"
@@ -142,6 +156,7 @@ topnav2:
       host: main-en
       url: "/clients/benefits.html"
       label: "new"
+      label-color: "blue"
       badge: false
       disable: false
     - title: "Testimonials"
@@ -149,13 +164,15 @@ topnav2:
       host: main-en
       url: "/clients/testimonials.html"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: "Client manual"
       icon: file-text-o
-      host: support
+      host: support-en
       url: "/clients/"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: separator
@@ -166,6 +183,7 @@ topnav2:
       host: client
       url: "/contact/"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Your account"
@@ -173,6 +191,7 @@ topnav2:
       host: client
       url: "/login"
       label: false
+      label-color: false
       badge: false
       disable: false
 
@@ -190,6 +209,7 @@ topnav3:
       host: main-en
       url: "/about/"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Contact us"
@@ -197,6 +217,7 @@ topnav3:
       host: main-en
       url: "/contact/"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: "Our office"
@@ -204,6 +225,7 @@ topnav3:
       host: main-en
       url: "/contact/map.html"
       label: false
+      label-color: false
       badge: false
       disable: false
     - title: separator
@@ -211,9 +233,10 @@ topnav3:
       text: "Dedicate support site"
     - title: "Knowledge library"
       icon: university
-      host: support
+      host: support-en
       url: "/"
       label: false
+      label-color: false
       badge: false
       disable: true
     - title: separator
@@ -224,6 +247,7 @@ topnav3:
       host: main-en
       url: "/blog/"
       label: "updated"
+      label-color: "red"
       badge: true
       disable: false
 
