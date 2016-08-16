@@ -23,7 +23,7 @@ paginate_path:        /blog/:num/
 permalink:            /blog/:year/:month/:day/:title
 encoding:             utf-8
 timezone:             Asia/Bangkok
-google_analytics:     false
+google_analytics:     UA-82554411-1
 
 markdown:             kramdown
 highlighter:          rouge
@@ -62,6 +62,8 @@ jekyll-archives:
   permalinks:
     category: /blog/category/:name/
     tag: /blog/tag/:name/
+  limit: 5
+  fullwidth: false
 
 compress_html:
   clippings: []
