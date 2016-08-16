@@ -1,31 +1,27 @@
 ---
 layout: main-en
-title: "Blog archives"
-section: blog
-homepage: false
-fullwidth: false
 ---
 
 <section class="container blog">
   <h2>Blog archive by {{ page.type }}</h2>
   <div class="row">
-    {% if page.fullwidth %}
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
-		{% else %}
-		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
-		{% endif %}
+    {% if site.jekyll-archives.fullwidth %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
+    {% else %}
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
+    {% endif %}
       <h4><i class="pe-archive"></i> Archive of Blogs</h4>
       <p>
-      {% if page.type contains "category" %}
-        Showing blogs in <span class="orange"><strong>{{ page.type }}</strong></span>: <i class="pe-folder-open-o"></i> {{ page.title }}
-      {% elsif page.type contains "tag" %}
-        Showing blogs in <span class="orange"><strong>{{ page.type }}</strong></span>: <i class="pe-tag"></i> {{ page.title }}
+      {% if page.type == "category" %}
+        Showing the last <span class="orange"><strong>{{ site.jekyll-archives.limit }}</strong></span> blogs in <span class="orange"><strong>{{ page.type }}</strong></span>: <i class="pe-folder-open-o"></i> {{ page.title }}
+      {% elsif page.type == "tag" %}
+        Showing the last <span class="orange"><strong>{{ site.jekyll-archives.limit }}</strong></span> blogs in <span class="orange"><strong>{{ page.type }}</strong></span>: <i class="pe-tag"></i> {{ page.title }}
       {% endif %}
-      <br>And blogs are sorted by <span class="orange"><strong>date</strong></span> <i class="pe-sort-amount-desc pe-fw"></i></p>
+      <br>And all of these latest blogs are sorted by <span class="orange"><strong>date</strong></span> <i class="pe-sort-amount-desc pe-fw"></i></p>
       <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
         <meta itemprop="keywords" content="{{ post.tags | join: ',' }}" />
         <meta itemprop="description" content="{{ post.excerpt | strip_html | truncatewords: 40 }}" />
-        {% for post in page.posts %}
+        {% for post in page.posts limit:site.jekyll-archives.limit %}
         <header class="post-header">
           <h4 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
           <p class="post-meta">
@@ -61,12 +57,12 @@ fullwidth: false
       </article>
       {% endfor %}
       <!-- <br><br> -->
-  		<!-- <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button-x"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p> -->
+      <!-- <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button-x"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p> -->
     </div>
-    {% unless page.fullwidth %}
-		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
+    {% unless site.jekyll-archives.fullwidth %}
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
       {% include 7-blog/left-menu.html %}
     </div>
-		{% endunless %}
+    {% endunless %}
   </div>
 </section>
