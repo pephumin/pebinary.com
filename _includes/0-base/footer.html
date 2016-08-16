@@ -29,9 +29,9 @@
       <span class="hidden-xs hidden-sm">All rights reserved.</span><br>
       <nav class="footer">
         <ul class="list-inline">
-          {% for footer in site.data.navigation.footer %}{% for domain in site.data.domains %}{% if footer.host contains domain.name %}{% unless footer.disable %}
-          <li><a href="{{ footer.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
-          {% endunless %}{% endif %}{% endfor %}{% endfor %}
+          {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
+          <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+          {% endunless %}{% endfor %}
         </ul>
       </nav>
     </div>

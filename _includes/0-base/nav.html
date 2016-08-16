@@ -8,9 +8,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% for entry in site.data.navigation.topnav1 %}{% for domain in site.data.domains %}{% if entry.host contains domain.name %}
-      <a href="{{ entry.url | prepend: domain.host | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
-      {% endif %}{% endfor %}{% endfor %}
+      {% for entry in site.data.navigation.topnav1 %}
+      <a href="{{ entry.url | prepend: site.data.domains.[entry.host] | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
+      {% endfor %}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -18,27 +18,13 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
-            {% for item in entry.items %}
-            {% if item.disable %}{% capture ifdisable %}<li class="disabled">{% endcapture %}{% else %}{% capture ifdisable %}<li>{% endcapture %}{% endif %}
-            {% if item.title == "separator" %}
+            {% for item in entry.items %}{% if item.title == "separator" %}
             <li class="divider" role="separator"></li>
             {% elsif item.title == "header" %}
             <li class="dropdown-header">{{ item.text }}</li>
-            {% elsif item.urlexternal %}
-            {{ ifdisable }}<a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
             {% else %}
-            {% for domain in site.data.domains %}{% if item.host contains domain.name %}
-            {% if item.badge and item.label %}{% capture insert %}<span class="badge">{{ site.posts | size }}</span> <span class="label">{{ item.label }}</span>{% endcapture %}{% endif %}
-            {% if item.badge and item.label == false %}{% capture insert %}<span class="badge">{{ site.posts | size }}</span>{% endcapture %}{% endif %}
-            {% if item.badge == false and item.label %}{% capture insert %}<span class="label">{{ item.label }}</span>{% endcapture %}{% endif %}
-            {% if item.badge == false and item.label == false %}{% capture insert %}{% endcapture %}{% endif %}
-            {% if item.host == "main-en" %}
-            {{ ifdisable }}<a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} {{ insert }}</a></li>
-            {% else %}
-            {{ ifdisable }}<a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} {{ insert }}</a></li>
-            {% endif %}{% endif %}{% endfor %}
-            {% endif %}
-            {% endfor %}
+            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.urlexternal %}<a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% elsif item.host == "main-en" %}<a href="{{ item.url | prepend: site.data.domains.[item.host] | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% else %}<a href="{{ item.url | prepend: site.data.domains.[item.host] }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% endif %}</li>
+            {% endif %}{% endfor %}
           </ul>
         </li>
         {% endfor %}
@@ -48,27 +34,13 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
-            {% for item in entry.items %}
-            {% if item.disable %}{% capture ifdisable %}<li class="disabled">{% endcapture %}{% else %}{% capture ifdisable %}<li>{% endcapture %}{% endif %}
-            {% if item.title == "separator" %}
+            {% for item in entry.items %}{% if item.title == "separator" %}
             <li class="divider" role="separator"></li>
             {% elsif item.title == "header" %}
             <li class="dropdown-header">{{ item.text }}</li>
-            {% elsif item.urlexternal %}
-            {{ ifdisable }}<a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}</a></li>
             {% else %}
-            {% for domain in site.data.domains %}{% if item.host contains domain.name %}
-            {% if item.badge and item.label %}{% capture insert %}<span class="badge">{{ site.posts | size }}</span> <span class="label">{{ item.label }}</span>{% endcapture %}{% endif %}
-            {% if item.badge and item.label == false %}{% capture insert %}<span class="badge">{{ site.posts | size }}</span>{% endcapture %}{% endif %}
-            {% if item.badge == false and item.label %}{% capture insert %}<span class="label">{{ item.label }}</span>{% endcapture %}{% endif %}
-            {% if item.badge == false and item.label == false %}{% capture insert %}{% endcapture %}{% endif %}
-            {% if item.host == "main-en" %}
-            {{ ifdisable }}<a href="{{ item.url | prepend: domain.host | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} {{ insert }}</a></li>
-            {% else %}
-            {{ ifdisable }}<a href="{{ item.url | prepend: domain.host }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }} {{ insert }}</a></li>
-            {% endif %}{% endif %}{% endfor %}
-            {% endif %}
-            {% endfor %}
+            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.urlexternal %}<a href="{{ item.urlexternal }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% elsif item.host == "main-en" %}<a href="{{ item.url | prepend: site.data.domains.[item.host] | prepend: site.baseurl }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% else %}<a href="{{ item.url | prepend: site.data.domains.[item.host] }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% endif %}</li>
+            {% endif %}{% endfor %}
           </ul>
         </li>
         {% endfor %}
