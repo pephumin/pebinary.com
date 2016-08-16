@@ -3,26 +3,14 @@
 
   <div class="row">
 
+    {% for entry in site.data.vision %}
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-      <p><span class="pe-stack pe-3x"><i class="pe-circle pe-stack-2x"></i><i class="pe-star-o pe-stack-1x pe-inverse"></i></span></p>
-      <h3>Our vision</h3>
-      <p>We are a market research company with a vision to provide consumer insights as quickly as possible allowing business to move quicker ahead of competition</p>
+      <p>{% capture stack %}{% include 0-base/stack.html icon = entry.icon shape = "circle" size = "3" inverse = "true" title = entry.title %}{% endcapture %}{{ stack | rstrip }}</p>
+      <h3>{{ entry.title }}</h3>
+      <p>{{ entry.description }}</p>
     </div>
-
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-      <p><span class="pe-stack pe-3x"><i class="pe-circle pe-stack-2x"></i><i class="pe-lightbulb-o pe-stack-1x pe-inverse"></i></span></p>
-      <h3>The core idea</h3>
-      <p>This can be achieved by minimising time in several key research processes, using automations where possible, an leveraging mobile platform for data collection</p>
-    </div>
-
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-      <p><span class="pe-stack pe-3x"><i class="pe-circle pe-stack-2x"></i><i class="pe-trophy pe-stack-1x pe-inverse"></i></span></p>
-      <h3>The ultimate goal</h3>
-      <p>With the ability to respond to the market quicker and business decision can be made faster, it creates a competitive advantage against the competition</p>
-    </div>
+    {% endfor %}
 
   </div>
-
-  <!-- <p class="text-right"><a href="{{ "/about/" | prepend: site.baseurl }}" class="button-x">Read more <i class="pe-map-o"></i></a></p> -->
 
 </section>

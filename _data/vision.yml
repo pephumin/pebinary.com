@@ -1,0 +1,15 @@
+
+- title: "Our vision"
+  description: "We are a market research company with a vision to provide consumer insights as quickly as possible allowing business to move quicker ahead of competition"
+  icon: star-o
+  disable: false
+
+- title: "The core idea"
+  description: "This can be achieved by minimising time in several key research processes, using automations where possible, an leveraging mobile platform for data collection"
+  icon: lightbulb-o
+  disable: false
+
+- title: "The ultimate goal"
+  description: "With the ability to respond to the market quicker and business decision can be made faster, it creates a competitive advantage against the competition"
+  icon: trophy
+  disable: false
