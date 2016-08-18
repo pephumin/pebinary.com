@@ -2,7 +2,7 @@
         <h4>Blog highlights</h4>
         <p><q><strong>Some key highlighted blogs providing useful information to clients / members</strong></q></p>
         <p>
-          {% for highlight in site.data.blog-highlights %}
+          {% for highlight in site.data.blogs %}
           {% assign title = highlight.title | slugify %}
           {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
           {% assign url = "/blog/" | append: date | append: "/" | append: title %}

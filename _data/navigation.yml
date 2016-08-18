@@ -1,12 +1,15 @@
+############################################################################
+# HEADER NAVIGATION
+############################################################################
 
-topnav1:
+header1:
 
 - title: "Home"
   icon: home
   host: main-en
   url: "/"
 
-topnav2:
+header2:
 
 - title: "Products"
   icon: cubes
@@ -195,7 +198,7 @@ topnav2:
       badge: false
       disable: false
 
-topnav3:
+header3:
 
 - title: "About us"
   icon: logo
@@ -251,6 +254,12 @@ topnav3:
       badge: true
       disable: false
 
+
+
+############################################################################
+# FOOTER NAVIGATION
+############################################################################
+
 footer:
 
 - title: "Privacy policy"
@@ -259,27 +268,24 @@ footer:
   host: main-en
   url: "/about/privacy.html"
   disable: false
+
 - title: "Terms of services"
   stitle: "TOS"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
   disable: false
+
 - title: "Terms & conditions"
   stitle: "Terms"
   icon: balance-scale
   host: main-en
   url: "/about/terms.html"
   disable: false
+  
 - title: "Sitemap"
   stitle: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
   disable: false
-- title: "Search engine"
-  stitle: "Search"
-  icon: globe
-  host: main-en
-  url: "/sitemap.xml"
-  disable: true

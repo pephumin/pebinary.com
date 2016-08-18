@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "Bank account"
 date: 2016-08-05 14:24:57 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [company]
 quote:

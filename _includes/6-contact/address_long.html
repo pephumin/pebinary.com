@@ -19,4 +19,4 @@
 
           <p><i class="pe-envelope-o pe-fw"></i> Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 
-          <p><i class="pe-globe pe-fw"></i> Website: <a href="{{ site.domains.main-en }}">{{ site.domains.main-en }}</a></p>
+          <p><i class="pe-globe pe-fw"></i> Website: <a href="{% if site.data.domains.main-en %}{{ site.data.domains.main-en }}{% else %}{{ site.domains.main-en }}{% endif %}">{% if site.data.domains.main-en %}{{ site.data.domains.main-en }}{% else %}{{ site.domains.main-en }}{% endif %}</a></p>

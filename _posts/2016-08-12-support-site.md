@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "Support site"
 date: 2016-08-12 12:13:07 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:

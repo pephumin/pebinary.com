@@ -1,0 +1,107 @@
+- title: "Gender"
+  slug: gender
+  type: "Percentage"
+  chart: PieChart
+  width: 250
+  height: 250
+  is3D: true
+  legend: bottom
+  data:
+    - label: "Male"
+      result: 0.46
+    - label: "Female"
+      result: 0.54
+
+- title: "Age"
+  slug: age
+  type: "Percentage"
+  chart: BarChart
+  width: 250
+  height: 250
+  is3D: true
+  legend: none
+  data:
+    - label: "Less than 20"
+      result: 0.12
+    - label: "20-29"
+      result: 0.23
+    - label: "30-39"
+      result: 0.26
+    - label: "40-49"
+      result: 0.22
+    - label: "50-59"
+      result: 0.13
+    - label: "60 and above"
+      result: 0.04
+
+- title: "Region"
+  slug: region
+  type: "Percentage"
+  chart: BarChart
+  width: 250
+  height: 250
+  is3D: true
+  legend: none
+  data:
+    - label: "Bangkok"
+      result: 0.25
+    - label: "North"
+      result: 0.20
+    - label: "Northeast"
+      result: 0.35
+    - label: "Central"
+      result: 0.10
+    - label: "South"
+      result: 0.10
+
+- title: "Occupation"
+  slug: occupation
+  type: "Percentage"
+  chart: BarChart
+  width: 250
+  height: 250
+  is3D: true
+  legend: none
+  data:
+    - label: "Working"
+      result: 0.67
+    - label: "Not working"
+      result: 0.33
+
+- title: "Device usage"
+  slug: device
+  type: "Percentage"
+  chart: PieChart
+  width: 250
+  height: 250
+  is3D: true
+  legend: bottom
+  data:
+    - label: "iPhone"
+      result: 0.27
+    - label: "Samsung"
+      result: 0.68
+    - label: "Others"
+      result: 0.05
+
+- title: "Apps used daily"
+  slug: app
+  type: "Percentage"
+  chart: BarChart
+  width: 250
+  height: 250
+  is3D: true
+  legend: none
+  data:
+    - label: "App 1"
+      result: 0.26
+    - label: "App 2"
+      result: 0.23
+    - label: "App 3"
+      result: 0.22
+    - label: "App 4"
+      result: 0.16
+    - label: "App 5"
+      result: 0.08
+    - label: "App 6"
+      result: 0.05

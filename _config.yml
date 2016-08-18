@@ -21,6 +21,8 @@ baseurl:              /pebinary.com
 paginate:             5
 paginate_path:        /blog/:num/
 permalink:            /blog/:year/:month/:day/:title
+quiet:                false
+verbose:              true
 encoding:             utf-8
 timezone:             Asia/Bangkok
 google_analytics:     UA-82554411-1
@@ -28,9 +30,15 @@ google_analytics:     UA-82554411-1
 markdown:             kramdown
 highlighter:          rouge
 #highlighter:         pygments
-
 kramdown:
   input:              GFM
+  auto_ids:           true
+  footnote_nr:        1
+  entity_output:      as_char
+  toc_levels:         1..6
+  smart_quotes:       lsquo,rsquo,ldquo,rdquo
+  hard_wrap:          false
+  footnote_nr:        1
 
 domains:
   main-en:            http://www.pebinary.com
@@ -94,3 +102,20 @@ jekyll_timeago:
   week:               "week"
   days:               "days"
   day:                "day"
+
+defaults:
+  -
+    scope:
+      path:           ""
+      type:           "posts"
+      permalink:      /blog/:year/:month/:day/:title
+    values:
+      layout:         "blog-en"
+      author:         "admin"
+      author-email:   "admin@pebinary.com"
+  -
+    scope:
+      path:           "_pages"
+      type:           "pages"
+    values:
+      layout:         "main-en"

@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "Highlights on coding"
 date: 2016-08-08 11:30:10 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:

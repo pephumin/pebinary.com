@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "Slideshow added"
 date: 2016-07-14 16:06:27 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote:

@@ -8,13 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% for entry in site.data.navigation.topnav1 %}
+      {% for entry in site.data.navigation.header1 %}
       <a href="{{ entry.url | prepend: site.data.domains.[entry.host] | prepend: site.baseurl }}" class="navbar-brand"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
       {% endfor %}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        {% for entry in site.data.navigation.topnav2 %}
+        {% for entry in site.data.navigation.header2 %}
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">
@@ -30,7 +30,7 @@
         {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        {% for entry in site.data.navigation.topnav3 %}
+        {% for entry in site.data.navigation.header3 %}
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }} <i class="pe-caret-down"></i></a>
           <ul class="dropdown-menu">

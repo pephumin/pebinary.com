@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "Company signage"
 date: 2016-08-06 01:13:45 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [company]
 quote:

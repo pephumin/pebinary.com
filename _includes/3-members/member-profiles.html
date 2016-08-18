@@ -6,40 +6,21 @@
 
   <div class="row">
 
-		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 chart">
-      <h4>Gender</h4>
-			<div id="chart_gender"></div>
-    </div>
-
+    {% for entry in site.data.charts %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 chart">
-      <h4>Age</h4>
-      <div id="chart_age"></div>
+      <h4>{{ entry.title }}</h4>
+      <div id="chart_{{ entry.slug }}"></div>
     </div>
-
-		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 chart">
-      <h4>Region</h4>
-      <div id="chart_region"></div>
-    </div>
-
-		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 chart">
-      <h4>Occupation</h4>
-      <div id="chart_occupation"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 chart">
-      <h4>Device use</h4>
-      <div id="chart_device"></div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 chart">
-      <h4>Apps used daily</h4>
-      <div id="chart_app"></div>
-    </div>
+    {% endfor %}
 
   </div>
 
-  <br>
-  <p>Do you want to see more in details? If yes, please click <a class="button" href="{{ "/contact/" | prepend: site.baseurl }}" role="button">contact us <i class="pe-envelope-o pe-fw"></i></a></p>
-  <p>If you are our existing clients, you will be able to run several cross-tabs on this data by yourself. Just simply <a href="{{ "/login" | prepend: site.domains.client }}">login to your account</a></p>
+  <div class="tipsbox">
+    <strong>Note:</strong>
+    <ul>
+      <li>If you are our existing clients, you can see more detail of these by running several cross-tabs yourself. Just simply <a href="{{ "/login" | prepend: site.domains.client }}">login to your account</a></li>
+      <li>If you are not our clients, you can <a href="{{ "/contact/" | prepend: site.baseurl }}">contact us <i class="pe-envelope-o pe-fw"></i></a> for more detail on our panel profile</li>
+    </ul>
+  </div>
 
 </section>

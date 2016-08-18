@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "Company registration"
 date: 2016-07-27 14:51:05 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [company]
 quote:

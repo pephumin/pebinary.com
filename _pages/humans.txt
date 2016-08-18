@@ -1,7 +1,8 @@
 ---
-title: humans.txt
-section:
-homepage: false
+title: "humans.txt"
+section: home
+permalink: /humans.txt
+layout:
 ---
 
 # humanstxt.org

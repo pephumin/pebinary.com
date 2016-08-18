@@ -1,7 +1,8 @@
 ---
-title: robot.txt
-section:
-homepage: false
+title: "robot.txt"
+section: home
+permalink: /robot.txt
+layout:
 ---
 
 {% if site.github %}

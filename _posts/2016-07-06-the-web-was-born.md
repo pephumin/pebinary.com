@@ -1,9 +1,6 @@
 ---
-layout: blog-en
 title: "The web was born"
 date: 2016-07-06 17:02:13 +0700
-author: admin
-author-email: admin@pebinary.com
 category: blog
 tags: [website]
 quote: "Our official website is developed by using a combination of HTML5, CSS3, Ruby, and Markdown"

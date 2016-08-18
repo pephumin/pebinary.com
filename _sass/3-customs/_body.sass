@@ -249,7 +249,7 @@ span.pe-stack.active
   vertical-align: middle
   white-space: nowrap
   text-align: center
-  background-color: $darkindigo
+  background-color: $navy
   border-radius: 10px
   &:empty
     display: none
@@ -287,3 +287,30 @@ span.pe-stack.active
   width: 300px
   height: 300px
   margin: 5px 5px
+
+.tipsbox
+  width: 90%
+  background-color: $lightindigo
+  padding: 10px 30px
+  margin: auto
+  border: 1px solid $grey
+  border-bottom-color: $grey
+  border-radius: 4px
+  box-shadow: 0 1px 2px $lightgrey, 0 3px 5px $silver
+  -webkit-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+
+  &:hover
+    text-decoration: none
+    border-color: $grey
+    box-shadow: 0 1px 3px $grey, 0 5px 8px $grey
+
+  ul
+    list-style-type: none
+    margin-left: -40px
+
+    li:before
+      font-family: "pe"
+      content: "\f0a9"
+      padding: 0 5px
+      color: $grey
