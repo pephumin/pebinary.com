@@ -288,29 +288,28 @@ span.pe-stack.active
   height: 300px
   margin: 5px 5px
 
-.tipsbox
+.alert
   width: 90%
-  background-color: $lightindigo
-  padding: 10px 30px
-  margin: auto
-  border: 1px solid $grey
-  border-bottom-color: $grey
-  border-radius: 4px
-  box-shadow: 0 1px 2px $lightgrey, 0 3px 5px $silver
-  -webkit-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
-  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out
+  margin: 20px auto
 
-  &:hover
-    text-decoration: none
-    border-color: $grey
-    box-shadow: 0 1px 3px $grey, 0 5px 8px $grey
-
-  ul
-    list-style-type: none
-    margin-left: -40px
-
-    li:before
-      font-family: "pe"
-      content: "\f0a9"
-      padding: 0 5px
-      color: $grey
+div#search-container
+  input
+    font-family: "pe"
+    
+ul#search-results
+  list-style: none
+  margin: 1px auto 20px auto
+  padding-left: 20px
+  display: block
+  li
+    list-style: none
+    font-weight: normal
+  li > a
+    color: $grey
+    &:hover, &:focus
+      color: $orange
+      background-color: transparent
+  li:before
+    content: "\00BB\00a0"
+    //padding: 0 5px
+    color: inherit
