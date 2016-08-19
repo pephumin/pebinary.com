@@ -23,6 +23,14 @@
           <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
           {% endfor %}
         </p>
+        <h4>Blog search</h4>
+        <div id="search-container">
+          <div class="form-group has-feedback">
+          <input type="text" class="form-control" id="search-input" placeholder="type keyword here">
+          <i class="pe-search form-control-feedback"></i>
+          </div>
+          <ul id="search-results"></ul>
+        </div>
          <!-- <div class="text-center">
            <label class="switch"><input type="checkbox"><div class="switchslider round"></div></label>
            <label class="switch"><input type="checkbox"><div class="switchslider"></div></label>

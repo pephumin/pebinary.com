@@ -1,0 +1,33 @@
+---
+title: "Search the website"
+permalink: /search_site.json
+layout:
+search: exclude
+---
+[
+  {% for post in site.posts %}
+    {% unless post.search == "exclude" %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}",
+      "content"  : "{{ post.content | strip_html | strip_newlines }}"
+    } {% unless forloop.last %},{% endunless %}
+    {% endunless %}
+  {% endfor %}
+  ,
+  {% for page in site.pages %}
+    {% unless page.search == "exclude" %}
+    {
+      "title"    : "{{ page.title | escape }}",
+      "section"  : "{{ page.section }}",
+      "tags"     : "{{ page.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "date"     : "{{ page.date }}",
+      "content"  : "{{ page.content | strip_html | strip_newlines }}"
+    } {% unless forloop.last %},{% endunless %}
+   {% endunless %}
+  {% endfor %}
+]
