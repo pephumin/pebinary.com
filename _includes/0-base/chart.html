@@ -7,114 +7,24 @@
     google.charts.setOnLoadCallback(occupation);
     google.charts.setOnLoadCallback(device);
     google.charts.setOnLoadCallback(app);
-    function gender() {
+    {% for entry in site.data.charts %}
+    function {{ entry.slug }}() {
       var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Gender');
-      data.addColumn('number', 'Percentage');
+      data.addColumn('string', '{{ entry.title }}');
+      data.addColumn('number', '{{ entry.type }}');
       data.addRows([
-        ['Male', 0.46],
-        ['Female', 0.54]
+        {% for d in entry.data %}
+        ['{{ d.label }}', {{ d.result }}],
+        {% endfor %}
       ]);
-      var piechart_options = {
-        width: 250,
-        height: 250,
-        is3D: true,
-        legend: 'bottom'
+      var {{ entry.chart | downcase }}_options = {
+        width: {{ entry.width }},
+        height: {{ entry.height }},
+        {% if entry.is3D %}is3D: true,{% endif %}
+        legend: '{{ entry.legend }}'
       };
-      var chart = new google.visualization.PieChart(document.getElementById('chart_gender'));
-      chart.draw(data, piechart_options);
+      var chart = new google.visualization.{{ entry.chart }}(document.getElementById('chart_{{ entry.slug }}'));
+      chart.draw(data, {{ entry.chart | downcase }}_options);
     }
-    function age() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Gender');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Less than 20', 0.12],
-        ['20-29', 0.23],
-        ['30-39', 0.26],
-        ['40-49', 0.22],
-        ['50-59', 0.13],
-        ['60 and above', 0.04]
-      ]);
-      var barchart_options = {
-        width: 250,
-        height: 250,
-        is3D: true,
-        legend: 'none'
-      };
-      var chart = new google.visualization.BarChart(document.getElementById('chart_age'));
-      chart.draw(data, barchart_options);
-    }
-    function region() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Gender');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Bangkok', 0.25],
-        ['North', 0.20],
-        ['Northeast', 0.35],
-        ['Central', 0.10],
-        ['South', 0.10]
-      ]);
-      var barchart_options = {
-        width: 250,
-        height: 250,
-        is3D: true,
-        legend: 'none'
-      };
-      var chart = new google.visualization.BarChart(document.getElementById('chart_region'));
-      chart.draw(data, barchart_options);
-    }
-    function occupation() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Gender');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Male', 0.46],
-        ['Female', 0.54]
-      ]);
-      var barchart_options = {
-        width: 250,
-        height: 250,
-        is3D: true,
-        legend: 'none'
-      };
-      var chart = new google.visualization.BarChart(document.getElementById('chart_occupation'));
-      chart.draw(data, barchart_options);
-    }
-    function device() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Gender');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['iPhone', 0.27],
-        ['Samsung', 0.68],
-        ['Others', 0.05]
-      ]);
-      var piechart_options = {
-        width: 250,
-        height: 250,
-        is3D: true,
-        legend: 'bottom'
-      };
-      var chart = new google.visualization.PieChart(document.getElementById('chart_device'));
-      chart.draw(data, piechart_options);
-    }
-    function app() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Gender');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Male', 0.46],
-        ['Female', 0.54]
-      ]);
-      var barchart_options = {
-        width: 250,
-        height: 250,
-        is3D: true,
-        legend: 'none'
-      };
-      var chart = new google.visualization.BarChart(document.getElementById('chart_app'));
-      chart.draw(data, barchart_options);
-    }
+    {% endfor %}
   </script>
