@@ -1,0 +1,5 @@
+<!-- include.url = target url -->
+<!-- include.file -->
+<!-- include.alt = img alt and img title -->
+<!-- include.caption -->
+<figure>{% if include.url %}<a href="{{ include.url }}">{% endif %}<img src="/assets/img/others/{{ include.file }}" alt="{{ include.alt }}" title="{{ include.alt }}">{% if include.url %}</a>{% endif %}{% if include.caption %}<figcaption>{{ include.caption }}</figcaption></figure>{% endif %}
