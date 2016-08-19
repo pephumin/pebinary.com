@@ -3,6 +3,7 @@ title: "Blog feed"
 section: blog
 permalink: /blog/atom.xml
 layout:
+search: exclude
 ---
 
 <?xml version="1.0" encoding="utf-8"?>

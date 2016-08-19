@@ -3,6 +3,7 @@ title: "humans.txt"
 section: home
 permalink: /humans.txt
 layout:
+search: exclude
 ---
 
 # humanstxt.org

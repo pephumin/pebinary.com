@@ -4,7 +4,7 @@ date: 2016-07-06 17:02:13 +0700
 category: blog
 tags: [website]
 quote: "Our official website is developed by using a combination of HTML5, CSS3, Ruby, and Markdown"
-icon: home
+icon: birthday-cake
 published: true
 ---
 

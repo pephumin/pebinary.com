@@ -3,6 +3,7 @@ title: "robot.txt"
 section: home
 permalink: /robot.txt
 layout:
+search: exclude
 ---
 
 {% if site.github %}

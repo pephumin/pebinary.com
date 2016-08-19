@@ -57,6 +57,48 @@
     border: 1px solid $grey
     outline: 0
     text-decoration: none
+.button
+  font-size: 0.6rem
+  color: $grey
+  background-color: transparent
+  border: 1px solid $grey
+  text-align: center
+  letter-spacing: 0.1rem
+  text-transform: uppercase
+  text-decoration: none
+  display: inline-block
+  height: 30px
+  line-height: 30px
+  padding: 0 15px
+  white-space: nowrap
+  border-radius: 4px
+  cursor: pointer
+  box-sizing: border-box
+  -webkit-transition: all 0.15s ease-out 0s
+  transition: all 0.15s ease-out 0s
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $white
+    background-color: $lightgrey
+    border: 1px solid $lightgrey
+    border-color: transparent
+    outline: 0
+    text-decoration: none
+
+.button-x.green
+  color: $white
+  background-color: $darkgreen
+  border: 1px solid $darkgreen
+  //background-color: transparent
+
+  &:hover,
+  &:active,
+  &:focus
+    color: $darkgreen
+    background-color: transparent
+    border: 1px solid $darkgreen
 
 .blue-wiggle
   color: $blue

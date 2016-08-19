@@ -22,16 +22,16 @@ header2:
       icon: cubes
       host: main-en
       url: "/products/"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Get the app"
       icon: cloud-download
       urlexternal: "https://itunes.apple.com/en/app/"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: separator
     - title: header
@@ -40,17 +40,17 @@ header2:
       icon: magnet
       host: main-en
       url: "/products/A.html"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: "Product B"
       icon: magnet
       host: main-en
       url: "/products/B.html"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: separator
     - title: header
@@ -59,25 +59,25 @@ header2:
       icon: cube
       host: main-en
       url: "/products/C.html"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: "Product D"
       icon: cube
       host: main-en
       url: "/products/D.html"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: "Product E"
       icon: cube
       host: main-en
       url: "/products/E.html"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
 
 - title: "Members"
@@ -91,33 +91,33 @@ header2:
       icon: user
       host: main-en
       url: "/members/"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Member benefits"
       icon: thumbs-o-up
       host: main-en
       url: "/members/benefits.html"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Reward program"
       icon: diamond
       host: main-en
       url: "/members/rewards.html"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: "Member manual"
       icon: file-text-o
       host: support-en
       url: "/members/"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: separator
     - title: header
@@ -126,18 +126,18 @@ header2:
       icon: user-plus
       host: member
       url: "/join"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Your account"
       icon: sign-in
       host: member
       url: "/login"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
 
 - title: "Clients"
   icon: briefcase
@@ -150,33 +150,33 @@ header2:
       icon: briefcase
       host: main-en
       url: "/clients/"
-      label: "checked"
-      label-color: "green"
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Client benefits"
       icon: thumbs-o-up
       host: main-en
       url: "/clients/benefits.html"
       label: "new"
       label-color: "blue"
-      badge: false
-      disable: false
+      badge:
+      disable:
     - title: "Testimonials"
       icon: commenting-o
       host: main-en
       url: "/clients/testimonials.html"
-      label: false
-      label-color: false
-      badge: false
-      disable: true
+      label: "revised"
+      label-color: "green"
+      badge:
+      disable:
     - title: "Client manual"
       icon: file-text-o
       host: support-en
       url: "/clients/"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: separator
     - title: header
@@ -185,18 +185,18 @@ header2:
       icon: user-plus
       host: client
       url: "/contact/"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Your account"
       icon: sign-in
       host: client
       url: "/login"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
 
 header3:
 
@@ -211,26 +211,26 @@ header3:
       icon: graduation-cap
       host: main-en
       url: "/about/"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Contact us"
       icon: envelope-o
       host: main-en
       url: "/contact/"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: "Our office"
       icon: map-marker
       host: main-en
       url: "/contact/map.html"
-      label: false
-      label-color: false
-      badge: false
-      disable: false
+      label:
+      label-color:
+      badge:
+      disable:
     - title: separator
     - title: header
       text: "Dedicate support site"
@@ -238,9 +238,9 @@ header3:
       icon: university
       host: support-en
       url: "/"
-      label: false
-      label-color: false
-      badge: false
+      label:
+      label-color:
+      badge:
       disable: true
     - title: separator
     - title: header
@@ -252,7 +252,7 @@ header3:
       label: "updated"
       label-color: "red"
       badge: true
-      disable: false
+      disable:
 
 
 
@@ -267,25 +267,25 @@ footer:
   icon: lock
   host: main-en
   url: "/about/privacy.html"
-  disable: false
+  disable:
 
 - title: "Terms of services"
   stitle: "TOS"
   icon: gavel
   host: main-en
   url: "/about/tos.html"
-  disable: false
+  disable:
 
 - title: "Terms & conditions"
   stitle: "Terms"
   icon: balance-scale
   host: main-en
   url: "/about/terms.html"
-  disable: false
-  
+  disable:
+
 - title: "Sitemap"
   stitle: "Sitemap"
   icon: sitemap
   host: main-en
   url: "/about/sitemap.html"
-  disable: false
+  disable:
