@@ -1,0 +1,39 @@
+- picture: "c1.jpg"
+  title: "Bored of waiting months for survey results?"
+  description: "Our core value is to provide survey results as quickly as possible as we know that time is important. We help you make quicker business actions and be ahead of the competition."
+  button: "contact <span class=\"hidden-xs hidden-sm\">us</span>"
+  button-url: "/contact/"
+  button-type: button-lg-x
+  button-icon: envelope-o
+
+- picture: "c2.jpg"
+  title: "Data is collected with the mobile platform"
+  description: "We leverage the high mobile penetration in the modern world. The ability to connect directly with respondents provide us with an opportunity to draw insights from them directly."
+  button: "<span class=\"hidden-xs hidden-sm\">View</span> demo"
+  button-url: "#"
+  button-type: "button-lg-x"
+  button-icon: paper-plane-o
+
+- picture: "c3.jpg"
+  title: "We help you move faster"
+  description: "The market has changed where things move much quicker, and so does your business. Failing to keep pace is not an option. We provide data very quickly so you can cope better with the fast-moving world."
+  button: "contact <span class=\"hidden-xs hidden-sm\">us</span>"
+  button-url: "/contact/"
+  button-type: "button-lg-x"
+  button-icon: envelope-o
+
+- picture: "c4.jpg"
+  title: "Members give opinions whenever they want"
+  description: "We design our system to support members with continuity where multiple devices are accepted. This gives the most flexibility for our members in terms of providing their opinions to our survey."
+  button: "<span class=\"hidden-xs hidden-sm\">View</span> demo"
+  button-url: "#"
+  button-type: "button-lg-x"
+  button-icon: paper-plane-o
+
+- picture: "c5.jpg"
+  title: "Connect directly with your targets"
+  description: "With our system, you can connect with your target audiences even they are difficult to reach. No more difficulties to reach rural upcountry consumers or the high net-worths."
+  button: "contact <span class=\"hidden-xs hidden-sm\">us</span>"
+  button-url: "/contact/"
+  button-type: "button-lg-x"
+  button-icon: envelope-o
