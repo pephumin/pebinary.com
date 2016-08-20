@@ -44,7 +44,7 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 // Actual modal
@@ -77,8 +77,9 @@
 // Modal header
 // Top section of the modal w/ title and dismiss
 .modal-header {
-  padding: $modal-title-padding;
-  border-bottom: 1px solid $modal-header-border-color;
+  padding: $modal-title-padding $modal-title-padding;
+  border-bottom: 1px dotted $modal-header-border-color;
+  background-color: $modal-header-background-color;
   @include clearfix;
 }
 // Close icon
@@ -88,22 +89,26 @@
 
 // Title text within header
 .modal-title {
-  margin: 0;
+  margin: 0px 10px;
   line-height: $modal-title-line-height;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {
   position: relative;
-  padding: $modal-inner-padding;
+  padding: $modal-inner-padding $modal-inner-padding;
 }
 
 // Footer (for actions)
 .modal-footer {
-  padding: $modal-inner-padding;
+  padding: $modal-inner-padding $modal-inner-padding;
   text-align: right; // right align buttons
-  border-top: 1px solid $modal-footer-border-color;
+  border-top: 1px dotted $modal-footer-border-color;
+  background-color: $modal-footer-background-color;
   @include clearfix; // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons
@@ -135,7 +140,7 @@
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     width: $modal-md;
-    margin: 30px auto;
+    margin: 10px auto;
   }
   .modal-content {
     @include box-shadow(0 5px 15px rgba(0,0,0,.5));

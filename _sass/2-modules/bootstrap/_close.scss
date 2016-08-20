@@ -15,7 +15,7 @@
   &:hover,
   &:focus {
     color: $close-color;
-    text-decoration: none;
+    //text-decoration: none;
     cursor: pointer;
     @include opacity(.5);
   }
@@ -33,4 +33,13 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+
+  &:hover,
+  &:focus {
+    color: $close-color;
+    //text-decoration: none;
+    cursor: pointer;
+    @include opacity(.5);
+  }
+
 }
