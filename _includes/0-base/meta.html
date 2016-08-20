@@ -7,7 +7,7 @@
   <meta name="description" content="{{ site.title }} &middot; {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  {% if site.github %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index follow">{% endif %}
+  {% if site.github %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow">{% endif %}
   <title>{% if page.homepage == true %}{{ site.title }} &middot; {{ site.description }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/icon/favicon.ico" | prepend: site.baseurl }}">
