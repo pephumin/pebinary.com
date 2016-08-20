@@ -1,8 +1,8 @@
 ---
 title: "Support site"
 date: 2016-08-12 12:13:07 +0700
-category: blog
-tags: [website]
+category: [setup]
+tags: [website, support]
 quote:
 icon: university
 published: true
@@ -14,9 +14,9 @@ The new `mini-website` that we are building is the `Support section` which will 
 
 At this stage, we will use __[http://support.pebinary.com]__ as the sub-domain name for this `mini-website`, and it will be divided into two main sections which are section specifically for clients and members.
 
-Similar to the main website, we will build it by using a combination of [HTML], [Cascading Style Sheets], [Ruby] (programming language), and [Markdown].
+And, as one would have expected, similar to the main website we will build it by using a combination of [HTML] {% include 0-base/ext.html %}, [Cascading Style Sheets] {% include 0-base/ext.html %}, [Ruby] {% include 0-base/ext.html %} (programming language), and [Markdown] {% include 0-base/ext.html %}.
 
-To be more specific, the [HTML] we use is the most advanced version which is [HTML5], and similarly for the [Cascading Style Sheets] where we also use the most updated version of [CSS3].
+To be more specific, the [HTML] {% include 0-base/ext.html %} we use is the most advanced version which is [HTML5] {% include 0-base/ext.html %}, and similarly for the [Cascading Style Sheets] {% include 0-base/ext.html %} where we also use the most updated version of [CSS3] {% include 0-base/ext.html %}.
 
 <table class="table table-striped" width="80%" border="0">
   <tr>
@@ -26,10 +26,10 @@ To be more specific, the [HTML] we use is the most advanced version which is [HT
     <td align="center"><img src="{{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
   </tr>
   <tr>
-    <td align="center"><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a></small></td>
-    <td align="center"><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a></small></td>
-    <td align="center"><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a></small></td>
-    <td align="center"><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a></small></td>
+    <td align="center"><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td align="center"><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td align="center"><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td align="center"><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a> {% include 0-base/ext.html %}</small></td>
   </tr>
 </table>
 
@@ -53,11 +53,11 @@ And lastly, the ultimate objective is to use both the layout and the typography 
 [http://support.pebinary.com]: http://support.pebinary.com
 [HTML]: https://www.w3.org/html/
 [HTML5]: http://www.w3.org/TR/html5/
-[html5-logo]: {{ "/assets/img/others/html5.svg" | prepend: site.baseurl }} "HTML5 logo"
+[html5-logo]: {{ "/assets/img/others/html5.svg" | prepend: site.baseurl }} "Logo of HTML5"
 [Cascading Style Sheets]: https://www.w3.org/Style/CSS/
 [CSS3]: http://www.w3.org/TR/CSS/
-[css3-logo]: {{ "/assets/img/others/css3.svg" | prepend: site.baseurl }} "CSS3 logo"
+[css3-logo]: {{ "/assets/img/others/css3.svg" | prepend: site.baseurl }} "Logo of CSS3"
 [Ruby]: https://www.ruby-lang.org
-[ruby-logo]: {{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }} "Ruby logo"
+[ruby-logo]: {{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }} "Logo of Ruby"
 [Markdown]: https://en.wikipedia.org/wiki/Markdown
-[markdown-logo]: {{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }} "Markdown logo"
+[markdown-logo]: {{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }} "Logo of Markdown"

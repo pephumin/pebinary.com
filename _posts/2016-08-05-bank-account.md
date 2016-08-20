@@ -1,7 +1,7 @@
 ---
 title: "Bank account"
 date: 2016-08-05 14:24:57 +0700
-category: blog
+category: [setup, legal]
 tags: [company]
 quote:
 icon: bank
@@ -14,13 +14,13 @@ After spending quite a lot of efforts in preparing documents that are required b
 
 And to further enhancing the banking experience, we have also applied for the account to be accessible with the internet. We hope this will give a more flexibility to account usage in the future especially for the balance checking and some quick money transfer. But be noted that at this stage, we still do not know if money transfer can be done with the internet access. We shall wait and see on this.
 
-The bank we chose is as expected which is [Kasikorn Bank], the only bank that we always use.
+The bank we chose is as expected which is [Kasikorn Bank] {% include 0-base/ext.html %}, the only bank that we always use.
 
 
 ![Kasikorn Bank logo][kbank-logo]
 
 
-And we chose the branch that is located in the shopping mall, [Seacon Square] (it is a new branch which is located on the third floor). The key reason we choose the bank branch that is located in the shopping mall is because their operating hours are more flexible and we may be able to have some transactions, if any at all, done **outside** the regular office hours.
+And we chose the branch that is located in the shopping mall, [Seacon Square] {% include 0-base/ext.html %} (it is a new branch which is located on the third floor). The key reason we choose the bank branch that is located in the shopping mall is because their operating hours are more flexible and we may be able to have some transactions, if any at all, done **outside** the regular office hours.
 
 
 ![Seacon Square logo][seacon-logo]
@@ -31,7 +31,6 @@ And we chose the branch that is located in the shopping mall, [Seacon Square] (i
 **To be honest, we were quite surprised on how many documents the bank actually required for just opening a new bank account. They asked for a lot of documents upfront, plus a lot of filling and signing included for those documents. We found it was quite painful and not much less than what we experienced with the government sector. We hope moving forward it would not be much of the paperwork needed anymore.**
 
 Below is the detail of our bank information.
-
 
 
 <table class="table table-hover">
@@ -48,19 +47,19 @@ Below is the detail of our bank information.
     </tr>
     <tr>
       <td>Account name</td>
-      <td>PE BINARY CO., LTD.</td>
+      <td><a href="http://www.pebinary.com" title="PE BINARY CO., LTD.">PE BINARY CO., LTD.</a></td>
     </tr>
     <tr>
       <td>Account type</td>
-      <td>Current account Bank]</td>
+      <td>Current account</td>
     </tr>
     <tr>
       <td>Bank name</td>
-      <td><a href="http://www.kasikornbank.com">Kasikorn Bank</a></td>
+      <td><a href="http://www.kasikornbank.com" title="Kasikorn Bank">Kasikorn Bank</a> {% include 0-base/ext.html %}</td>
     </tr>
   <tr>
       <td>Bank branch</td>
-      <td><a href="http://www.seaconsquare.com">Seacon Square</a> II</td>
+      <td><a href="http://www.seaconsquare.com" title="Seacon Square II">Seacon Square II</a> {% include 0-base/ext.html %}</td>
     </tr>
     <tr>
       <td>SWIFT code</td>
@@ -72,6 +71,6 @@ Below is the detail of our bank information.
 
 
 [Kasikorn Bank]: http://www.kasikornbank.com
-[kbank-logo]: {{ "/assets/img/others/kasikorn.gif" | prepend: site.baseurl }} "Kasikorn Bank logo"
+[kbank-logo]: {{ "/assets/img/others/kasikorn.gif" | prepend: site.baseurl }} "Logo of Kasikorn Bank"
 [Seacon Square]: http://www.seaconsquare.com
-[seacon-logo]: {{ "/assets/img/others/seaconsquare.gif" | prepend: site.baseurl }} "Seacon Square logo"
+[seacon-logo]: {{ "/assets/img/others/seaconsquare.gif" | prepend: site.baseurl }} "Logo of Seacon Square"

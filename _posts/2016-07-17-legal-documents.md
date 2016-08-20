@@ -1,8 +1,8 @@
 ---
 title: "Legal documents"
 date: 2016-07-17 06:10:32 +0700
-category: blog
-tags: [website]
+category: [legal]
+tags: [company]
 quote: "These documents will still needed to be fully revised soon"
 icon: balance-scale
 published: true

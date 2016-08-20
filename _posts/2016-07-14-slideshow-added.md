@@ -1,7 +1,7 @@
 ---
 title: "Slideshow added"
 date: 2016-07-14 16:06:27 +0700
-category: blog
+category: [updates]
 tags: [website]
 quote:
 icon: fast-forward
@@ -10,7 +10,7 @@ published: true
 
 In order to make the website look more appeal to the general public, a `slideshow` has been added.
 
-It is one of the build-in functions provided by [Bootstrap framework] which is called [carousel]. FYI, this framework is developed and maintained by [Twitter] and it has been named as one of the most popular framework.
+It is one of the build-in functions provided by [Bootstrap framework] {% include 0-base/ext.html %} which is called [carousel] {% include 0-base/ext.html %}. FYI, this framework is developed and maintained by [Twitter] {% include 0-base/ext.html %} and it has been named as one of the most popular framework.
 
 While it is first developed and installed to the [front page], it may be considered to be included in some other pages in the future as well.
 
@@ -93,7 +93,7 @@ Below is the example of how the `slideshow` looks like.
 
 **And please be noted that it is just an example and therefore we only show with a smaller size than the actual one we put on the front page.**
 
-Currently this section only uses one size of the picture which is 1280x500 pixel. ~~And instead of placing the blur effect directly to the pictures, we currently use `filter` effect by [CSS3] to make them look blur. However we may consider making all pictures blurred from the original photoshop source for a guarantee of consistency output to all viewers from different type of web browsers.~~
+Currently this section only uses one size of the picture which is 1280x500 pixel. ~~And instead of placing the blur effect directly to the pictures, we currently use `filter` effect by [CSS3] {% include 0-base/ext.html %} to make them look blur. However we may consider making all pictures blurred from the original photoshop source for a guarantee of consistency output to all viewers from different type of web browsers.~~
 
 **We have finally built-in all the pictures in this section as well as other sections with blur effect. And the effect itself is called `Gaussian Blur` in [Adobe Photoshop].**
 

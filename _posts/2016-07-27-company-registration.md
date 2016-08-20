@@ -1,14 +1,14 @@
 ---
 title: "Company registration"
 date: 2016-07-27 14:51:05 +0700
-category: blog
+category: [setup, legal]
 tags: [company]
 quote:
 icon: book
 published: true
 ---
 
-Today we mark another big step progress to our company history. We have successfully completed the `company registration` with the [Department of Business Development, Ministry of Commerce].
+Today we mark another big step progress to our company history. We have successfully completed the `company registration` with the [Department of Business Development, Ministry of Commerce] {% include 0-base/ext.html %}.
 
 
 ![Department of Business Development logo][dbd-logo]
@@ -18,9 +18,9 @@ This process started two days ago (25 July 2016) and it has finally completed to
 
 As we have heard from many people on how really difficult it could be to deal with this government sector, we decided to hire a third party to conduct this particular process for us. And as expected, it involves with a lot of paperwork and signatures.
 
-In fact our first impression with the [Department of Business Development, Ministry of Commerce] was not really positive since the company name reservation that we did online had faced an unexpected difficulty which was the requirement from their website to be accessed with only [Microsoft Internet Explorer] Version 9. How really unprofessional it could be.  
+In fact our first impression with the [Department of Business Development, Ministry of Commerce] {% include 0-base/ext.html %} was not really positive since the company name reservation that we did online had faced an unexpected difficulty which was the requirement from their website to be accessed with only [Microsoft Internet Explorer] Version 9. How really unprofessional it could be.  
 
-Although we have done the registration with the [Department of Business Development, Ministry of Commerce], **there is still another important step in this process to be completed**, which is the registration on the Value Added Tax (VAT) with [The Revenue Department, Ministry of Finance].
+Although we have done the registration with the [Department of Business Development, Ministry of Commerce] {% include 0-base/ext.html %}, **there is still another important step in this process to be completed**, which is the registration on the Value Added Tax (VAT) with [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %}.
 
 
 ![The Revenue Department logo][rd-logo]
@@ -30,44 +30,44 @@ Although we have done the registration with the [Department of Business Developm
 
 <!--more-->
 
-And below are the electronic copies of the completed paperwork that we have got back from the [Department of Business Development, Ministry of Commerce] regarding to our official `company registration`.
+And below are the electronic copies of the completed paperwork that we have got back from the [Department of Business Development, Ministry of Commerce] {% include 0-base/ext.html %} regarding to our official `company registration`.
 
 
 <div class="row">
   <div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
-    <a class="modal-link" data-toggle="modal" data-target="#RA"><img src="{{ "/assets/img/registration/RAs.png" | prepend: site.baseurl }}" class="img-responsive"></a>
-    <div class="modal fade" id="RA" role="dialog">
-      <div class="modal-dialog">
+    <a class="modal-link" data-toggle="modal" data-target="#RA" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RAs.png" | prepend: site.baseurl }}"></a>
+    <div class="modal fade" id="RA" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Company registration document (front)</h4>
+            <a data-dismiss="modal"><i class="pe-times pull-right"></i></a>
+            <span class="modal-title">Company registration (front)</span>
           </div>
           <div class="modal-body text-center">
-            <img src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}" class="img-responsive center-block">
+            <img class="img-thumbnail" src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-x" data-dismiss="modal">Close <i class="pe-remove"></i></button>
-          </div>
+          <!-- <div class="modal-footer">
+            <button class="button-x" data-dismiss="modal">Close</button>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <a class="modal-link" data-toggle="modal" data-target="#RB"><img src="{{ "/assets/img/registration/RBs.png" | prepend: site.baseurl }}" class="img-responsive"></a>
-    <div class="modal fade" id="RB" role="dialog">
-      <div class="modal-dialog">
+    <a class="modal-link" data-toggle="modal" data-target="#RB" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RBs.png" | prepend: site.baseurl }}"></a>
+    <div class="modal fade" id="RB" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Company registration document (back)</h4>
+            <a data-dismiss="modal"><i class="pe-times pull-right"></i></a>
+            <span class="modal-title">Company registration (back)</span>
           </div>
           <div class="modal-body text-center">
-            <img src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}" class="img-responsive center-block">
+            <img class="img-thumbnail" src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-x" data-dismiss="modal">Close <i class="pe-remove"></i></button>
-          </div>
+          <!-- <div class="modal-footer">
+            <button class="button-x" data-dismiss="modal">Close</button>
+          </div> -->
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ And below are the electronic copies of the completed paperwork that we have got 
 </div>
 
 [Department of Business Development, Ministry of Commerce]: http://www.dbd.go.th
-[dbd-logo]: {{ "/assets/img/others/dbd.jpg" | prepend: site.baseurl }} "Department of Business Development logo"
+[dbd-logo]: {{ "/assets/img/others/dbd.jpg" | prepend: site.baseurl }} "Logo of Department of Business Development"
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
-[rd-logo]: {{ "/assets/img/others/rd.png" | prepend: site.baseurl }} "The Revenue Department logo"
+[rd-logo]: {{ "/assets/img/others/rd.png" | prepend: site.baseurl }} "Logo of The Revenue Department"
 [Microsoft Internet Explorer]: https://en.wikipedia.org/wiki/Internet_Explorer
