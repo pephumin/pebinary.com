@@ -1,6 +1,12 @@
+// font-face
+
 @font-face
   font-family: "neon"
   src: url("../fonts/neon.woff") format("woff")
+
+@font-face
+  font-family: "supermarket"
+  src: url("../fonts/supermarket.woff") format("woff")
 
 @font-face
   font-family: "boon"
@@ -10,6 +16,142 @@
 
 @font-face
   font-family: "ubuntu"
-  font-style: normal
-  font-weight: 400
   src: url("../fonts/ubuntu.woff") format("woff")
+
+// font-size
+
+h1, h2, h3, h4, h5, h6,
+.gigantic, .huge, .large, .bigger, .big
+  font-weight: bold
+
+.gigantic
+  font-size: 3.0rem
+  line-height: 1.09
+  letter-spacing: -2px
+
+h1,
+.huge
+  font-size: 2.0rem
+  line-height: 1.05
+  letter-spacing: -1px
+
+h2,
+.large
+  font-size: 1.8rem
+  line-height: 1.14
+
+h3,
+.bigger
+  font-size: 1.4rem
+  line-height: 1.38
+
+h4,
+.big
+  font-size: 1.1rem
+  line-height: 1.38
+
+small,
+.small
+  font-size: 0.8rem
+  line-height: 1.2
+
+.verysmall
+  font-size: 0.6rem
+  line-height: 1.0
+
+
+@media (max-width: 768px)
+
+  .gigantic
+    font-size: 2.5rem
+
+  h1,
+  .huge
+    font-size: 1.6rem
+
+  h2,
+  .large
+    font-size: 1.5rem
+
+  h3,
+  .bigger
+    font-size: 1.1rem
+
+  h4,
+  .big
+    font-size: 1.0rem
+
+  small,
+  .small
+    font-size: 0.7rem
+
+  .verysmall
+    font-size: 0.55rem
+
+// colour control
+
+.white
+  color: $white
+
+.silver
+  color: $silver
+
+.lightkgrey
+  color: $lightgrey
+
+.grey
+  color: $grey
+
+.darkgrey
+  color: $darkgrey
+
+.black
+  color: $black
+
+.blue
+  color: $blue
+
+.darkblue
+  color: $darkblue
+
+.navy
+  color: $navy
+
+.lightgreen
+  color: $lightgreen
+
+.green
+  color: $green
+
+.darkgreen
+  color: $darkgreen
+
+.deepgreen
+  color: $deepgreen
+
+.yellow
+  color: $yellow
+
+.orange
+  color: $orange
+
+.red
+  color: $red
+
+.tg
+  color: $c-thaiairways
+
+.scb
+  color: $c-scb
+
+.plum
+  color: $plum
+
+.lightplum
+  color: $lightplum
+
+.indigo
+  color: $indigo
+
+.tropicalindigo
+  color: $tropicalindigo
