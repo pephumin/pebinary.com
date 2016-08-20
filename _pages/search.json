@@ -1,6 +1,6 @@
 ---
-title: "Search posts"
-permalink: /search_posts.json
+title: "Search database"
+permalink: /search.json
 layout:
 search: exclude
 ---
@@ -9,12 +9,13 @@ search: exclude
     {% unless post.search == "exclude" %}
     {
       "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category }}",
+      "category" : "{{ post.category | join: ', ' }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}",
-      "content"  : "{{ post.content | strip_html | strip_newlines }}"
-    } {% unless forloop.last %},{% endunless %}
+      "content"  : "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}"
+    }
+    {% unless forloop.last %},{% endunless %}
     {% endunless %}
   {% endfor %}
 ]

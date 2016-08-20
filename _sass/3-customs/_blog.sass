@@ -31,7 +31,7 @@
     font-size: 0.8rem
     padding: 9px 14px
     //margin-bottom: 14px
-    background-color: $white-shadow
+    background-color: mintcream
     border: 1px solid $silver
     border-radius: 4px
 
@@ -59,19 +59,29 @@
 
 .blog-menu
 
-  .blog-highlights
+  section.blogrightmenu
+    padding-top: 3px
+    padding-bottom: 0px
 
-    ul
-      list-style-type: none
+  .blog-highlights
 
     q
       color: $plum
 
-    a
-      color: $indigo
-      text-decoration: none
-      &:hover
-        color: $orange
+    ul
+      list-style-type: none
+
+      li::before
+        font-family: "pe"
+        content: "\f101"
+        display: inline-block
+        margin: auto 5px auto -35px
+
+      li > a
+        color: $indigo
+        text-decoration: none
+        &:hover
+          color: $orange
 
   .blog-quote
     margin: 0 auto
@@ -111,13 +121,32 @@
     line-height: 1.4
     border: none
 
+  .blog-tags
+    font-size: 0.75rem
+
   .list-group-item
     padding: 5px 15px
     width: 100%
     //background-color: $silver
 
-  .blog-tags
-    font-size: 0.75rem
+  a.list-group-item, button.list-group-item
+    color: $grey
+
+  // a.list-group-item .list-group-item-heading, button.list-group-item .list-group-item-heading
+  //   color: $darkgrey
+
+  a.list-group-item
+    &:hover, &:focus
+      text-decoration: none
+      color: $grey
+      background-color: $yellow
+
+  button.list-group-item
+    &:hover, &:focus
+      text-decoration: none
+      color: $grey
+      background-color: $yellow
+
 
 .blog-pagination
   font-size: 85%
@@ -242,3 +271,25 @@
     border: 1px solid $indigo
     outline: 0
     text-decoration: none
+
+div#search-container
+  input[type="text"]
+    font-family: "pe"
+
+ul#search-results
+  list-style: none
+  margin: 1px auto 20px auto
+  padding-left: 50px
+  display: block
+  li
+    list-style: none
+    font-weight: normal
+  li > a
+    color: $grey
+    &:hover, &:focus
+      color: $orange
+      background-color: transparent
+  li:before
+    content: "\00BB\00a0"
+    //padding: 0 5px
+    color: inherit

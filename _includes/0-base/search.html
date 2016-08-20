@@ -1,0 +1,9 @@
+<script type="text/javascript" src="{{ "/assets/js/search.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+  })
+</script>
