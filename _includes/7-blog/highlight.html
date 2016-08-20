@@ -1,36 +1,45 @@
       <aside class="blog-highlights">
-        <h4>Blog highlights</h4>
-        <p><q><strong>Some key highlighted blogs providing useful information to clients / members</strong></q></p>
-        <p>
-          {% for highlight in site.data.blogs %}
-          {% assign title = highlight.title | slugify %}
-          {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
-          {% assign url = "/blog/" | append: date | append: "/" | append: title %}
-          <i class="pe-angle-double-right"></i> <a href="{{ url | prepend: site.baseurl }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small><br>
-          {% endfor %}
-        </p>
-        <h4>Categories</h4>
-        <div class="list-group">
-          {% for category in site.categories %}
-          {% assign sorted_posts = category[0] | reverse %}
-          <a href="/blog/category/{{ category | first | slugify | prepend: site.baseurl }}" class="list-group-item">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
-          {% endfor %}
-        </div>
-        <h4>Tags</h4>
-        <p class="blog-tags">
-          {% for tag in site.tags %}
-          {% assign sorted_posts = tag[0] | reverse %}
-          <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
-          {% endfor %}
-        </p>
-        <h4>Blog search</h4>
-        <div id="search-container">
-          <div class="form-group has-feedback">
-          <input type="text" class="form-control" id="search-input" placeholder="type keyword here">
-          <i class="pe-search form-control-feedback"></i>
+        <h3>Blog menu</h3>
+        <section class="blogrightmenu">
+          <h4>Highlights</h4>
+          <p><q><strong>Some key highlighted blogs providing useful information to clients / members</strong></q></p>
+          <ul>
+            {% for highlight in site.data.blogs %}
+            {% assign title = highlight.title | slugify %}
+            {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
+            {% assign url = "/blog/" | append: date | append: "/" | append: title %}
+            <li><a href="{{ url | prepend: site.baseurl }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small></li>
+            {% endfor %}
+          </ul>
+        </section>
+        <section class="blogrightmenu">
+          <h4>Categories</h4>
+          <div class="list-group">
+            {% for category in site.categories %}
+            {% assign sorted_posts = category[0] | reverse %}
+            <a href="/blog/category/{{ category | first | slugify | prepend: site.baseurl }}" class="list-group-item">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
+            {% endfor %}
           </div>
-          <ul id="search-results"></ul>
-        </div>
+        </section>
+        <section class="blogrightmenu">
+          <h4>Tags</h4>
+          <p class="blog-tags">
+            {% for tag in site.tags %}
+            {% assign sorted_posts = tag[0] | reverse %}
+            <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
+            {% endfor %}
+          </p>
+        </section>
+        <section class="blogrightmenu">
+          <h4>Search</h4>
+          <div id="search-container">
+            <div class="form-group has-feedback">
+            <input type="text" class="form-control" id="search-input" placeholder="Type keyword">
+            <i class="pe-search form-control-feedback"></i>
+            </div>
+            <ul id="search-results"></ul>
+          </div>
+        </section>
          <!-- <div class="text-center">
            <label class="switch"><input type="checkbox"><div class="switchslider round"></div></label>
            <label class="switch"><input type="checkbox"><div class="switchslider"></div></label>

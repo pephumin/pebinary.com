@@ -1,15 +1,14 @@
-- number: 4
-  title: "Bank account"
+- title: "Support site"
+  timestamp: 2016-08-12 12:13:07 +0700
+
+- title: "Bank account"
   timestamp: 2016-08-05 14:24:57 +0700
 
-- number: 3
-  title: "Company registration"
+- title: "Company registration"
   timestamp: 2016-07-27 14:51:05 +0700
 
-- number: 2
-  title: "The blog"
+- title: "The blog"
   timestamp: 2016-07-12 20:38:07 +0700
 
-- number: 1
-  title: "The web was born"
+- title: "The web was born"
   timestamp: 2016-07-06 17:02:13 +0700
