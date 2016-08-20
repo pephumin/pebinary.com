@@ -8,8 +8,8 @@ layout: main-en
 <section class="container blog">
 
   <h2>Blogs <small><a href="{{ "/blog/atom.xml" | prepend: site.baseurl }}"><i class="pe-rss"></i></a></small></h2>
-  <p>Our weblogs (i.e. Blogs) which contain all updated information / news about our company from several different perspectives from the internal system development to the external market development. We update our weblogs from time to time when there is an important occasion to be recorded.</p>
-  <br>
+  <p>Our weblogs (i.e. Blogs) which contain all updated information / news about our company from several different perspectives from the internal system development to the external market development.</p>
+  <p>We update our weblogs from time to time when there is an important occasion to be recorded.</p>
 
   <div class="row">
     {% if page.fullwidth %}
@@ -23,7 +23,7 @@ layout: main-en
         <meta itemprop="keywords" content="{{ post.tags | join: ',' }}" />
         <meta itemprop="description" content="{{ post.excerpt | strip_html | truncatewords: 40 }}" />
         <header class="post-header">
-          <h4 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+          <h3 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
           <p class="post-meta">
             {% if post.icon %}<i class="pe-{{ post.icon }} pe-2x pull-right post-icon"></i>{% endif %}
             <span class="darkgreen"><i class="pe-newspaper-o pe-fw"></i> Reading time:

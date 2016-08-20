@@ -5,7 +5,8 @@
 
     {% for entry in site.data.vision %}
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-      <p>{% capture stack %}{% include 0-base/stack.html icon = entry.icon shape = "circle" size = "3" inverse = "true" title = entry.title %}{% endcapture %}{{ stack | rstrip }}</p>
+      {% capture stack %}{% include 0-base/stack.html icon = entry.icon shape="circle" size="3" inverse="true" title=entry.title %}{% endcapture %}
+      <p>{{ stack | strip }}</p>
       <h3>{{ entry.title }}</h3>
       <p>{{ entry.description }}</p>
     </div>

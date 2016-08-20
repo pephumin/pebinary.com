@@ -1,9 +1,11 @@
 ---
+title: "Blog archiver"
+section: blog
 layout: main-en
 ---
 
 <section class="container blog">
-  <h2>Blog archive by {{ page.type }}</h2>
+  <h2>Blog archiver shown by {{ page.type }}</h2>
   <div class="row">
     {% if site.jekyll-archives.fullwidth %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
@@ -23,7 +25,7 @@ layout: main-en
         <meta itemprop="description" content="{{ post.excerpt | strip_html | truncatewords: 40 }}" />
         {% for post in page.posts limit:site.jekyll-archives.limit %}
         <header class="post-header">
-          <h4 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+          <h3 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
           <p class="post-meta">
             {% if post.icon %}<i class="pe-{{ post.icon }} pe-2x pull-right post-icon"></i>{% endif %}
             <span class="darkgreen"><i class="pe-newspaper-o pe-fw"></i> Reading time:
@@ -54,10 +56,8 @@ layout: main-en
         </div>
         <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}" class="blog-button">Read more <i class="pe-map-o pe-fw"></i></a></p>
         <div class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">{{ site.title }}</div>
+        {% endfor %}
       </article>
-      {% endfor %}
-      <!-- <br><br> -->
-      <!-- <p class="text-right"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="button-x"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p> -->
     </div>
     {% unless site.jekyll-archives.fullwidth %}
     <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
