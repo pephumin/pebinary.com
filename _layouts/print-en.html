@@ -10,27 +10,23 @@ layout: brew
   <link rel="stylesheet" media="all" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" media="all" type="text/css" href="{{ "/assets/css/print.css" | prepend: site.baseurl }}">
 </head>
-
 <body>
-
-<br>
-<header class="container printing">
-<div class="pull-right">[<a href="{{ page.original | prepend: site.baseurl }}" class="except1">Back to full graphic mode <i class="pe-picture-o pe-lg pe-fw"></i></a>]</div>
-<div class="small pull-left">
-  <i class="pe-print pe-fw"></i> Print version: <strong>{{ page.title }}</strong><br>
-  <i class="pe-globe pe-fw"></i> From URL: <a href="{{ page.url | prepend: site.domains.main-en }}" class="except2">{{ page.url | prepend: site.domains.main-en }}</a>
-</div>
+<header class="print-header">
+  <section class="container">
+    <div class="p1">[<a href="{{ page.original | prepend: site.baseurl }}">Back to full graphic mode <i class="pe-picture-o pe-lg pe-fw"></i></a>]</div>
+    <div class="p2">
+      <i class="pe-print pe-fw"></i> Print version: <strong>{{ page.title }}</strong><br>
+      <i class="pe-globe pe-fw"></i> From URL: <a href="{{ page.url | prepend: site.domains.main-en }}">{{ page.url | prepend: site.domains.main-en }}</a>
+    </div>
+  </section>
 </header>
-<hr>
-
 {{ content }}
-
-<hr>
-<p class="text-center small">
-<i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
-<a href="{{ "/" | prepend: site.baseurl }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
-<span class="hidden-xs hidden-sm">All rights reserved.</span>
-</p>
-
+<footer class="print-footer">
+  <section class="container p3">
+    <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
+    <a href="{{ "/" | prepend: site.baseurl }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
+    <span class="hidden-xs hidden-sm">All rights reserved.</span>
+  </section>
+</footer>
 </body>
 </html>
