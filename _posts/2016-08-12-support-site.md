@@ -40,9 +40,10 @@ We plan to finish the template within a month from now. And we will then complet
 Some additional functions are also currently considered which can be listed out below:
 
 - [ ] Bilingual (English/Thai)
-- [x] Breadcrumb
-- [ ] Similar or related topics
-- [x] Feedback function o users can comment if a topic is helpful (using Yes/No)
+- [ ] Breadcrumb
+- [ ] Similar topics
+- [ ] Other topics that other clients/members also read
+- [ ] Read if the current topic is helpful (usiung Yes/No)
 - [ ] Submit function for new topic (or need more help)
 
 
