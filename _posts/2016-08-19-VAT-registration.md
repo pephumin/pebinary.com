@@ -12,6 +12,8 @@ In order to ensure we are aligned with Thai government regulation, we have regis
 
 The process has been quite painful because it requires quite a lot of effort including the workspace arrangement at the venue we registered for the company (in order to show the company really exists!?!), plus having the actual company signage placed in front of the building at the entrance. There has also been an approve from staff of [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %} since they came and inspected the venue according.
 
+{% include 0-base/alert.html type = "pe" close = "yes" icon = "exclamation-triangle" intro = "Note" msg = "Value Added Tax (VAT) has been implemented in Thailand since 1992 replacing Business Tax (BT). VAT is an indirect tax imposed on the value added of each stage of production and distribution." %}
+
 Value Added Tax (VAT) has been implemented in Thailand since 1992 replacing Business Tax (BT). VAT is an indirect tax imposed on the value added of each stage of production and distribution.
 
 - Any person or entity who regularly supplies goods or provides services in Thailand and has an annual turnover exceeding 1.8 million baht is subject to VAT in Thailand. Service is deemed to be provided in Thailand if the service is performed in Thailand regardless where it is utilized or if it is performed elsewhere and utilized in Thailand.
