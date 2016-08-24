@@ -43,7 +43,7 @@ if(strlen($error) > 0) {
 
   $r_email = "phumin@pebinary.com";
   $r_subject = "Web email from ".clean_string($s_email).";
-  $r_message = "Form details below.\n\n";
+  $r_message = "Details below:\n\n";
   $r_message .= "Name: ".clean_string($s_name)."\n";
   $r_message .= "Email: ".clean_string($s_email)."\n";
   $r_message .= "Message: ".clean_string($s_message)."\n";
