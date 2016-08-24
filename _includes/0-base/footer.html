@@ -24,12 +24,12 @@
   <div class="footer-3">
     <div class="container">
       <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
-      <a href="{{ "/" | prepend: site.baseurl }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
+      <a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
       <span class="hidden-xs hidden-sm">All rights reserved.</span>
       <nav class="footer">
         <ul class="list-inline">
           {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
-          <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+          <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
           {% endunless %}{% endfor %}
         </ul>
       </nav>

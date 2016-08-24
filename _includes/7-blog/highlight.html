@@ -8,7 +8,7 @@
             {% assign title = highlight.title | slugify %}
             {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
             {% assign url = "/blog/" | append: date | append: "/" | append: title %}
-            <li><a href="{{ url | prepend: site.baseurl }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small></li>
+            <li><a href="{{ url | prepend: site.baseurl }}" title="{{ highlight.title }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small></li>
             {% endfor %}
           </ul>
         </section>
@@ -17,7 +17,7 @@
           <div class="list-group">
             {% for category in site.categories %}
             {% assign sorted_posts = category[0] | reverse %}
-            <a href="/blog/category/{{ category | first | slugify | prepend: site.baseurl }}" class="list-group-item">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
+            <a href="/blog/category/{{ category | first | slugify | prepend: site.baseurl }}" class="list-group-item" title="Category: {{ category[0] }}">{{ category[0] | replace:'-', ' ' }} <span class="badge">{{ category | last | size }}</span></a>
             {% endfor %}
           </div>
         </section>
@@ -26,7 +26,7 @@
           <p class="blog-tags">
             {% for tag in site.tags %}
             {% assign sorted_posts = tag[0] | reverse %}
-            <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | first | slugify | prepend: site.baseurl }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
+            <i class="pe-tag pe-fw"></i> <a href="/blog/tag/{{ tag | first | slugify | prepend: site.baseurl }}" title="Tag: {{ tag[0] }}">{{ tag[0] | replace:'-', ' ' }}</a> ({{ tag | last | size }})
             {% endfor %}
           </p>
         </section>
