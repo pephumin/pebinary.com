@@ -1,6 +1,6 @@
 ---
 title: "humans.txt"
-section: home
+section: "home"
 permalink: /humans.txt
 layout:
 search: exclude

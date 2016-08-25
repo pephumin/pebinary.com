@@ -1,5 +1,6 @@
 ---
 title: "Search database"
+section: "home"
 permalink: /search.json
 layout:
 search: exclude

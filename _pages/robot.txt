@@ -1,6 +1,6 @@
 ---
 title: "robot.txt"
-section: home
+section: "home"
 permalink: /robot.txt
 layout:
 search: exclude

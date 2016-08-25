@@ -1,6 +1,6 @@
 ---
 title: "Blog feed"
-section: blog
+section: "blog"
 permalink: /blog/atom.xml
 layout:
 search: exclude
