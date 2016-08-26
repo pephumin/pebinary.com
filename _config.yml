@@ -30,7 +30,6 @@ google_analytics:     UA-82554411-1
 
 markdown:             kramdown
 highlighter:          rouge
-#highlighter:         pygments
 kramdown:
   input:              GFM
   auto_ids:           true
@@ -40,6 +39,9 @@ kramdown:
   smart_quotes:       lsquo,rsquo,ldquo,rdquo
   hard_wrap:          false
   footnote_nr:        1
+# sass:
+#   sass_dir:           _sass
+#   style:              compressed
 
 domains:
   main-en:            http://www.pebinary.com
