@@ -8,3 +8,6 @@ Icon?
 run
 Gemfile
 Gemfile.lock
+.firebaserc
+firebase.json
+database.rules.json
