@@ -12,7 +12,7 @@ We start building a new section of the website which can be considered as a `min
 
 The new `mini-website` that we are building is the `Support section` which will contain all guiding and instruction documents for both clients and menbers.
 
-At this stage, we will use __[http://support.pebinary.com]__ as the sub-domain name for this `mini-website`, and it will be divided into two main sections which are section specifically for clients and members.
+At this stage, we will use __[http://www.pebinary.net]__ as the sub-domain name for this `mini-website`, and it will be divided into two main sections which are section specifically for clients and members.
 
 And, as one would have expected, similar to the main website we will build it by using a combination of [HTML] {% include 0-base/ext.html %}, [Cascading Style Sheets] {% include 0-base/ext.html %}, [Ruby] {% include 0-base/ext.html %} (programming language), and [Markdown] {% include 0-base/ext.html %}.
 
@@ -49,7 +49,7 @@ Some additional functions are also currently considered which can be listed out 
 And lastly, the ultimate objective is to use both the layout and the typography that are very easy to read for users. A slightly larger font size (than normal) is currently under our consideration.
 
 
-[http://support.pebinary.com]: http://support.pebinary.com
+[http://www.pebinary.net]: http://www.pebinary.net
 [HTML]: https://www.w3.org/html/
 [HTML5]: http://www.w3.org/TR/html5/
 [html5-logo]: {{ "/assets/img/others/html5.svg" | prepend: site.baseurl }} "Logo of HTML5"

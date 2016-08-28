@@ -12,35 +12,6 @@
     left: 0
     min-width: 100%
     height: 500px
-    //filter: blur(7px)
-
-  .landing-control
-    position: absolute
-    top: 0
-    left: 0
-    bottom: 0
-    width: 15%
-    opacity: 0.9
-    filter: alpha(opacity = 90)
-    font-size: 30px
-    color: $white
-    text-align: center
-    text-shadow: 0 1px 2px transparentize($black, 0.4)
-    background-color: transparent
-
-    &.left
-      background-image: -webkit-linear-gradient(left, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
-      background-image: -o-linear-gradient(left, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
-      background-image: linear-gradient(to right, transparentize($black, 0.5) 0%, transparentize($black, 0.99) 100%)
-      background-repeat: repeat-x
-
-    &.right
-      left: auto
-      right: 0
-      background-image: -webkit-linear-gradient(left, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
-      background-image: -o-linear-gradient(left, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
-      background-image: linear-gradient(to right, transparentize($black, 0.99) 0%, transparentize($black, 0.5) 100%)
-      background-repeat: repeat-x
 
   .landing-headline
     position: absolute
@@ -65,35 +36,71 @@
   .landing-form
     color: $white
     border-collapse: separate
+    text-align: left
+
+    label
+      text-align: left
+
+    input
+      height: 20px
 
     .button-lg-x
       margin: 20px auto
       display: block
       width: 100%
 
-    .input-group .form-control
-      position: relative
-      z-index: 2
-      float: left
+    .button-lg-x.green
+      color: $white
+      background-color: $darkgreen
+      border: 2px solid $darkgreen
       width: 100%
-      margin-bottom: 0
-      display: table
-      border-collapse: separate
-
-    .input-group-addon
-      padding: 6px 12px
-      line-height: 1
-      color: $grey
+      margin: 10px auto
       text-align: center
-      background-color: none
-      border: 1px solid $silver
-      border-radius: 4px
-      width: 1%
+      letter-spacing: 0.1rem
+      text-transform: uppercase
+      text-decoration: none
+      display: block
+      line-height: 30px
+      padding: 5px 25px
       white-space: nowrap
-      vertical-align: middle
+      border-radius: 6px
+      cursor: pointer
+      box-sizing: border-box
+      -webkit-transition: all 0.15s ease-out 0s
+      transition: all 0.15s ease-out 0s
 
-    .margin-bottom
-      margin-bottom: 10px !important
+      &:hover,
+      &:active,
+      &:focus
+        color: $darkgreen
+        background-color: transparent
+        border: 2px solid $darkgreen
+        outline: 0
+        text-decoration: none
+
+    // .input-group .form-control
+    //   position: relative
+    //   z-index: 2
+    //   float: left
+    //   width: 100%
+    //   margin-bottom: 0
+    //   display: table
+    //   border-collapse: separate
+
+    // .input-group-addon
+    //   padding: 6px 12px
+    //   line-height: 1
+    //   color: $grey
+    //   text-align: center
+    //   background-color: none
+    //   border: 1px solid $silver
+    //   border-radius: 4px
+    //   width: 1%
+    //   white-space: nowrap
+    //   vertical-align: middle
+
+    // .margin-bottom
+    //   margin-bottom: 10px !important
 
     .form-control
       height: 50px
@@ -126,5 +133,8 @@
 
     .landing-form
 
-      .button-lg-x
-        margin: 10px auto
+      // input
+      //   height: 10px
+
+      .button-lg-x.green
+        margin: 5px auto
