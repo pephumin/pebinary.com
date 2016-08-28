@@ -29,7 +29,11 @@
       <nav class="footer">
         <ul class="list-inline">
           {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
+          {% if footer.host == "main-en" %}
+          <li><a href="{{ footer.url | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+          {% else %}
           <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+          {% endif %}
           {% endunless %}{% endfor %}
         </ul>
       </nav>

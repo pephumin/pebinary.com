@@ -113,7 +113,7 @@ header2:
       disable: true
     - title: "Member manual"
       icon: file-text-o
-      host: support-en
+      host: support
       url: "/members/"
       label:
       label-color:
@@ -172,7 +172,7 @@ header2:
       disable:
     - title: "Client manual"
       icon: file-text-o
-      host: support-en
+      host: support
       url: "/clients/"
       label:
       label-color:
@@ -236,7 +236,7 @@ header3:
       text: "Dedicate support site"
     - title: "Knowledge library"
       icon: university
-      host: support-en
+      host: support
       url: "/"
       label:
       label-color:

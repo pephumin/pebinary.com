@@ -46,9 +46,9 @@ kramdown:
 domains:
   main-en:            http://www.pebinary.com
   main-th:            http://www.pebinary.co.th
-  client:             http://www.siamsquare.net
+  support:            http://www.pebinary.net
   member:             http://www.siamsquare.org
-  support:            http://support.pebinary.com
+  client:             http://www.siamsquare.net
 
 include:
   - _pages

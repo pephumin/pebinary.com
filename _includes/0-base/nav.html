@@ -9,7 +9,11 @@
         <span class="icon-bar"></span>
       </button>
       {% for entry in site.data.navigation.header1 %}
+      {% if entry.host == "main-en" %}
+      <a href="{{ entry.url | prepend: site.baseurl }}" class="navbar-brand" title="{{ entry.title }}"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
+      {% else %}
       <a href="{{ entry.url | prepend: site.data.domains.[entry.host] | prepend: site.baseurl }}" class="navbar-brand" title="{{ entry.title }}"><i class="pe-{{ entry.icon }} pe-fw"></i> {{ entry.title }}</a>
+      {% endif %}
       {% endfor %}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
@@ -23,7 +27,7 @@
             {% elsif item.title == "header" %}
             <li class="dropdown-header">{{ item.text }}</li>
             {% else %}
-            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.urlexternal %}<a href="{{ item.urlexternal }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% elsif item.host == "main-en" %}<a href="{{ item.url | prepend: site.data.domains.[item.host] | prepend: site.baseurl }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% else %}<a href="{{ item.url | prepend: site.data.domains.[item.host] }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% endif %}</li>
+            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.urlexternal %}<a href="{{ item.urlexternal }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% elsif item.host == "main-en" %}<a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% else %}<a href="{{ item.url | prepend: site.data.domains.[item.host] }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% endif %}</li>
             {% endif %}{% endfor %}
           </ul>
         </li>
@@ -39,7 +43,7 @@
             {% elsif item.title == "header" %}
             <li class="dropdown-header">{{ item.text }}</li>
             {% else %}
-            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.urlexternal %}<a href="{{ item.urlexternal }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% elsif item.host == "main-en" %}<a href="{{ item.url | prepend: site.data.domains.[item.host] | prepend: site.baseurl }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% else %}<a href="{{ item.url | prepend: site.data.domains.[item.host] }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% endif %}</li>
+            {% if item.disable %}<li class="disabled">{% elsif item.url == page.url %}<li class="active">{% else %}<li>{% endif %}{% if item.urlexternal %}<a href="{{ item.urlexternal }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% elsif item.host == "main-en" %}<a href="{{ item.url | prepend: site.baseurl }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% else %}<a href="{{ item.url | prepend: site.data.domains.[item.host] }}" title="{{ item.title }}"><i class="pe-{{ item.icon }} pe-fw"></i> {{ item.title }}{% if item.badge %} <span class="badge">{{ site.posts | size }}</span>{% endif %}{% if item.label %} <span class="label {{ item.label-color }}">{{ item.label }}</span>{% endif %}</a>{% endif %}</li>
             {% endif %}{% endfor %}
           </ul>
         </li>
