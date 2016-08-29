@@ -13,12 +13,12 @@ thaititle:            "บริษัท พีอี ไบนารี่ จ
 email:                support@pebinary.com
 description:          "A market research company specialised in mobile survey"
 locale:               en-GB
-permalink:            pretty
+permalink:            date
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 4000
-#url:                 http://pephumin.github.io
-baseurl:              /pebinary.com
+# url:                  http://pephumin.github.io
+# baseurl:              /pebinary.com
 paginate:             5
 paginate_path:        /blog/:num/
 permalink:            /blog/:year/:month/:day/:title
@@ -39,16 +39,16 @@ kramdown:
   smart_quotes:       lsquo,rsquo,ldquo,rdquo
   hard_wrap:          false
   footnote_nr:        1
-# sass:
-#   sass_dir:           _sass
-#   style:              compressed
+sass:
+  sass_dir:           _sass
+  style:              compressed
 
 domains:
   main-en:            http://www.pebinary.com
   main-th:            http://www.pebinary.co.th
   support:            http://www.pebinary.net
   member:             http://www.siamsquare.org
-  client:             http://www.siamsquare.net
+  client:             http://www.siamsquare.org/admin
 
 include:
   - _pages
@@ -61,12 +61,15 @@ exclude:
   - Icon?
   - Gemfile
   - Gemfile.lock
+  - database.rules.json
+  - firebase.json
+  - .firebaserc
 
 gems:
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-timeago
-  - jekyll-archives
 
 jekyll-archives:
   enabled:
@@ -111,7 +114,7 @@ defaults:
     scope:
       path:           ""
       type:           "posts"
-      permalink:      /blog/:year/:month/:day/:title
+      permalink:      /blog/:year/:month/:day/:title.html
     values:
       layout:         "blog-en"
       author:         "admin"
