@@ -10,4 +10,5 @@ Gemfile
 Gemfile.lock
 .firebaserc
 firebase.json
+firebase-debug.log
 database.rules.json
