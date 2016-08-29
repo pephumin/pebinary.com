@@ -111,14 +111,6 @@ header2:
       label-color:
       badge:
       disable: true
-    - title: "Member manual"
-      icon: file-text-o
-      host: support
-      url: "/members/"
-      label:
-      label-color:
-      badge:
-      disable: true
     - title: separator
     - title: header
       text: "Join our membership"
@@ -136,6 +128,14 @@ header2:
       url: "/login"
       label:
       label-color:
+      badge:
+      disable:
+    - title: "Member support"
+      icon: file-text-o
+      host: support
+      url: "/members/"
+      label: "new"
+      label-color: "red"
       badge:
       disable:
 
@@ -158,8 +158,8 @@ header2:
       icon: thumbs-o-up
       host: main-en
       url: "/clients/benefits.html"
-      label: "new"
-      label-color: "blue"
+      label:
+      label-color:
       badge:
       disable:
     - title: "Testimonials"
@@ -170,14 +170,6 @@ header2:
       label-color: "green"
       badge:
       disable:
-    - title: "Client manual"
-      icon: file-text-o
-      host: support
-      url: "/clients/"
-      label:
-      label-color:
-      badge:
-      disable: true
     - title: separator
     - title: header
       text: "Work with us"
@@ -195,6 +187,14 @@ header2:
       url: "/login"
       label:
       label-color:
+      badge:
+      disable:
+    - title: "Client support"
+      icon: file-text-o
+      host: support
+      url: "/clients/"
+      label: "new"
+      label-color: "red"
       badge:
       disable:
 
@@ -234,14 +234,14 @@ header3:
     - title: separator
     - title: header
       text: "Dedicate support site"
-    - title: "Knowledge library"
+    - title: "PEB Support"
       icon: university
       host: support
       url: "/"
-      label:
-      label-color:
+      label: "new"
+      label-color: "red"
       badge:
-      disable: true
+      disable:
     - title: separator
     - title: header
       text: "Read our updates"
@@ -250,7 +250,7 @@ header3:
       host: main-en
       url: "/blog/"
       label: "updated"
-      label-color: "red"
+      label-color: "blue"
       badge: true
       disable:
 
