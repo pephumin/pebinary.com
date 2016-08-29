@@ -131,7 +131,7 @@ header2:
       badge:
       disable:
     - title: "Member support"
-      icon: file-text-o
+      icon: university
       host: support
       url: "/members/"
       label: "new"
@@ -190,7 +190,7 @@ header2:
       badge:
       disable:
     - title: "Client support"
-      icon: file-text-o
+      icon: university
       host: support
       url: "/clients/"
       label: "new"
