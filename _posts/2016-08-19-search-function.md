@@ -14,7 +14,7 @@ It is a simple and quick search which will take no efforts from users to click t
 
 The search function itself is coded by using a combination of [Ruby] {% include 0-base/ext.html %} and [javascript] {% include 0-base/ext.html %} which is simple enough to be integrated to our website.
 
-We currently use this function only for the Blog section. And we will soon expand the usage to our sister website, __[http://support.pebinary.com]__, which would be very beneficial for all members and clients in the future on searching for the right help documents to read quicker.
+We currently use this function only for the Blog section. And we will soon expand the usage to our sister website, __[http://www.pebinary.net]__, which would be very beneficial for all members and clients in the future on searching for the right help documents to read quicker.
 
 The `search function` can be easily found in the [Blog] section on the right menu. Below is the example on how it looks like although its function is not working (just a demo here).
 
@@ -27,7 +27,7 @@ The `search function` can be easily found in the [Blog] section on the right men
 
 
 [Blog]: {{ "/blog/" | prepend: site.baseurl }}
-[http://support.pebinary.com]: http://support.pebinary.com
+[http://www.pebinary.net]: http://www.pebinary.net
 [Ruby]: https://www.ruby-lang.org
 [ruby-logo]: {{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }} "Logo of Ruby"
 [javascript]: https://www.javascript.com

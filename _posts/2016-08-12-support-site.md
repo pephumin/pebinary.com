@@ -40,10 +40,10 @@ We plan to finish the template within a month from now. And we will then complet
 Some additional functions are also currently considered which can be listed out below:
 
 - [ ] Bilingual (English/Thai)
-- [x] Breadcrumb
 - [ ] Similar or related topics
+- [x] Breadcrumb
 - [x] Feedback function o users can comment if a topic is helpful (using Yes/No)
-- [ ] Submit function for new topic (or need more help)
+- [x] Submit function for new topic (or need more help)
 
 
 And lastly, the ultimate objective is to use both the layout and the typography that are very easy to read for users. A slightly larger font size (than normal) is currently under our consideration.

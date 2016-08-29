@@ -35,7 +35,7 @@ Below is the detail of our bank information.
 
 <table class="table table-hover">
   <thead>
-    <tr class="bg-info">
+    <tr class="bg-primary">
       <th>Information</th>
       <th>Details</th>
     </tr>
