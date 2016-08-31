@@ -12,8 +12,8 @@ title:                "PE BINARY CO., LTD."
 thaititle:            "บริษัท พีอี ไบนารี่ จำกัด"
 email:                support@pebinary.com
 description:          "A market research company specialised in mobile survey"
-locale:               en-GB
-permalink:            date
+locale:               en
+# permalink:            pretty
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 4000
@@ -114,9 +114,9 @@ defaults:
     scope:
       path:           ""
       type:           "posts"
-      permalink:      /blog/:year/:month/:day/:title.html
+      permalink:      /blog/:year/:month/:day/:title
     values:
-      layout:         "blog-en"
+      layout:         "blog"
       author:         "admin"
       author-email:   "admin@pebinary.com"
   -
@@ -124,4 +124,4 @@ defaults:
       path:           "_pages"
       type:           "pages"
     values:
-      layout:         "main-en"
+      layout:         "main"
