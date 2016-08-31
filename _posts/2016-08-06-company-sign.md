@@ -22,11 +22,23 @@ Below is the picture of the tentative look of our signage (based on our initial 
 <img class="img-thumbnail" src="{{ "/assets/img/logo/signage.jpg" | prepend: site.baseurl }}" alt="For producing a signage" title="For producing a signage">
 
 
-***Please be noted that the above signage was developed with help from our best friend, [benjy]. So, we would like to take this opportunity to say `thank you` to her for all supports she has ben provided throughout two decades. Many things would be possible without her support both functionally and emotionally.***
+***Please be noted that the above signage was developed with help from our best friend, <i class="pe-heart"></i> [benjy]. So, we would like to take this opportunity to say `thank you` to her for all supports she has ben provided throughout two decades. Many things would be possible without her support both functionally and emotionally.***
 
 <!--more-->
 
 We also have got the suggested dimension for our signage to be 88cm x 22cm. We prefer to have the logo and all letters written in white while the background will be in a darker colour tone.
+
+---
+
+#### Updated on 31 August 2016
+
+Below is the picture of the finished signage which is ready to be installed in the front of the venue. And the schedule to install this signage has been planned to be on **10 September 2016**.
+
+<img class="img-thumbnail" src="{{ "/assets/img/others/IMG_6576.jpg" | prepend: site.baseurl }}" alt="Signage is ready and waiting for a proper installation" title="Signage is ready and waiting for a proper installation">
+
+Clearly the background colour has been done to match with the original intended colour deviating from the background colour seen previously in the design photo above. And in realistic situation, it is not possible to cut acrylic that thin although the cut was made by using the thinnest laser controlled by accurate computer.
+
+**And yes, overall we can say that we are very happy with the outcome**.
 
 
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
