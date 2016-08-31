@@ -2,7 +2,7 @@
 title: "Blog"
 section: "blog"
 fullwidth: false
-layout: main-en
+layout: main
 ---
 
 <section class="container blog">
@@ -13,10 +13,10 @@ layout: main-en
 
   <div class="row">
     {% if page.fullwidth %}
-  	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
-  	{% else %}
-  	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
-  	{% endif %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-content">
+    {% else %}
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
+    {% endif %}
 
       {% for post in paginator.posts %}
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -79,10 +79,10 @@ layout: main-en
 
     </div>
     {% unless page.fullwidth %}
-  	<div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 blog-menu">
 {% include 7-blog/highlight.html %}
     </div>
-  	{% endunless %}
+    {% endunless %}
   </div>
 
 </section>
