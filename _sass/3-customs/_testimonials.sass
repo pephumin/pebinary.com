@@ -6,17 +6,28 @@
   // p
   //   font-size: 0.9rem
 
-.reference
+.reference-wrap
+  border: 2px dotted transparent
+
+.reference-person
+  width: 100%
   border: 1px solid $lightgrey
   border-radius: 10px
   background-color: aliceblue
   padding: 20px
   margin: 20px
+  box-shadow: 5px 5px 5px $silver
+
+  &:hover
+    text-decoration: none
+    border-color: $grey
+    box-shadow: 0px 5px 5px $lightgrey
 
   blockquote
     margin: 0
     padding: 0
-    font-size: 1.1rem
+    font-family: "snippet"
+    font-size: 1.3rem
     line-height: 1.4
     border: none
 
