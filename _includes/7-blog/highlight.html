@@ -3,14 +3,15 @@
         <section class="blogrightmenu">
           <h4>Highlights</h4>
           <p><q><strong>Some key highlighted blogs providing useful information to clients / members</strong></q></p>
-          <ul>
+          <ul class="bloglisting">
             {% for highlight in site.data.blogs %}
             {% assign title = highlight.title | slugify %}
             {% assign date = highlight.timestamp | date: "%Y/%m/%d" %}
-            {% assign url = "/blog/" | append: date | append: "/" | append: title | prepend: site.baseurl %}
-            <li><a href="{{ url | prepend: site.baseurl }}" title="{{ highlight.title }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small></li>
+            {% assign url = "/blog/" | append: date | append: "/" | append: title | append: ".html" | prepend: site.baseurl %}
+            <li class="bloglisting-item"><a href="{{ url | prepend: site.baseurl }}" title="{{ highlight.title }}">{{ highlight.title }}</a> <small class="lightgrey">({{ highlight.timestamp | timeago }})</small></li>
             {% endfor %}
           </ul>
+          <p class="blog-summary">[<a href="{{ "/blog/summary.html" | prepend: site.baseurl }}" title="View all blogs">view all</a>]</p>
         </section>
         <section class="blogrightmenu">
           <h4>Categories</h4>

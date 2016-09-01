@@ -21,7 +21,7 @@ port:                 4000
 # baseurl:              /pebinary.com
 paginate:             5
 paginate_path:        /blog/:num/
-permalink:            /blog/:year/:month/:day/:title
+permalink:            /blog/:year/:month/:day/:title.html
 quiet:                false
 verbose:              true
 encoding:             utf-8
@@ -114,7 +114,7 @@ defaults:
     scope:
       path:           ""
       type:           "posts"
-      permalink:      /blog/:year/:month/:day/:title
+      permalink:      /blog/:year/:month/:day/:title.html
     values:
       layout:         "blog"
       author:         "admin"
