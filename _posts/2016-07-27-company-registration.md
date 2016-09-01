@@ -4,7 +4,7 @@ date: 2016-07-27 14:51:05 +0700
 category: [setup, legal]
 tags: [company]
 quote:
-icon: book
+icon: flag-checkered
 published: true
 ---
 
