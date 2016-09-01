@@ -18,18 +18,18 @@ layout: main
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 blog-content">
     {% endif %}
 
-      <ul>
+      <ul class="bloglisting">
       {% for post in site.posts %}
         {% unless post.next %}
-          <h3 class="post-title">{{ post.date | date: '%Y %b' }}</h3>
+          <h3 class="bloglisting-title">{{ post.date | date: "%B %Y" }}</h3>
         {% else %}
           {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
           {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
           {% if year != nyear %}
-          <h3 class="post-title">{{ post.date | date: '%Y %b' }}</h3>
+          <h3 class="bloglisting-title">{{ post.date | date: "%B %Y" }}</h3>
           {% endif %}
         {% endunless %}
-        <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - (posted: {{ post.date | timeago }})</li>
+        <li class="bloglisting-item"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - (posted: {{ post.date | timeago }})</li>
       {% endfor %}
       </ul>
 
