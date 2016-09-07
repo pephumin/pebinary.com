@@ -1,6 +1,6 @@
 
 <section class="landing">
-  <img src="{{ "/assets/img/landing.jpg" | prepend: site.baseurl }}" class="img-responsive">
+  <img src="{{ "/assets/img/landing.jpg" | prepend: site.baseurl }}" class="img-responsive" alt="Let us partner you with modern research method">
   <div class="row landing-headline">
     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 landing-text">
       <h2>Let us partner you with modern research method</h2>
@@ -10,31 +10,29 @@
     <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 landing-form">
       <form name="clientform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
         <div class="form-group has-feedback">
-          <label for="InputName">Name</label> <span class="label blue">required</span>
-          <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+          <label>Name</label> <span class="label blue">required</span>
+          <input type="text" class="form-control" name="name_large" placeholder="Your name" required>
           <i class="pe-user form-control-feedback"></i>
         </div>
         <div class="form-group has-feedback">
-          <label for="InputEmail">Email</label> <span class="label blue">required</span>
-          <input type="email" class="form-control" name="email" id="email" placeholder="email@company.com" required>
+          <label>Email</label> <span class="label blue">required</span>
+          <input type="email" class="form-control" name="email_large" placeholder="email@company.com" required>
           <i class="pe-envelope-o form-control-feedback"></i>
         </div>
-        <button type="submit" name="submit" class="button-lg-x blue">contact us <i class="pe-envelope-o pe-fw"></i></button>
+        <button type="submit" name="submit_large" class="button-lg-x blue">contact us <i class="pe-envelope-o pe-fw"></i></button>
       </form>
     </div>
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg landing-form">
       <form name="clientform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
         <div class="form-group has-feedback">
-          <!-- <label for="InputName">Name</label> <span class="label">required</span> -->
-          <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+          <input type="text" class="form-control" name="name_small" placeholder="Your name" required>
           <i class="pe-user form-control-feedback"></i>
         </div>
         <div class="form-group has-feedback">
-          <!-- <label for="InputEmail">Email</label> <span class="label">required</span> -->
-          <input type="email" class="form-control" name="email" id="email" placeholder="email@company.com" required>
+          <input type="email" class="form-control" name="email_small" placeholder="email@company.com" required>
           <i class="pe-envelope-o form-control-feedback"></i>
         </div>
-        <button type="submit" name="submit" class="button-lg-x blue">contact us <i class="pe-envelope-o pe-fw"></i></button>
+        <button type="submit" name="submit_small" class="button-lg-x blue">contact us <i class="pe-envelope-o pe-fw"></i></button>
       </form>
     </div>
   </div>

@@ -18,9 +18,9 @@ layout: main
             {% if page.icon %}<i class="pe-{{ page.icon }} pe-3x pull-right post-icon"></i>{% endif %}
             <i class="pe-pencil-square pe-fw"></i> Written by:
             <span itemprop="author" itemscope itemtype="http://schema.org/Person"><strong>{{ page.author }}</strong></span>
-            {% if page.author-email %}(<i class="pe-envelope-o pe-fw"></i> <a href="mailto:{{ page.author-email}}" title="Email to {{ page.author-email}}" itemprop="email" itemtype="http://schema.org/Person">{{ page.author-email}}</a>){% endif %}
-            <br><i class="pe-calendar pe-fw"></i> Date: <time datetime="{{ page.date | date: "%A %-d %b %Y" }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time> ({{ page.date | timeago }})
-            <br><i class="pe-clock-o pe-fw"></i> Time: <time datetime="{{ page.date | date: "%H:%M %p (GMT %z)" }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
+            {% if page.author-email %}(<i class="pe-envelope-o pe-fw"></i> <a href="mailto:{{ page.author-email}}" title="Email to {{ page.author-email}}" itemprop="email" itemscope itemtype="http://schema.org/Person">{{ page.author-email}}</a>){% endif %}
+            <br><i class="pe-calendar pe-fw"></i> Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A %-d %b %Y" }}</time> ({{ page.date | timeago }})
+            <br><i class="pe-clock-o pe-fw"></i> Time: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%H:%M %p (GMT %z)" }}</time>
             <br><i class="pe-globe pe-fw"></i> Location: <span itemprop="contentLocation">{{ site.timezone }}</span>
             <br>Category:&nbsp;
             {% if page.categories %}
@@ -37,16 +37,16 @@ layout: main
           </p>
         </header>
         <div class="post-content" itemprop="articleBody">
-          {{ content | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' | replace: '<img src', '<img class="img-responsive" src' }}
+          {{ content | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: "[/]</li>", "</span></li>" }}
         </div>
-        <p class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <div class="blog-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
              <meta itemprop="url" content="{{ "/assets/img/logo/logo-600x600.png" | prepend: site.baseurl }}">
              <meta itemprop="width" content="600">
              <meta itemprop="height" content="600">
            </div>
            <meta itemprop="name" content="{{ site.title }}">
-         </p>
+         </div>
       </article>
     <p class="blog-back"><a href="{{ "/blog/" | prepend: site.baseurl }}" class="blog-button-x" title="Back to Blog"><i class="pe-arrow-circle-left"></i> Back to Blog</a></p>
     </div>

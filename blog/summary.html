@@ -29,7 +29,7 @@ layout: main
           <h3 class="bloglisting-title">{{ post.date | date: "%B %Y" }}</h3>
           {% endif %}
         {% endunless %}
-        <li class="bloglisting-item"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - (posted: {{ post.date | timeago }})</li>
+        <li class="bloglisting-item"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - (posted: <time date="{{ post.date | date_to_xmlschema }}">{{ post.date | timeago }}</time>)</li>
       {% endfor %}
       </ul>
 

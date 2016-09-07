@@ -26,68 +26,26 @@ Below is the example of how the `slideshow` looks like.
       <li data-target="#slideshow" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
+      {% for entry in site.data.slideshow %}
+      {% if forloop.first %}
       <div class="item active">
-        <img class="slide img-responsive" src="{{ "/assets/img/carousel/c1.jpg" | prepend: site.baseurl }}" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>Bored of waiting months for survey results?</h2>
-            <p>Our core value is to provide survey results as quickly as possible as we know that time is important.
-               We help you make quicker business actions and be ahead of the competition.</p>
-            <p><a class="button-lg-x" href="{{ "/contact/" | prepend: site.baseurl }}" role="button">contact <span class="hidden-xs hidden-sm">us</span> <i class="pe-envelope-o pe-fw"></i></a></p>
-          </div>
-        </div>
-      </div>
+      {% else %}
       <div class="item">
-        <img class="slide img-responsive" src="{{ "/assets/img/carousel/c2.jpg" | prepend: site.baseurl }}" alt="">
+      {% endif %}
+      {% capture img %}/assets/img/carousel/{{ entry.picture }}{% endcapture %}
+        <img class="slide img-responsive" src="{{ img | prepend: site.baseurl }}" alt="{{ entry.title }}">
         <div class="container">
           <div class="carousel-caption">
-            <h2>Data is collected with the mobile platform</h2>
-            <p>We leverage the high mobile penetration in the modern world.
-               The ability to connect directly with respondents provide us with an opportunity to draw insights from them directly.</p>
-            <p><a class="button-lg-x" href="{{ "#" | prepend: site.baseurl }}" role="button"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a></p>
+            <h2>{{ entry.title }}</h2>
+            <p>{{ entry.description }}</p>
+            <p><a class="{{ entry.button-type }}" href="{{ entry.button-url | prepend: site.baseurl }}" role="button">{{ entry.button }} <i class="pe-{{ entry.button-icon }} pe-fw"></i></a></p>
           </div>
         </div>
       </div>
-      <div class="item">
-        <img class="slide img-responsive" src="{{ "/assets/img/carousel/c3.jpg" | prepend: site.baseurl }}" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>We help you move faster</h2>
-            <p>The market has changed where things move much quicker, and so does your business. Failing to keep pace is not an option.
-               We provide data very quickly so you can cope better with the fast-moving world.</p>
-            <p><a class="button-lg-x" href="{{ "/contact/" | prepend: site.baseurl }}" role="button">contact <span class="hidden-xs hidden-sm">us</span> <i class="pe-envelope-o pe-fw"></i></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img class="slide img-responsive" src="{{ "/assets/img/carousel/c4.jpg" | prepend: site.baseurl }}" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>Members give opinions when they want</h2>
-            <p>We design our system to support members with continuity where multiple devices are accepted.
-               This gives the most flexibility for our members in terms of providing their opinions to our survey.</p>
-            <p><a class="button-lg-x" href="{{ "/contact/" | prepend: site.baseurl }}" role="button"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img class="slide img-responsive" src="{{ "/assets/img/carousel/c5.jpg" | prepend: site.baseurl }}" alt="">
-        <div class="container">
-          <div class="carousel-caption">
-            <h2>Connect directly with your targets</h2>
-            <p>With our system, you can connect with your target audiences even they are difficult to reach.
-               No more difficulties to reach rural upcountry consumers or the high net-worths.</p>
-            <p><a class="button-lg-x" href="{{ "/contact/" | prepend: site.baseurl }}" role="button">contact <span class="hidden-xs hidden-sm">us</span> <i class="pe-envelope-o pe-fw"></i></a></p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
+      <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev"><i class="pe-chevron-left"></i></a>
+      <a class="right carousel-control" href="#slideshow" role="button" data-slide="next"><i class="pe-chevron-right"></i></a>
     </div>
-    <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev">
-      <i class="pe-chevron-left"></i>
-    </a>
-    <a class="right carousel-control" href="#slideshow" role="button" data-slide="next">
-      <i class="pe-chevron-right"></i>
-    </a>
   </div>
 </section>
 

@@ -18,18 +18,18 @@ And, as one would have expected, similar to the main website we will build it by
 
 To be more specific, the [HTML] {% include 0-base/ext.html %} we use is the most advanced version which is [HTML5] {% include 0-base/ext.html %}, and similarly for the [Cascading Style Sheets] {% include 0-base/ext.html %} where we also use the most updated version of [CSS3] {% include 0-base/ext.html %}.
 
-<table class="table table-striped" width="80%" border="0">
+<table class="table table-striped table-blog">
   <tr>
-    <td align="center"><img src="{{ "/assets/img/others/html5.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
-    <td align="center"><img src="{{ "/assets/img/others/css3.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
-    <td align="center"><img src="{{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
-    <td align="center"><img src="{{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
+    <td><img src="{{ "/assets/img/others/html5.svg" | prepend: site.baseurl }}" alt="HTML5"></td>
+    <td><img src="{{ "/assets/img/others/css3.svg" | prepend: site.baseurl }}" alt="CSS3"></td>
+    <td><img src="{{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }}" alt="Ruby"></td>
+    <td><img src="{{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }}" alt="Markdown"></td>
   </tr>
   <tr>
-    <td align="center"><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a> {% include 0-base/ext.html %}</small></td>
-    <td align="center"><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a> {% include 0-base/ext.html %}</small></td>
-    <td align="center"><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a> {% include 0-base/ext.html %}</small></td>
-    <td align="center"><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a> {% include 0-base/ext.html %}</small></td>
   </tr>
 </table>
 
@@ -39,11 +39,11 @@ We plan to finish the template within a month from now. And we will then complet
 
 Some additional functions are also currently considered which can be listed out below:
 
-- [ ] Bilingual (English/Thai)
-- [ ] Similar or related topics
-- [x] Breadcrumb
-- [x] Feedback function o users can comment if a topic is helpful (using Yes/No)
-- [x] Submit function for new topic (or need more help)
+- [x] Bilingual (English/Thai) [/]
+- [x] Similar or related topics [/]
+- [x] Breadcrumb [/]
+- [x] Feedback function o users can comment if a topic is helpful (using Yes/No) [/]
+- [x] Submit function for new topic (or need more help) [/]
 
 
 And lastly, the ultimate objective is to use both the layout and the typography that are very easy to read for users. A slightly larger font size (than normal) is currently under our consideration.

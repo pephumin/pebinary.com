@@ -1,7 +1,7 @@
 ---
-title: "Search database"
-section: "home"
-permalink: /search.json
+title: "Blog search database"
+section: "blog"
+permalink: /blog/search.json
 layout:
 search: exclude
 ---

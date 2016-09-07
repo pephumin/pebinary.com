@@ -34,9 +34,9 @@ layout: main
                 {{ words | divided_by:120 }} minutes</span> (<span itemprop="wordCount">{{ words }}</span> words)
               {% endif %}
             <br>
-            <i class="pe-calendar pe-fw"></i> Posted: <time datetime="{{ post.date | timeago }}" itemprop="datePublished">{{ post.date | timeago }}</time> by
+            <i class="pe-calendar pe-fw"></i> Posted: <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | timeago }}</time> by
             <span itemprop="author" itemscope itemtype="http://schema.org/Person"><strong>{{ post.author }}</strong></span>
-            (<a href="mailto:{{ post.author-email }}" title="Email to {{ post.author-email }}" itemprop="email" itemtype="http://schema.org/Person">{{ post.author-email }}</a>)<br>
+            (<a href="mailto:{{ post.author-email }}" title="Email to {{ post.author-email }}" itemprop="email" itemscope itemtype="http://schema.org/Person">{{ post.author-email }}</a>)<br>
             {% if post.categories %}
               {% for category in post.categories %}
                 <i class="pe-folder-open pe-fw"></i> <a href="/blog/category/{{ category | slugify | prepend: site.baseurl }}" title="Category: {{ category }}" itemprop="articleSection">{{ category }}</a>&nbsp;
@@ -50,7 +50,7 @@ layout: main
           </p>
         </header>
         <div class="post-excerpt" itemprop="articleBody">
-          {{ post.excerpt | tidy | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: '</li>', '</span></li>' | replace: '<img src', '<img class="img-responsive" src' }}
+          {{ post.excerpt | tidy | replace: '<li>[ ]', '<li class="checkbox"><input type="checkbox" disabled><span class="input-label">' | replace: '<li>[x]', '<li class="checkbox"><input type="checkbox" checked disabled><span class="input-label">' | replace: "[/]</li>", "</span></li>" }}
         </div>
         <p class="text-right"><a href="{{ post.url | prepend: site.baseurl }}" class="blog-button" title="Read more" itemprop="url">Read more <i class="pe-map-o pe-fw"></i></a></p>
         <div class="blog-publisher" itemprop="publisher">{{ site.title }}</div>

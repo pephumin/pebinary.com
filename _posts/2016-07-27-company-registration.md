@@ -35,7 +35,7 @@ And below are the electronic copies of the completed paperwork that we have got 
 
 <div class="row">
   <div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
-    <a class="modal-link" data-toggle="modal" data-target="#RA" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RAs.png" | prepend: site.baseurl }}"></a>
+    <a class="modal-link" data-toggle="modal" data-target="#RA" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RAs.png" | prepend: site.baseurl }}" alt="Company registration"></a>
     <div class="modal fade" id="RA" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -44,7 +44,7 @@ And below are the electronic copies of the completed paperwork that we have got 
             <span class="modal-title">Company registration (front)</span>
           </div>
           <div class="modal-body text-center">
-            <img class="img-thumbnail" src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}">
+            <img class="img-thumbnail" src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}" alt="Company registration">
           </div>
           <!-- <div class="modal-footer">
             <button class="button-x" data-dismiss="modal">Close</button>
@@ -54,7 +54,7 @@ And below are the electronic copies of the completed paperwork that we have got 
     </div>
   </div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <a class="modal-link" data-toggle="modal" data-target="#RB" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RBs.png" | prepend: site.baseurl }}"></a>
+    <a class="modal-link" data-toggle="modal" data-target="#RB" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RBs.png" | prepend: site.baseurl }}" alt="Company registration"></a>
     <div class="modal fade" id="RB" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -63,7 +63,7 @@ And below are the electronic copies of the completed paperwork that we have got 
             <span class="modal-title">Company registration (back)</span>
           </div>
           <div class="modal-body text-center">
-            <img class="img-thumbnail" src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}">
+            <img class="img-thumbnail" src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}" alt="Company registration">
           </div>
           <!-- <div class="modal-footer">
             <button class="button-x" data-dismiss="modal">Close</button>

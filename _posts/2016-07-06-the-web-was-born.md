@@ -16,18 +16,18 @@ Unlike our [Survey Engine] where we use a combination of [PHP] {% include 0-base
 
 And to be more specific, the [HTML] {% include 0-base/ext.html %} we use is the most advanced version which is [HTML5] {% include 0-base/ext.html %}, and similarly for the [Cascading Style Sheets] {% include 0-base/ext.html %} where we also use the most updated version of [CSS3] {% include 0-base/ext.html %}.
 
-<table class="table table-striped" width="80%" border="0">
+<table class="table table-striped table-blog">
   <tr>
-    <td align="center"><img src="{{ "/assets/img/others/html5.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
-    <td align="center"><img src="{{ "/assets/img/others/css3.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
-    <td align="center"><img src="{{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
-    <td align="center"><img src="{{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }}" class="img-thumbnail"></td>
+    <td><img src="{{ "/assets/img/others/html5.svg" | prepend: site.baseurl }}" alt="HTML5"></td>
+    <td><img src="{{ "/assets/img/others/css3.svg" | prepend: site.baseurl }}" alt="CSS3"></td>
+    <td><img src="{{ "/assets/img/others/ruby.svg" | prepend: site.baseurl }}" alt="Ruby"></td>
+    <td><img src="{{ "/assets/img/others/markdown.svg" | prepend: site.baseurl }}" alt="Markdown"></td>
   </tr>
   <tr>
-  <td align="center"><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a> {% include 0-base/ext.html %}</small></td>
-  <td align="center"><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a> {% include 0-base/ext.html %}</small></td>
-  <td align="center"><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a> {% include 0-base/ext.html %}</small></td>
-  <td align="center"><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="http://www.w3.org/TR/html5/"><strong>HTML5</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="http://www.w3.org/TR/CSS/"><strong>CSS3</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="https://www.ruby-lang.org"><strong>Ruby</strong></a> {% include 0-base/ext.html %}</small></td>
+    <td><small><a href="https://en.wikipedia.org/wiki/Markdown"><strong>Markdown</strong></a> {% include 0-base/ext.html %}</small></td>
   </tr>
 </table>
 
@@ -37,13 +37,12 @@ From now on, users can expect to see a significant progression on the web develo
 
 There are also some task-lists which are currently in the plan for this website which can be listed out as follows. *Please note that some items that have already been developed are marked as completed in the task-lists below.*
 
-- [ ] Bilingual (English/Thai)
-- [ ] Survey demo shown under a smartphone screen
-- [ ] Universal contact form to be used for all users across all occasions
-- [ ] Geo-pattern graphic to be chosen for both header and footer
-- [x] Weblog (Blog)
-- [x] Printable mode for some documents e.g. legal documents
-- [x] Sitemap (both for users and for search engine)
+- [ ] Survey demo shown under a smartphone screen [/]
+- [x] Universal contact form to be used for all users across all occasions [/]
+- [x] Geo-pattern graphic to be chosen for both header and footer [/]
+- [x] Weblog (Blog) [/]
+- [x] Printable mode for some documents e.g. legal documents [/]
+- [x] Sitemap (both for users and for search engine) [/]
 
 
 [Survey Engine]: http://www.siamsquare.org

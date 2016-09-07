@@ -14,9 +14,12 @@ The process has been quite painful because it requires quite a lot of effort inc
 
 Value Added Tax (VAT) has been implemented in Thailand since 1992 replacing Business Tax (BT). VAT is an indirect tax imposed on the value added of each stage of production and distribution.
 
-* Any person or entity who regularly supplies goods or provides services in Thailand and has an annual turnover exceeding 1.8 million baht is subject to VAT in Thailand. Service is deemed to be provided in Thailand if the service is performed in Thailand regardless where it is utilized or if it is performed elsewhere and utilized in Thailand.
+- Any person or entity who regularly supplies goods or provides services in Thailand and has an annual turnover exceeding 1.8 million baht is subject to VAT in Thailand. Service is deemed to be provided in Thailand if the service is performed in Thailand regardless where it is utilized or if it is performed elsewhere and utilized in Thailand.
+- An importer is also subject to VAT in Thailand no matter whether one is a registered person or not. VAT will be collected by the Customs Department at the time goods are imported. Certain businesses are excluded from VAT and will instead be subjected to Specific Business Tax (SBT).
 
-* An importer is also subject to VAT in Thailand no matter whether one is a registered person or not. VAT will be collected by the Customs Department at the time goods are imported. Certain businesses are excluded from VAT and will instead be subjected to Specific Business Tax (SBT). Under VAT, taxable goods mean all types of property, tangible or intangible, whether they are available for sales, for own use, or for any other purposes. It also includes any types of articles imported into Thailand. Services refer to any activities conducted for the benefits of a person or an entity, which are not the supply in terms of goods.
+Under VAT, taxable goods mean all types of property, tangible or intangible, whether they are available for sales, for own use, or for any other purposes.
+
+It also includes any types of articles imported into Thailand. Services refer to any activities conducted for the benefits of a person or an entity, which are not the supply in terms of goods.
 
 *Any person or entity who is liable to VAT in Thailand must register to be VAT registered person or entity before the operation of business or within 30 days after its income reaches the threshold. The registration application must be submitted to Area Revenue Offices if the business is situated in Bangkok or to the Area Revenue Branch Offices if it is situated elsewhere. Should taxpayer have several branches, registration application must be submitted to the Revenue Office where the headquarter is situated.*
 
@@ -31,7 +34,7 @@ And below are the electronic copies of the completed paperwork that we have got 
 
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <a class="modal-link" data-toggle="modal" data-target="#VAT"><img class="img-thumbnail" src="{{ "/assets/img/registration/VATs.jpg" | prepend: site.baseurl }}"></a>
+    <a class="modal-link" data-toggle="modal" data-target="#VAT"><img class="img-thumbnail" src="{{ "/assets/img/registration/VATs.jpg" | prepend: site.baseurl }}" alt="VAT registration"></a>
     <!-- <div class="modal-backdrop"></div> -->
     <div class="modal fade" id="VAT" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -41,7 +44,7 @@ And below are the electronic copies of the completed paperwork that we have got 
             <span class="modal-title">VAT certificate</span>
           </div>
           <div class="modal-body text-center">
-            <img class="center-block" src="{{ "/assets/img/registration/VAT.jpg" | prepend: site.baseurl }}">
+            <img class="center-block" src="{{ "/assets/img/registration/VAT.jpg" | prepend: site.baseurl }}" alt="VAT registration">
           </div>
           <!-- <div class="modal-footer">
             <button class="button-x" data-dismiss="modal">Close</button>

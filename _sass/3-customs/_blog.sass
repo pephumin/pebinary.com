@@ -8,23 +8,23 @@
       &:hover
         color: $darkindigo
 
-  li.checkbox
-    list-style-type: none
-    margin: 0px 0px 0px -10px
-    line-height: 1.2
-
-  li.checkbox > input[type="checkbox"] > .input-label:before
-    font-family: "pe"
-    content: "\f096"
-    display: inline-block
-    margin-right: 5px
-
-  li.checkbox > input[type="checkbox"]:checked + .input-label
-    text-decoration: line-through
-    color: $lightgrey
-
-  li.checkbox > input[type="checkbox"]:checked > .input-label:before
-    content: "\f046"
+  // li.checkbox
+  //   list-style-type: none
+  //   margin: 0px 0px 0px -10px
+  //   line-height: 1.2
+  //
+  // li.checkbox > input[type="checkbox"] > .input-label:before
+  //   font-family: "pe"
+  //   content: "\f096"
+  //   display: inline-block
+  //   margin-right: 5px
+  //
+  // li.checkbox > input[type="checkbox"]:checked + .input-label
+  //   text-decoration: line-through
+  //   color: $lightgrey
+  //
+  // li.checkbox > input[type="checkbox"]:checked > .input-label:before
+  //   content: "\f046"
 
   .post-meta
     color: $lightgrey
@@ -44,12 +44,6 @@
     .post-icon
       color: $darkgreen
       text-shadow: 0 1px 1px $silver
-
-  .post-excerpt
-    a
-      color: $indigo
-      &:hover
-        color: $orange
 
   .blog-publisher
     display: none
@@ -304,3 +298,59 @@ ul#search-results
     content: "\00BB\00a0"
     //padding: 0 5px
     color: inherit
+
+
+.post-excerpt, .post-content
+
+  a
+    color: $indigo
+    &:hover
+      color: $orange
+
+  ul, ol
+    list-style-type: none
+    margin-bottom: 20px
+
+    li:before
+      font-family: "pe"
+      content: "\f101"
+      display: inline-block
+      margin: auto 5px auto -10px
+      padding-top: 7px
+
+    li.checkbox
+      margin: 0px 0px 0px 10px
+      line-height: 1.3
+
+    li.checkbox:before
+      content: ""
+
+    li.checkbox > input[type="checkbox"] > .input-label:before
+      font-family: "pe"
+      content: "\f096"
+      display: inline-block
+      margin-right: 5px
+
+    li.checkbox > input[type="checkbox"]:checked + .input-label
+      text-decoration: line-through
+      color: $lightgrey
+
+    li.checkbox > input[type="checkbox"]:checked > .input-label:before
+      content: "\f046"
+
+
+.table-blog
+  width: 85%
+  max-width: 85%
+  margin: 15px auto 20px auto
+
+.table-blog > thead > tr > th, .table-blog > thead > tr > td,
+.table-blog > tbody > tr > th, .table-blog > tbody > tr > td,
+.table-blog > tfoot > tr > th, .table-blog > tfoot > tr > td
+  padding: 8px
+  line-height: 1.42857
+  vertical-align: top
+  text-align: center
+  border-top: 1px solid $silver
+  img
+    margin: 0px auto
