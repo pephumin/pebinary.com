@@ -1,18 +1,19 @@
 <header>
-  <div class="header-1">
-    <div class="container">
-      <a class="button" title="View demo"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a>
-      <a href="#contactPEB" role="button" data-toggle="modal" class="button-x indigo" title="Contact us">Contact <span class="hidden-xs hidden-sm">us</span> <i class="pe-envelope-o pe-fw"></i></a>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-1">
+      <div class="container">
+        <a class="button" title="View demo"><span class="hidden-xs hidden-sm">View</span> demo <i class="pe-paper-plane-o pe-fw"></i></a>
+        <a href="{{ page.url | append: "#contactPEB" | prepend: site.baseurl }}" role="button" data-toggle="modal" class="button-x indigo" title="Contact us">Contact <span class="hidden-xs hidden-sm">us</span> <i class="pe-envelope-o pe-fw"></i></a>
+      </div>
     </div>
-  </div>
-  <div class="header-2">
-    <div class="container">
-      <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a></h1>
-      <p class="description">{{ site.description }}</p>
-      <p class="thai-name"><i>{{ site.thaititle }}</i></p>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-2">
+      <div class="container">
+        <h1><a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</a></h1>
+        <p class="description">{{ site.description }}</p>
+        <p class="thai-name"><i>{{ site.thaititle }}</i></p>
+      </div>
     </div>
-  </div>
-  <div class="header-3">
-    <div class="container"></div>
-  </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 header-3">
+      <div class="container"></div>
+    </div>
 </header>

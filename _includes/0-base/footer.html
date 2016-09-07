@@ -1,39 +1,40 @@
 <footer>
-  <div class="footer-1">
-    <div class="container">
-      switching language <i class="pe-language pe-lg pe-fw"></i>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-1">
+      <div class="container">
+        switching language <i class="pe-language pe-lg pe-fw"></i>
+      </div>
     </div>
-  </div>
-  <div class="footer-2">
-    <div class="container">
-      <h4>{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | strip }}</h4>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <p class="handwriting">We are a revolutionary market research company with a vision to help clients changing the way they access consumer insights.</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <!-- <p>{{ site.description }}</p> -->
-          <p class="handwriting">Within the fast-moving world, consumer insights are needed to be accurate and more responsive allowing quicker business decisions to be made.</p>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-2">
+      <div class="container">
+        <h4>{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | strip }}</h4>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <p class="handwriting">We are a revolutionary market research company with a vision to help clients changing the way they access consumer insights.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <p class="handwriting">Within the fast-moving world, consumer insights are needed to be accurate and more responsive allowing quicker business decisions to be made.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-3">
-    <div class="container">
-      <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
-      <a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
-      <span class="hidden-xs hidden-sm">All rights reserved.</span>
-      <nav class="footer">
-        <ul class="list-inline">
-          {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
-          {% if footer.host == "main-en" %}
-          <li><a href="{{ footer.url | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
-          {% else %}
-          <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
-          {% endif %}
-          {% endunless %}{% endfor %}
-        </ul>
-      </nav>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-3">
+      <div class="container">
+        <i class="pe-copyright"></i> <span class="hidden-xs hidden-sm">Copyright</span> {{ site.time | date:"%Y" }}&nbsp;
+        <a href="{{ "/" | prepend: site.baseurl }}" title="{{ site.title }}"><span class="black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</span></a>
+        <span class="hidden-xs hidden-sm">All rights reserved.</span>
+        <nav class="footer">
+          <ul class="list-inline">
+            {% for footer in site.data.navigation.footer %}{% unless footer.disable %}
+            {% if footer.host == "main-en" %}
+            <li><a href="{{ footer.url | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+            {% else %}
+            <li><a href="{{ footer.url | prepend: site.data.domains.[footer.host] | prepend: site.baseurl }}" title="{{ footer.title }}"><i class="pe-{{ footer.icon }}"></i> <span class="hidden-md hidden-lg">{{ footer.stitle }}</span><span class="hidden-xs hidden-sm">{{ footer.title }}</span></a>&nbsp;</li>
+            {% endif %}
+            {% endunless %}{% endfor %}
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </footer>
