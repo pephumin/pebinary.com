@@ -6,5 +6,4 @@
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/anchor.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/functions.js" | prepend: site.baseurl }}"></script>
-<!-- <script type="text/javascript" src="{{ "/assets/js/wow.js" | prepend: site.baseurl }}"></script> -->
-{% if page.url contains "/blog/" %}{% include 0-base/search.html %}{% endif %}
+{% if site.blogss contains page.url %}{% include 0-base/search.html %}{% endif %}
