@@ -38,7 +38,18 @@ Below is the picture of the finished signage which is ready to be installed in t
 
 Clearly the background colour has been done to match with the original intended colour deviating from the background colour seen previously in the design photo above. And in realistic situation, it is not possible to cut acrylic that thin although the cut was made by using the thinnest laser controlled by accurate computer.
 
-**And yes, overall we can say that we are very happy with the outcome**.
+And yes, overall we can say that we are very happy with the outcome.
+
+---
+
+#### Updated on 10 September 2016 <span class="label blue">updated</span>
+
+We have finally install the signage up on the wall as shown from the picture below which was taken right after the installation.
+
+And this installation has been perfectly aligned with the original schedule. So far, we are happy with it.
+
+<img class="img-thumbnail" src="{{ "/assets/img/others/IMG_6631.jpg" | prepend: site.baseurl }}" alt="Signage which has been installed up on the wall in the front of the venue" title="Signage which has been installed up on the wall in the front of the venue">
+
 
 
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th

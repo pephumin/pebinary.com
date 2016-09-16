@@ -5,7 +5,7 @@ category: [setup, legal]
 tags: [company]
 quote:
 icon: flag-checkered
-published: true
+published: false
 ---
 
 In order to ensure we are aligned with Thai government regulation, we have registered with the `VAT certificate` with the [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %}.
