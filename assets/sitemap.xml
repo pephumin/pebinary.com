@@ -1,7 +1,7 @@
 ---
 title: "Sitemap XML"
 section: "home"
-permalink: /sitemap.xml
+permalink: /assets/sitemap.xml
 layout: brew
 search: exclude
 ---
