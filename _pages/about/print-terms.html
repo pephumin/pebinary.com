@@ -14,7 +14,7 @@ printing: true
 
   {% capture stack %}{% include 0-base/stack.html icon = "balance-scale" shape = "square-o" size = "3" title = page.title position = "pull-right" %}{% endcapture %}{{ stack | rstrip }}
 
-  <p class="lastupdate"><i class="pe-floppy-o pe-fw"></i> Last updated: {{ page.timestamp | date: "%A %d %B %Y" }} ({{ page.timestamp | timeago }})</p>
+  <p class="lastupdate"><i class="pe-floppy-o pe-fw"></i> Last updated: <time datetime="{{ page.timestamp | date_to_xmlschema }}">{{ page.timestamp | date: "%A %d %B %Y" }}</time> ({{ page.timestamp | timeago }})</p>
 
   <p class="big black">{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | rstrip }}</p>
 
