@@ -117,15 +117,15 @@ header2:
     - title: "Create an account"
       icon: user-plus
       host: member
-      url: "/public/signup.php"
+      url: "/join/"
       label:
       label-color:
       badge:
       disable:
     - title: "Your account"
-      icon: sign-in
+      icon: cogs
       host: member
-      url: "/public/?w=login"
+      url: "/login/"
       label:
       label-color:
       badge:
@@ -176,15 +176,15 @@ header2:
     - title: "Request for access"
       icon: bullhorn
       host: client
-      url: "/request.php"
+      url: "/request/"
       label:
       label-color:
       badge:
       disable:
     - title: "Your account"
-      icon: sign-in
+      icon: wrench
       host: client
-      url: "/?w=login"
+      url: "/login/"
       label:
       label-color:
       badge:
