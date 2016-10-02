@@ -117,7 +117,7 @@ header2:
     - title: "Create an account"
       icon: user-plus
       host: member
-      url: "/join"
+      url: "/public/?w=signup"
       label:
       label-color:
       badge:
@@ -125,7 +125,7 @@ header2:
     - title: "Your account"
       icon: sign-in
       host: member
-      url: "/login"
+      url: "/public/?w=login"
       label:
       label-color:
       badge:
@@ -133,7 +133,7 @@ header2:
     - title: "Member support"
       icon: university
       host: support
-      url: "/members/"
+      url: "/th/members/"
       label: "new"
       label-color: "red"
       badge:
@@ -174,9 +174,9 @@ header2:
     - title: header
       text: "Work with us"
     - title: "Request for access"
-      icon: user-plus
+      icon: bullhorn
       host: client
-      url: "/contact/"
+      url: "/?w=request"
       label:
       label-color:
       badge:
@@ -184,7 +184,7 @@ header2:
     - title: "Your account"
       icon: sign-in
       host: client
-      url: "/login"
+      url: "/?w=login"
       label:
       label-color:
       badge:
@@ -192,7 +192,7 @@ header2:
     - title: "Client support"
       icon: university
       host: support
-      url: "/clients/"
+      url: "/en/clients/"
       label: "new"
       label-color: "red"
       badge:
