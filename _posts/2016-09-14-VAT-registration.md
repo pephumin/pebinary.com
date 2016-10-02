@@ -4,7 +4,7 @@ date: 2016-09-14 16:26:03 +0700
 category: [setup, legal]
 tags: [company]
 quote:
-icon: flag-checkered
+icon: gavel
 published: true
 ---
 
