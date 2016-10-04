@@ -33,7 +33,7 @@
   .landing-text p
     font-size: 1.2rem
 
-  .landing-form
+  .landing-form-large, .landing-form-small
     color: $white
     border-collapse: separate
     text-align: left
@@ -89,6 +89,19 @@
       background-image: none
       border: 1px solid $silver
       border-radius: 4px
+
+    small.help-block
+      color: $white
+
+  .landing-form-large
+    i.form-control-feedback.fv-bootstrap-icon-input-group
+      top: 33px
+      font-size: 1.2rem
+
+  .landing-form-small
+    i.form-control-feedback.fv-bootstrap-icon-input-group
+      top: 8px
+      font-size: 1.2rem
 
 @media (max-width: 768px)
 

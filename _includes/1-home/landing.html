@@ -7,35 +7,63 @@
       <p class="hidden-xs">Why spending with traditional research when there is an alternative that is quicker and significantly cheaper?
         Contact us now and let us show you how effective our system is in order to help you gain the competitive advantage.</p>
     </div>
-    <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 landing-form">
-      <form name="clientform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
-        <div class="form-group has-feedback">
+    <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 landing-form-large">
+      <form id="landing_large" method="post" action="{{ "/assets/ext/pebinary.com/landing-large.php" | prepend: site.data.domains.client }}">
+        <div class="form-group">
           <label>Name</label> <span class="label blue">required</span>
-          <input type="text" class="form-control" name="name_large" placeholder="Your name" required>
-          <i class="pe-user form-control-feedback"></i>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="pe-user pe-fw"></i></span>
+            <input type="text" class="form-control" name="name_large" placeholder="Your name" required>
+          </div>
         </div>
-        <div class="form-group has-feedback">
+        <div class="form-group">
           <label>Email</label> <span class="label blue">required</span>
-          <input type="email" class="form-control" name="email_large" placeholder="email@company.com" required>
-          <i class="pe-envelope-o form-control-feedback"></i>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="pe-envelope pe-fw"></i></span>
+            <input type="email" class="form-control" name="email_large" placeholder="email@company.com" required>
+          </div>
         </div>
         <button type="submit" name="submit_large" class="button-lg-x blue">contact us <i class="pe-envelope-o pe-fw"></i></button>
       </form>
     </div>
-    <div class="col-xs-12 hidden-sm hidden-md hidden-lg landing-form">
-      <form name="clientform" method="post" action="{{ "/email.php" | prepend: site.baseurl }}">
-        <div class="form-group has-feedback">
-          <input type="text" class="form-control" name="name_small" placeholder="Your name" required>
-          <i class="pe-user form-control-feedback"></i>
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg landing-form-small">
+      <form id="landing_small" method="post" action="{{ "/assets/ext/pebinary.com/landing-small.php" | prepend: site.data.domains.client }}">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="pe-user pe-fw"></i></span>
+            <input type="text" class="form-control" name="name_small" placeholder="Your name" required>
+          </div>
         </div>
-        <div class="form-group has-feedback">
-          <input type="email" class="form-control" name="email_small" placeholder="email@company.com" required>
-          <i class="pe-envelope-o form-control-feedback"></i>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="pe-envelope pe-fw"></i></span>
+            <input type="email" class="form-control" name="email_small" placeholder="email@company.com" required>
+          </div>
         </div>
         <button type="submit" name="submit_small" class="button-lg-x blue">contact us <i class="pe-envelope-o pe-fw"></i></button>
       </form>
     </div>
   </div>
-  <!-- <div class="left landing-control"></div> -->
-  <!-- <div class="right landing-control"></div> -->
 </section>
+<script>
+  $(document).ready(function() {
+    $('#landing_large').formValidation({
+      framework: 'bootstrap',
+      icon: { valid: 'pe-check', invalid: 'pe-times', validating: 'pe-refresh' },
+      excluded: ':disabled',
+      fields: {
+        name_large: { validators: { notEmpty: { message: 'Your name is required' } } },
+        email_large: { validators: { notEmpty: { message: 'Your email is required' }, emailAddress: { message: 'The input is not a valid email address' } } }
+      }
+    });
+    $('#landing_small').formValidation({
+      framework: 'bootstrap',
+      icon: { valid: 'pe-check', invalid: 'pe-times', validating: 'pe-refresh' },
+      excluded: ':disabled',
+      fields: {
+        name_small: { validators: { notEmpty: { message: 'Your name is required' } } },
+        email_small: { validators: { notEmpty: { message: 'Your email is required' }, emailAddress: { message: 'The input is not a valid email address' } } }
+      }
+    });
+  });
+</script>
