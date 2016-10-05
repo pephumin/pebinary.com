@@ -25,8 +25,13 @@ And staff from [The Revenue Department, Ministry of Finance] {% include 0-base/e
 
 *Apart from that they also told us that we still need to submit the very first accounting paperwork to them within 30 days regardless of having the actual sales or revenues run through the account or not. We will connect with our finance partner on this again.*
 
-
 <!--more-->
+
+---
+
+#### Updated on 5 October 2016 <span class="label blue">updated</span>
+
+Today, we have received the official document from [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %} which was sent to us by postal. We are told to put this document on the wall within our office on a spot where it can be easily see and read by anyone who comes and visits our office.
 
 <!-- And below are the electronic copies of the completed paperwork that we have got back from the [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %} regarding to our official `VAT certificate registration`. -->
 
