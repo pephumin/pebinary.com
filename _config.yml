@@ -22,9 +22,9 @@ locale:               en
 excerpt_separator:    <!--more-->
 host:                 localhost
 port:                 4000
-url:                  https://www.pebinary.com
-# url:                  http://pephumin.github.io
-# baseurl:              /pebinary.com
+# url:                  https://www.pebinary.com
+url:                  http://pephumin.github.io
+baseurl:              /pebinary.com
 paginate:             5
 paginate_path:        /blog/:num/
 permalink:            /blog/:year/:month/:day/:title.html
