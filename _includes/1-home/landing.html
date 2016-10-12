@@ -50,6 +50,7 @@
     $('#landing_large').formValidation({
       framework: 'bootstrap',
       icon: { valid: 'pe-check', invalid: 'pe-times', validating: 'pe-refresh' },
+      button: { selector: '[type="submit"]', disabled: '' },
       excluded: ':disabled',
       fields: {
         name_large: { validators: { notEmpty: { message: 'Your name is required' } } },
@@ -59,6 +60,7 @@
     $('#landing_small').formValidation({
       framework: 'bootstrap',
       icon: { valid: 'pe-check', invalid: 'pe-times', validating: 'pe-refresh' },
+      button: { selector: '[type="submit"]', disabled: '' },
       excluded: ':disabled',
       fields: {
         name_small: { validators: { notEmpty: { message: 'Your name is required' } } },
