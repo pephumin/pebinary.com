@@ -14,7 +14,7 @@ Today we mark another big step progress to our company history. We have successf
 ![Department of Business Development logo][dbd-logo]
 
 
-This process started two days ago (25 July 2016) and it has finally completed today (27 July 2016).
+This process started and ended within only two days ago, the actual completion was on 27 July 2016.
 
 As we have heard from many people on how really difficult it could be to deal with this government sector, we decided to hire a third party to conduct this particular process for us. And as expected, it involves with a lot of paperwork and signatures.
 
@@ -46,9 +46,6 @@ And below are the electronic copies of the completed paperwork that we have got 
           <div class="modal-body text-center">
             <img class="img-thumbnail" src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}" alt="Company registration">
           </div>
-          <!-- <div class="modal-footer">
-            <button class="button-x" data-dismiss="modal">Close</button>
-          </div> -->
         </div>
       </div>
     </div>
@@ -65,14 +62,18 @@ And below are the electronic copies of the completed paperwork that we have got 
           <div class="modal-body text-center">
             <img class="img-thumbnail" src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}" alt="Company registration">
           </div>
-          <!-- <div class="modal-footer">
-            <button class="button-x" data-dismiss="modal">Close</button>
-          </div> -->
         </div>
       </div>
     </div>
   </div>
 </div>
+
+---
+
+#### Updated on 2 August 2016 <span class="label blue">updated</span>
+
+Based on the paperwork we have got back from the [Department of Business Development, Ministry of Commerce] {% include 0-base/ext.html %}, it shows that our business registration number is **0-1055-59113-73-4**. And we also expect to get the same number for VAT registration from [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %}.
+
 
 [Department of Business Development, Ministry of Commerce]: http://www.dbd.go.th
 [dbd-logo]: {{ "/assets/img/others/dbd.jpg" | prepend: site.baseurl }} "Logo of Department of Business Development"
