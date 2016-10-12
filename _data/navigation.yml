@@ -117,7 +117,7 @@ header2:
     - title: "Create an account"
       icon: user-plus
       host: member
-      url: "/join/"
+      url: "/public/signup.php"
       label:
       label-color:
       badge:
@@ -125,7 +125,7 @@ header2:
     - title: "Your account"
       icon: cogs
       host: member
-      url: "/login/"
+      url: "/public/?w=login"
       label:
       label-color:
       badge:
@@ -176,7 +176,7 @@ header2:
     - title: "Request for access"
       icon: bullhorn
       host: client
-      url: "/request/"
+      url: "/request.php"
       label:
       label-color:
       badge:
@@ -184,7 +184,7 @@ header2:
     - title: "Your account"
       icon: wrench
       host: client
-      url: "/login/"
+      url: "/?w=login"
       label:
       label-color:
       badge:
