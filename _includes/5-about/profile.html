@@ -1,12 +1,71 @@
 <section class="container profile">
-  <h2>Profile</h2>
-  <p>My profile to be shown here</p>
-  <p>details</p>
-  <ul>
-    <li>List item #1</li>
-    <li>List item #2</li>
-    <li>List item #3</li>
-    <li>List item #4</li>
-    <li>List item #5</li>
-  </ul>
+
+  <h2>Company profile</h2>
+
+  <h4>Who really is <small>{% capture logo %}{% include 0-base/logo.html %}{% endcapture %}{{ logo | strip }}</small>?</h4>
+  <p>We are a revolutionary market research company founded in July 2016 with a vision to help clients changing the way they access consumer insights.</p>
+  <p>We strongly believe that consumer insights are needed to be accurate and more responsive allowing quicker business decisions to be made matching with a fast-moving world.</p>
+  <p>Although we seem to be a young company, we are not new to the industry at all. We actually have had an accumulative experience for almost two decades in market research industry. Our core experience spans across between both qualitative and quantitative. We have partnered a variety of clients both local and international in several different industries.</p>
+  <br>
+
+  <h4>Company registration document (since July 2016)</h4>
+  <p>The official company registration number is <strong>0-1055-59113-73-4</strong>. And this is exactly the same number used for VAT registration.</p>
+  <p>You can click at these documents in order to view a larger version.</p>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
+      <a class="modal-link" data-toggle="modal" data-target="#RA" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RAs.png" | prepend: site.baseurl }}"></a>
+      <div class="modal fade" id="RA" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a data-dismiss="modal"><i class="pe-times pull-right"></i></a>
+              <span class="modal-title">Company registration (front)</span>
+            </div>
+            <div class="modal-body text-center">
+              <img class="img-thumbnail" src="{{ "/assets/img/registration/RA.png" | prepend: site.baseurl }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <a class="modal-link" data-toggle="modal" data-target="#RB" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/RBs.png" | prepend: site.baseurl }}"></a>
+      <div class="modal fade" id="RB" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a data-dismiss="modal"><i class="pe-times pull-right"></i></a>
+              <span class="modal-title">Company registration (back)</span>
+            </div>
+            <div class="modal-body text-center">
+              <img class="img-thumbnail" src="{{ "/assets/img/registration/RB.png" | prepend: site.baseurl }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <h4>VAT certificate (since October 2016)</h4>
+  <p>You can click at these documents in order to view a larger version.</p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      <a class="modal-link" data-toggle="modal" data-target="#VAT" data-keyboard="true"><img class="img-thumbnail" src="{{ "/assets/img/registration/VATs.jpg" | prepend: site.baseurl }}" alt="VAT registration"></a>
+      <div class="modal fade" id="VAT" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a data-dismiss="modal"><i class="pe-times pull-right"></i></a>
+              <span class="modal-title">VAT certificate</span>
+            </div>
+            <div class="modal-body text-center">
+              <img class="center-block" src="{{ "/assets/img/registration/VAT.jpg" | prepend: site.baseurl }}" alt="VAT registration">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
