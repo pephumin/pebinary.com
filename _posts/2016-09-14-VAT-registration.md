@@ -29,14 +29,20 @@ And staff from [The Revenue Department, Ministry of Finance] {% include 0-base/e
 
 ---
 
-#### Updated on 5 October 2016 <span class="label blue">updated</span>
+#### Updated on 5 October 2016
 
 Today, we have received the official document from [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %} which was sent to us by postal. We are told to put this document on the wall within our office on a spot where it can be easily see and read by anyone who comes and visits our office.
 
-<!-- And below are the electronic copies of the completed paperwork that we have got back from the [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %} regarding to our official `VAT certificate registration`. -->
+**VAT Registration Number: 0-1055-59113-73-4**
+
+---
+
+#### Updated on 11 October 2016 <span class="label blue">updated</span>
+
+And below are the electronic copies of the completed paperwork that we have got back from the [The Revenue Department, Ministry of Finance] {% include 0-base/ext.html %} regarding to our official `VAT certificate registration`.
 
 
-<!-- <div class="row">
+<div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <a class="modal-link" data-toggle="modal" data-target="#VAT"><img class="img-thumbnail" src="{{ "/assets/img/registration/VATs.jpg" | prepend: site.baseurl }}" alt="VAT registration"></a>
     <div class="modal fade" id="VAT" tabindex="-1" role="dialog">
@@ -53,7 +59,7 @@ Today, we have received the official document from [The Revenue Department, Mini
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 
 [The Revenue Department, Ministry of Finance]: http://www.rd.go.th
