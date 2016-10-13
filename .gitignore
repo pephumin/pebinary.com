@@ -1,11 +1,14 @@
 .DS_Store
 .firebaserc
 .sass-cache
+.gitignore
 Gemfile
-Gemfile.lock
 Icon'$'\r
 README.md
 _site
 firebase.json
 firebase-debug.log
 run
+Gemfile.lock
+
+Gemfile.lock
