@@ -7,7 +7,7 @@ header1:
 - title: "Home"
   icon: home
   host: main-en
-  url: "/"
+  url: "/main.html"
 
 header2:
 
@@ -25,7 +25,7 @@ header2:
       label:
       label-color:
       badge:
-      disable:
+      disable: true
     - title: "Get the app"
       icon: cloud-download
       urlexternal: "https://itunes.apple.com/en/app/"
@@ -169,7 +169,7 @@ header2:
       label: "revised"
       label-color: "green"
       badge:
-      disable:
+      disable: true
     - title: separator
     - title: header
       text: "Work with us"

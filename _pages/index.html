@@ -1,18 +1,40 @@
 ---
-title: "The main page of website"
+title: "Rediecting to the main website"
 section: "home"
 permalink: /
-homepage: true
+layout:
+nav: "home"
+locale: "en"
 ---
 
-{% include 1-home/intro.html %}
-
-{% include 1-home/vision.html %}
-
-{% include 1-home/landing.html %}
-
-{% include 4-clients/why-clients.html %}
-
-{% include 1-home/slideshow.html %}
-
-{% include 3-members/why-members.html %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>PE BINARY CO., LTD.</title>
+  <meta http-equiv="refresh" content="5; URL='{{ "/main.html" | prepend: site.baseurl }}'" />
+  <style>
+    body {
+      background-color: #131313;
+      text-align: center;
+    }
+    div#king {
+      text-align: center;
+      margin: 0 auto;
+      padding: 30px 0px;
+    }
+    .continue {
+      color: #FFFFFF;
+      font-family: snippet;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="king">
+    <img src="{{ "/assets/img/king.jpg" | prepend: site.baseurl }}" alt="In Remembrance of His Majesty King Bhumibol Adulyadej, 1927-2016">
+  </div>
+  <p><a href="{{ "/main.html" | prepend: site.baseurl }}" title="Continue to the main website..." class="continue">Continue to the main website...</a></p>
+</body>
+</html>
