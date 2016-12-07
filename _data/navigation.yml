@@ -15,70 +15,70 @@ header2:
   icon: cubes
   host: main-en
   url: "/products/"
-  items:
-    - title: header
-      text: "Our offers"
-    - title: "Products"
-      icon: cubes
-      host: main-en
-      url: "/products/"
-      label:
-      label-color:
-      badge:
-      disable: true
-    - title: "Get the app"
-      icon: cloud-download
-      urlexternal: "https://itunes.apple.com/en/app/"
-      label:
-      label-color:
-      badge:
-      disable: true
-    - title: separator
-    - title: header
-      text: "Syndicate research"
-    - title: "Product A"
-      icon: magnet
-      host: main-en
-      url: "/products/A.html"
-      label:
-      label-color:
-      badge:
-      disable: true
-    - title: "Product B"
-      icon: magnet
-      host: main-en
-      url: "/products/B.html"
-      label:
-      label-color:
-      badge:
-      disable: true
-    - title: separator
-    - title: header
-      text: "Customised research"
-    - title: "Product C"
-      icon: cube
-      host: main-en
-      url: "/products/C.html"
-      label:
-      label-color:
-      badge:
-      disable: true
-    - title: "Product D"
-      icon: cube
-      host: main-en
-      url: "/products/D.html"
-      label:
-      label-color:
-      badge:
-      disable: true
-    - title: "Product E"
-      icon: cube
-      host: main-en
-      url: "/products/E.html"
-      label:
-      label-color:
-      badge:
-      disable: true
+  # items:
+  #   - title: header
+  #     text: "Our offers"
+  #   - title: "Products"
+  #     icon: cubes
+  #     host: main-en
+  #     url: "/products/"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
+  #   - title: "Get the app"
+  #     icon: cloud-download
+  #     urlexternal: "https://itunes.apple.com/en/app/"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
+  #   - title: separator
+  #   - title: header
+  #     text: "Syndicate research"
+  #   - title: "Product A"
+  #     icon: magnet
+  #     host: main-en
+  #     url: "/products/A.html"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
+  #   - title: "Product B"
+  #     icon: magnet
+  #     host: main-en
+  #     url: "/products/B.html"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
+  #   - title: separator
+  #   - title: header
+  #     text: "Customised research"
+  #   - title: "Product C"
+  #     icon: cube
+  #     host: main-en
+  #     url: "/products/C.html"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
+  #   - title: "Product D"
+  #     icon: cube
+  #     host: main-en
+  #     url: "/products/D.html"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
+  #   - title: "Product E"
+  #     icon: cube
+  #     host: main-en
+  #     url: "/products/E.html"
+  #     label:
+  #     label-color:
+  #     badge:
+  #     disable: true
 
 - title: "Members"
   icon: user
@@ -103,21 +103,21 @@ header2:
       label-color:
       badge:
       disable:
-    - title: "Reward program"
-      icon: diamond
-      host: main-en
-      url: "/members/rewards.html"
-      label:
-      label-color:
-      badge:
-      disable: true
+    # - title: "Reward program"
+    #   icon: diamond
+    #   host: main-en
+    #   url: "/members/rewards.html"
+    #   label:
+    #   label-color:
+    #   badge:
+    #   disable: true
     - title: separator
     - title: header
       text: "Join our membership"
     - title: "Create an account"
       icon: user-plus
       host: member
-      url: "/public/signup.php"
+      url: "/members/signup/"
       label:
       label-color:
       badge:
@@ -125,19 +125,19 @@ header2:
     - title: "Your account"
       icon: cogs
       host: member
-      url: "/public/?w=login"
+      url: "/members/?w=login"
       label:
       label-color:
       badge:
       disable:
-    - title: "Member support"
-      icon: university
-      host: support
-      url: "/th/members/"
-      label: "new"
-      label-color: "red"
-      badge:
-      disable:
+    # - title: "Member support"
+    #   icon: university
+    #   host: support
+    #   url: "/th/members/"
+    #   label: "new"
+    #   label-color: "red"
+    #   badge:
+    #   disable:
 
 - title: "Clients"
   icon: briefcase
@@ -162,21 +162,21 @@ header2:
       label-color:
       badge:
       disable:
-    - title: "Testimonials"
-      icon: commenting-o
-      host: main-en
-      url: "/clients/testimonials.html"
-      label: "revised"
-      label-color: "green"
-      badge:
-      disable: true
+    # - title: "Testimonials"
+    #   icon: commenting-o
+    #   host: main-en
+    #   url: "/clients/testimonials.html"
+    #   label: "revised"
+    #   label-color: "green"
+    #   badge:
+    #   disable: true
     - title: separator
     - title: header
       text: "Work with us"
     - title: "Request for access"
       icon: bullhorn
       host: client
-      url: "/request.php"
+      url: "/request/"
       label:
       label-color:
       badge:
@@ -189,14 +189,14 @@ header2:
       label-color:
       badge:
       disable:
-    - title: "Client support"
-      icon: university
-      host: support
-      url: "/en/clients/"
-      label: "new"
-      label-color: "red"
-      badge:
-      disable:
+    # - title: "Client support"
+    #   icon: university
+    #   host: support
+    #   url: "/en/clients/"
+    #   label: "new"
+    #   label-color: "red"
+    #   badge:
+    #   disable:
 
 header3:
 
@@ -231,17 +231,17 @@ header3:
       label-color:
       badge:
       disable:
-    - title: separator
-    - title: header
-      text: "Dedicate support site"
-    - title: "PEB Support"
-      icon: university
-      host: support
-      url: "/"
-      label: "new"
-      label-color: "red"
-      badge:
-      disable:
+    # - title: separator
+    # - title: header
+    #   text: "Dedicate support site"
+    # - title: "PEB Support"
+    #   icon: university
+    #   host: support
+    #   url: "/"
+    #   label: "new"
+    #   label-color: "red"
+    #   badge:
+    #   disable:
     - title: separator
     - title: header
       text: "Read our updates"
