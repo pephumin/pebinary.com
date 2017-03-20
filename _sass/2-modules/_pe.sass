@@ -5,9 +5,9 @@
   src: url("../fonts/pe.woff?pe") format("woff")
 
 i
-  font-family: "pe" !important
+  font-family: "pe"
   display: inline-block
-  font: normal normal normal 14px/1 pe
+  font: normal normal normal 14px/1 "pe"
   font-size: inherit
   text-rendering: auto
   vertical-align: baseline
@@ -65,58 +65,81 @@ i
 
 .pe-spin
   -webkit-animation: pe-spin 2s infinite linear
+  -moz-animation: pe-spin 2s infinite linear
+  -ms-animation: pe-spin 2s infinite linear
+  -o-animation: pe-spin 2s infinite linear
   animation: pe-spin 2s infinite linear
 
 .pe-pulse
   -webkit-animation: pe-spin 1s infinite steps(8)
+  -moz-animation: pe-spin 1s infinite steps(8)
+  -ms-animation: pe-spin 1s infinite steps(8)
+  -o-animation: pe-spin 1s infinite steps(8)
   animation: pe-spin 1s infinite steps(8)
 
 @-webkit-keyframes pe-spin
   0%
     -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
     transform: rotate(0deg)
 
   100%
     -webkit-transform: rotate(359deg)
+    -moz-transform: rotate(359deg)
+    -ms-transform: rotate(359deg)
+    -o-transform: rotate(359deg)
     transform: rotate(359deg)
 
 @keyframes pe-spin
   0%
     -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
     transform: rotate(0deg)
 
   100%
     -webkit-transform: rotate(359deg)
+    -moz-transform: rotate(359deg)
+    -ms-transform: rotate(359deg)
+    -o-transform: rotate(359deg)
     transform: rotate(359deg)
 
 .pe-rotate-90
-  //filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1)
   -webkit-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
   -ms-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
   transform: rotate(90deg)
 
 .pe-rotate-180
-  //filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2)
   -webkit-transform: rotate(180deg)
+  -moz-transform: rotate(180deg)
   -ms-transform: rotate(180deg)
+  -o-transform: rotate(180deg)
   transform: rotate(180deg)
 
 .pe-rotate-270
-  //filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
   -webkit-transform: rotate(270deg)
+  -moz-transform: rotate(270deg)
   -ms-transform: rotate(270deg)
+  -o-transform: rotate(270deg)
   transform: rotate(270deg)
 
 .pe-flip-horizontal
-  //filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)
   -webkit-transform: scale(-1, 1)
+  -moz-transform: scale(-1, 1)
   -ms-transform: scale(-1, 1)
+  -o-transform: scale(-1, 1)
   transform: scale(-1, 1)
 
 .pe-flip-vertical
-  //filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)
   -webkit-transform: scale(1, -1)
+  -moz-transform: scale(1, -1)
   -ms-transform: scale(1, -1)
+  -o-transform: scale(1, -1)
   transform: scale(1, -1)
 
 \:root
@@ -194,7 +217,13 @@ i
 .pe-check:before
   content: "\f00c"
 
-.pe-close:before, .pe-remove:before, .pe-times:before
+.pe-close:before
+  content: "\f00d"
+
+.pe-remove:before
+  content: "\f00d"
+
+.pe-times:before
   content: "\f00d"
 
 .pe-search-plus:before
@@ -209,7 +238,9 @@ i
 .pe-signal:before
   content: "\f012"
 
-.pe-cog:before,
+.pe-cog:before
+  content: "\f013"
+
 .pe-gear:before
   content: "\f013"
 
@@ -243,7 +274,9 @@ i
 .pe-play-circle-o:before
   content: "\f01d"
 
-.pe-repeat:before,
+.pe-repeat:before
+  content: "\f01e"
+
 .pe-rotate-right:before
   content: "\f01e"
 
@@ -325,7 +358,9 @@ i
 .pe-list:before
   content: "\f03a"
 
-.pe-dedent:before,
+.pe-dedent:before
+  content: "\f03b"
+
 .pe-outdent:before
   content: "\f03b"
 
@@ -335,8 +370,12 @@ i
 .pe-video-camera:before
   content: "\f03d"
 
-.pe-image:before,
-.pe-photo:before,
+.pe-image:before
+  content: "\f03e"
+
+.pe-photo:before
+  content: "\f03e"
+
 .pe-picture-o:before
   content: "\f03e"
 
@@ -352,7 +391,9 @@ i
 .pe-tint:before
   content: "\f043"
 
-.pe-edit:before,
+.pe-edit:before
+  content: "\f044"
+
 .pe-pencil-square-o:before
   content: "\f044"
 
@@ -443,7 +484,9 @@ i
 .pe-arrow-down:before
   content: "\f063"
 
-.pe-mail-forward:before,
+.pe-mail-forward:before
+  content: "\f064"
+
 .pe-share:before
   content: "\f064"
 
@@ -480,7 +523,9 @@ i
 .pe-eye-slash:before
   content: "\f070"
 
-.pe-exclamation-triangle:before,
+.pe-exclamation-triangle:before
+  content: "\f071"
+
 .pe-warning:before
   content: "\f071"
 
@@ -523,7 +568,9 @@ i
 .pe-arrows-h:before
   content: "\f07e"
 
-.pe-bar-chart:before,
+.pe-bar-chart:before
+  content: "\f080"
+
 .pe-bar-chart-o:before
   content: "\f080"
 
@@ -539,7 +586,9 @@ i
 .pe-key:before
   content: "\f084"
 
-.pe-cogs:before,
+.pe-cogs:before
+  content: "\f085"
+
 .pe-gears:before
   content: "\f085"
 
@@ -600,7 +649,9 @@ i
 .pe-twitter:before
   content: "\f099"
 
-.pe-facebook:before,
+.pe-facebook:before
+  content: "\f09a"
+
 .pe-facebook-f:before
   content: "\f09a"
 
@@ -613,7 +664,9 @@ i
 .pe-credit-card:before
   content: "\f09d"
 
-.pe-feed:before,
+.pe-feed:before
+  content: "\f09e"
+
 .pe-rss:before
   content: "\f09e"
 
@@ -671,11 +724,15 @@ i
 .pe-arrows-alt:before
   content: "\f0b2"
 
-.pe-group:before,
+.pe-group:before
+  content: "\f0c0"
+
 .pe-users:before
   content: "\f0c0"
 
-.pe-chain:before,
+.pe-chain:before
+  content: "\f0c1"
+
 .pe-link:before
   content: "\f0c1"
 
@@ -685,26 +742,36 @@ i
 .pe-flask:before
   content: "\f0c3"
 
-.pe-cut:before,
+.pe-cut:before
+  content: "\f0c4"
+
 .pe-scissors:before
   content: "\f0c4"
 
-.pe-copy:before,
+.pe-copy:before
+  content: "\f0c5"
+
 .pe-files-o:before
   content: "\f0c5"
 
 .pe-paperclip:before
   content: "\f0c6"
 
-.pe-floppy-o:before,
+.pe-floppy-o:before
+  content: "\f0c7"
+
 .pe-save:before
   content: "\f0c7"
 
 .pe-square:before
   content: "\f0c8"
 
-.pe-bars:before,
-.pe-navicon:before,
+.pe-bars:before
+  content: "\f0c9"
+
+.pe-navicon:before
+  content: "\f0c9"
+
 .pe-reorder:before
   content: "\f0c9"
 
@@ -759,15 +826,21 @@ i
 .pe-columns:before
   content: "\f0db"
 
-.pe-sort:before,
+.pe-sort:before
+  content: "\f0dc"
+
 .pe-unsorted:before
   content: "\f0dc"
 
-.pe-sort-desc:before,
+.pe-sort-desc:before
+  content: "\f0dd"
+
 .pe-sort-down:before
   content: "\f0dd"
 
-.pe-sort-asc:before,
+.pe-sort-asc:before
+  content: "\f0de"
+
 .pe-sort-up:before
   content: "\f0de"
 
@@ -777,15 +850,21 @@ i
 .pe-linkedin:before
   content: "\f0e1"
 
-.pe-rotate-left:before,
+.pe-rotate-left:before
+  content: "\f0e2"
+
 .pe-undo:before
   content: "\f0e2"
 
-.pe-gavel:before,
+.pe-gavel:before
+  content: "\f0e3"
+
 .pe-legal:before
   content: "\f0e3"
 
-.pe-dashboard:before,
+.pe-dashboard:before
+  content: "\f0e4"
+
 .pe-tachometer:before
   content: "\f0e4"
 
@@ -795,7 +874,9 @@ i
 .pe-comments-o:before
   content: "\f0e6"
 
-.pe-bolt:before,
+.pe-bolt:before
+  content: "\f0e7"
+
 .pe-flash:before
   content: "\f0e7"
 
@@ -805,7 +886,9 @@ i
 .pe-umbrella:before
   content: "\f0e9"
 
-.pe-clipboard:before,
+.pe-clipboard:before
+  content: "\f0ea"
+
 .pe-paste:before
   content: "\f0ea"
 
@@ -899,7 +982,9 @@ i
 .pe-tablet:before
   content: "\f10a"
 
-.pe-mobile:before,
+.pe-mobile:before
+  content: "\f10b"
+
 .pe-mobile-phone:before
   content: "\f10b"
 
@@ -918,7 +1003,9 @@ i
 .pe-circle:before
   content: "\f111"
 
-.pe-mail-reply:before,
+.pe-mail-reply:before
+  content: "\f112"
+
 .pe-reply:before
   content: "\f112"
 
@@ -958,12 +1045,18 @@ i
 .pe-code:before
   content: "\f121"
 
-.pe-mail-reply-all:before,
+.pe-mail-reply-all:before
+  content: "\f122"
+
 .pe-reply-all:before
   content: "\f122"
 
-.pe-star-half-empty:before,
-.pe-star-half-full:before,
+.pe-star-half-empty:before
+  content: "\f123"
+
+.pe-star-half-full:before
+  content: "\f123"
+
 .pe-star-half-o:before
   content: "\f123"
 
@@ -976,7 +1069,9 @@ i
 .pe-code-fork:before
   content: "\f126"
 
-.pe-chain-broken:before,
+.pe-chain-broken:before
+  content: "\f127"
+
 .pe-unlink:before
   content: "\f127"
 
@@ -1091,49 +1186,75 @@ i
 .pe-compass:before
   content: "\f14e"
 
-.pe-caret-square-o-down:before,
+.pe-caret-square-o-down:before
+  content: "\f150"
+
 .pe-toggle-down:before
   content: "\f150"
 
-.pe-caret-square-o-up:before,
+.pe-caret-square-o-up:before
+  content: "\f151"
+
 .pe-toggle-up:before
   content: "\f151"
 
-.pe-caret-square-o-right:before,
+.pe-caret-square-o-right:before
+  content: "\f152"
+
 .pe-toggle-right:before
   content: "\f152"
 
-.pe-eur:before,
+.pe-eur:before
+  content: "\f153"
+
 .pe-euro:before
   content: "\f153"
 
 .pe-gbp:before
   content: "\f154"
 
-.pe-dollar:before,
+.pe-dollar:before
+  content: "\f155"
+
 .pe-usd:before
   content: "\f155"
 
-.pe-inr:before,
+.pe-inr:before
+  content: "\f156"
+
 .pe-rupee:before
   content: "\f156"
 
-.pe-cny:before,
-.pe-jpy:before,
-.pe-rmb:before,
+.pe-cny:before
+  content: "\f157"
+
+.pe-jpy:before
+  content: "\f157"
+
+.pe-rmb:before
+  content: "\f157"
+
 .pe-yen:before
   content: "\f157"
 
-.pe-rouble:before,
-.pe-rub:before,
+.pe-rouble:before
+  content: "\f158"
+
+.pe-rub:before
+  content: "\f158"
+
 .pe-ruble:before
   content: "\f158"
 
-.pe-krw:before,
+.pe-krw:before
+  content: "\f159"
+
 .pe-won:before
   content: "\f159"
 
-.pe-bitcoin:before,
+.pe-bitcoin:before
+  content: "\f15a"
+
 .pe-btc:before
   content: "\f15a"
 
@@ -1251,7 +1372,9 @@ i
 .pe-male:before
   content: "\f183"
 
-.pe-gittip:before,
+.pe-gittip:before
+  content: "\f184"
+
 .pe-gratipay:before
   content: "\f184"
 
@@ -1288,7 +1411,9 @@ i
 .pe-arrow-circle-o-left:before
   content: "\f190"
 
-.pe-caret-square-o-left:before,
+.pe-caret-square-o-left:before
+  content: "\f191"
+
 .pe-toggle-left:before
   content: "\f191"
 
@@ -1301,7 +1426,9 @@ i
 .pe-vimeo-square:before
   content: "\f194"
 
-.pe-try:before,
+.pe-try:before
+  content: "\f195"
+
 .pe-turkish-lira:before
   content: "\f195"
 
@@ -1323,12 +1450,18 @@ i
 .pe-openid:before
   content: "\f19b"
 
-.pe-bank:before,
-.pe-institution:before,
+.pe-bank:before
+  content: "\f19c"
+
+.pe-institution:before
+  content: "\f19c"
+
 .pe-university:before
   content: "\f19c"
 
-.pe-graduation-cap:before,
+.pe-graduation-cap:before
+  content: "\f19d"
+
 .pe-mortar-board:before
   content: "\f19d"
 
@@ -1407,11 +1540,15 @@ i
 .pe-recycle:before
   content: "\f1b8"
 
-.pe-automobile:before,
+.pe-automobile:before
+  content: "\f1b9"
+
 .pe-car:before
   content: "\f1b9"
 
-.pe-cab:before,
+.pe-cab:before
+  content: "\f1ba"
+
 .pe-taxi:before
   content: "\f1ba"
 
@@ -1442,20 +1579,30 @@ i
 .pe-file-powerpoint-o:before
   content: "\f1c4"
 
-.pe-file-image-o:before,
-.pe-file-photo-o:before,
+.pe-file-image-o:before
+  content: "\f1c5"
+
+.pe-file-photo-o:before
+  content: "\f1c5"
+
 .pe-file-picture-o:before
   content: "\f1c5"
 
-.pe-file-archive-o:before,
+.pe-file-archive-o:before
+  content: "\f1c6"
+
 .pe-file-zip-o:before
   content: "\f1c6"
 
-.pe-file-audio-o:before,
+.pe-file-audio-o:before
+  content: "\f1c7"
+
 .pe-file-sound-o:before
   content: "\f1c7"
 
-.pe-file-movie-o:before,
+.pe-file-movie-o:before
+  content: "\f1c8"
+
 .pe-file-video-o:before
   content: "\f1c8"
 
@@ -1471,22 +1618,36 @@ i
 .pe-jsfiddle:before
   content: "\f1cc"
 
-.pe-life-bouy:before,
-.pe-life-buoy:before,
-.pe-life-ring:before,
-.pe-life-saver:before,
+.pe-life-bouy:before
+  content: "\f1cd"
+
+.pe-life-buoy:before
+  content: "\f1cd"
+
+.pe-life-ring:before
+  content: "\f1cd"
+
+.pe-life-saver:before
+  content: "\f1cd"
+
 .pe-support:before
   content: "\f1cd"
 
 .pe-circle-o-notch:before
   content: "\f1ce"
 
-.pe-ra:before,
-.pe-rebel:before,
+.pe-ra:before
+  content: "\f1d0"
+
+.pe-rebel:before
+  content: "\f1d0"
+
 .pe-resistance:before
   content: "\f1d0"
 
-.pe-empire:before,
+.pe-empire:before
+  content: "\f1d1"
+
 .pe-ge:before
   content: "\f1d1"
 
@@ -1496,8 +1657,12 @@ i
 .pe-git:before
   content: "\f1d3"
 
-.pe-hacker-news:before,
-.pe-y-combinator-square:before,
+.pe-hacker-news:before
+  content: "\f1d4"
+
+.pe-y-combinator-square:before
+  content: "\f1d4"
+
 .pe-yc-square:before
   content: "\f1d4"
 
@@ -1507,15 +1672,21 @@ i
 .pe-qq:before
   content: "\f1d6"
 
-.pe-wechat:before,
+.pe-wechat:before
+  content: "\f1d7"
+
 .pe-weixin:before
   content: "\f1d7"
 
-.pe-paper-plane:before,
+.pe-paper-plane:before
+  content: "\f1d8"
+
 .pe-send:before
   content: "\f1d8"
 
-.pe-paper-plane-o:before,
+.pe-paper-plane-o:before
+  content: "\f1d9"
+
 .pe-send-o:before
   content: "\f1d9"
 
@@ -1543,7 +1714,9 @@ i
 .pe-bomb:before
   content: "\f1e2"
 
-.pe-futbol-o:before,
+.pe-futbol-o:before
+  content: "\f1e3"
+
 .pe-soccer-ball-o:before
   content: "\f1e3"
 
@@ -1658,8 +1831,12 @@ i
 .pe-cc:before
   content: "\f20a"
 
-.pe-ils:before,
-.pe-shekel:before,
+.pe-ils:before
+  content: "\f20b"
+
+.pe-shekel:before
+  content: "\f20b"
+
 .pe-sheqel:before
   content: "\f20b"
 
@@ -1726,7 +1903,9 @@ i
 .pe-mercury:before
   content: "\f223"
 
-.pe-intersex:before,
+.pe-intersex:before
+  content: "\f224"
+
 .pe-transgender:before
   content: "\f224"
 
@@ -1775,7 +1954,9 @@ i
 .pe-user-times:before
   content: "\f235"
 
-.pe-bed:before,
+.pe-bed:before
+  content: "\f236"
+
 .pe-hotel:before
   content: "\f236"
 
@@ -1791,7 +1972,9 @@ i
 .pe-medium:before
   content: "\f23a"
 
-.pe-y-combinator:before,
+.pe-y-combinator:before
+  content: "\f23b"
+
 .pe-yc:before
   content: "\f23b"
 
@@ -1804,23 +1987,36 @@ i
 .pe-expeditedssl:before
   content: "\f23e"
 
-.pe-battery-4:before,
+.pe-battery:before
+  content: "\f240"
+
+.pe-battery-4:before
+  content: "\f240"
+
 .pe-battery-full:before
   content: "\f240"
 
-.pe-battery-3:before,
+.pe-battery-3:before
+  content: "\f241"
+
 .pe-battery-three-quarters:before
   content: "\f241"
 
-.pe-battery-2:before,
+.pe-battery-2:before
+  content: "\f242"
+
 .pe-battery-half:before
   content: "\f242"
 
-.pe-battery-1:before,
+.pe-battery-1:before
+  content: "\f243"
+
 .pe-battery-quarter:before
   content: "\f243"
 
-.pe-battery-0:before,
+.pe-battery-0:before
+  content: "\f244"
+
 .pe-battery-empty:before
   content: "\f244"
 
@@ -1857,26 +2053,36 @@ i
 .pe-hourglass-o:before
   content: "\f250"
 
-.pe-hourglass-1:before,
+.pe-hourglass-1:before
+  content: "\f251"
+
 .pe-hourglass-start:before
   content: "\f251"
 
-.pe-hourglass-2:before,
+.pe-hourglass-2:before
+  content: "\f252"
+
 .pe-hourglass-half:before
   content: "\f252"
 
-.pe-hourglass-3:before,
+.pe-hourglass-3:before
+  content: "\f253"
+
 .pe-hourglass-end:before
   content: "\f253"
 
 .pe-hourglass:before
   content: "\f254"
 
-.pe-hand-grab-o:before,
+.pe-hand-grab-o:before
+  content: "\f255"
+
 .pe-hand-rock-o:before
   content: "\f255"
 
-.pe-hand-paper-o:before,
+.pe-hand-paper-o:before
+  content: "\f256"
+
 .pe-hand-stop-o:before
   content: "\f256"
 
@@ -1940,7 +2146,9 @@ i
 .pe-internet-explorer:before
   content: "\f26b"
 
-.pe-television:before,
+.pe-television:before
+  content: "\f26c"
+
 .pe-tv:before
   content: "\f26c"
 
@@ -2094,12 +2302,18 @@ i
 .pe-assistive-listening-systems:before
   content: "\f2a2"
 
-.pe-american-sign-language-interpreting:before,
+.pe-american-sign-language-interpreting:before
+  content: "\f2a3"
+
 .pe-asl-interpreting:before
   content: "\f2a3"
 
-.pe-deaf:before,
-.pe-deafness:before,
+.pe-deaf:before
+  content: "\f2a4"
+
+.pe-deafness:before
+  content: "\f2a4"
+
 .pe-hard-of-hearing:before
   content: "\f2a4"
 
@@ -2109,7 +2323,9 @@ i
 .pe-glide-g:before
   content: "\f2a6"
 
-.pe-sign-language:before,
+.pe-sign-language:before
+  content: "\f2a7"
+
 .pe-signing:before
   content: "\f2a7"
 
@@ -2143,13 +2359,204 @@ i
 .pe-themeisle:before
   content: "\f2b2"
 
-.pe-google-plus-circle:before,
+.pe-google-plus-circle:before
+  content: "\f2b3"
+
 .pe-google-plus-official:before
   content: "\f2b3"
 
-.pe-fa:before,
+.pe-fa:before
+  content: "\f2b4"
+
 .pe-font-awesome:before
   content: "\f2b4"
 
+.pe-handshake-o:before
+  content: "\f2b5"
+
+.pe-envelope-open:before
+  content: "\f2b6"
+
+.pe-envelope-open-o:before
+  content: "\f2b7"
+
+.pe-linode:before
+  content: "\f2b8"
+
+.pe-address-book:before
+  content: "\f2b9"
+
+.pe-address-book-o:before
+  content: "\f2ba"
+
+.pe-address-card:before
+  content: "\f2bb"
+
+.pe-vcard:before
+  content: "\f2bb"
+
+.pe-address-card-o:before
+  content: "\f2bc"
+
+.pe-vcard-o:before
+  content: "\f2bc"
+
+.pe-user-circle:before
+  content: "\f2bd"
+
+.pe-user-circle-o:before
+  content: "\f2be"
+
+.pe-user-o:before
+  content: "\f2c0"
+
+.pe-id-badge:before
+  content: "\f2c1"
+
+.pe-drivers-license:before
+  content: "\f2c2"
+
+.pe-id-card:before
+  content: "\f2c2"
+
+.pe-drivers-license-o:before
+  content: "\f2c3"
+
+.pe-id-card-o:before
+  content: "\f2c3"
+
+.pe-quora:before
+  content: "\f2c4"
+
+.pe-free-code-camp:before
+  content: "\f2c5"
+
+.pe-telegram:before
+  content: "\f2c6"
+
+.pe-thermometer:before
+  content: "\f2c7"
+
+.pe-thermometer-4:before
+  content: "\f2c7"
+
+.pe-thermometer-full:before
+  content: "\f2c7"
+
+.pe-thermometer-3:before
+  content: "\f2c8"
+
+.pe-thermometer-three-quarters:before
+  content: "\f2c8"
+
+.pe-thermometer-2:before
+  content: "\f2c9"
+
+.pe-thermometer-half:before
+  content: "\f2c9"
+
+.pe-thermometer-1:before
+  content: "\f2ca"
+
+.pe-thermometer-quarter:before
+  content: "\f2ca"
+
+.pe-thermometer-0:before
+  content: "\f2cb"
+
+.pe-thermometer-empty:before
+  content: "\f2cb"
+
+.pe-shower:before
+  content: "\f2cc"
+
+.pe-bath:before
+  content: "\f2cd"
+
+.pe-bathtub:before
+  content: "\f2cd"
+
+.pe-s15:before
+  content: "\f2cd"
+
+.pe-podcast:before
+  content: "\f2ce"
+
+.pe-window-maximize:before
+  content: "\f2d0"
+
+.pe-window-minimize:before
+  content: "\f2d1"
+
+.pe-window-restore:before
+  content: "\f2d2"
+
+.pe-times-rectangle:before
+  content: "\f2d3"
+
+.pe-window-close:before
+  content: "\f2d3"
+
+.pe-times-rectangle-o:before
+  content: "\f2d4"
+
+.pe-window-close-o:before
+  content: "\f2d4"
+
+.pe-bandcamp:before
+  content: "\f2d5"
+
+.pe-grav:before
+  content: "\f2d6"
+
+.pe-etsy:before
+  content: "\f2d7"
+
+.pe-imdb:before
+  content: "\f2d8"
+
+.pe-ravelry:before
+  content: "\f2d9"
+
+.pe-eercast:before
+  content: "\f2da"
+
+.pe-microchip:before
+  content: "\f2db"
+
+.pe-snowflake-o:before
+  content: "\f2dc"
+
+.pe-superpowers:before
+  content: "\f2dd"
+
+.pe-wpexplorer:before
+  content: "\f2de"
+
+.pe-meetup:before
+  content: "\f2e0"
+
+.pe-peb:before
+  content: "\e900"
+
 .pe-logo:before
   content: "\e900"
+
+.pe-ssq .path1:before
+  content: "\e901"
+  color: rgb(0, 0, 0)
+
+.pe-ssq .path2:before
+  content: "\e902"
+  margin-left: -1em
+  color: rgb(170, 170, 170)
+
+.pe-ssq .path3:before
+  content: "\e903"
+  margin-left: -1em
+  color: rgb(170, 170, 170)
+
+.pe-ssq .path4:before
+  content: "\e904"
+  margin-left: -1em
+  color: rgb(0, 0, 0)
