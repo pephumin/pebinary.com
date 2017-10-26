@@ -122,10 +122,26 @@ header2:
       label-color:
       badge:
       disable:
-    - title: "Your account"
-      icon: cogs
+    - title: "Account activation"
+      icon: flag-o
+      host: client
+      url: "/members/setup/"
+      label:
+      label-color:
+      badge:
+      disable:
+    - title: "Forgot password?"
+      icon: life-ring
+      host: client
+      url: "/members/setup/?d=recovery"
+      label:
+      label-color:
+      badge:
+      disable:
+    - title: "Member access"
+      icon: play
       host: member
-      url: "/members/?w=login"
+      url: "/members/"
       label:
       label-color:
       badge:
@@ -176,15 +192,31 @@ header2:
     - title: "Request for access"
       icon: bullhorn
       host: client
-      url: "/request/"
+      url: "/contact/?d=request"
       label:
       label-color:
       badge:
       disable:
-    - title: "Your account"
-      icon: wrench
+    - title: "Account activation"
+      icon: flag-o
       host: client
-      url: "/?w=login"
+      url: "/setup/"
+      label:
+      label-color:
+      badge:
+      disable:
+    - title: "Forgot password?"
+      icon: life-ring
+      host: client
+      url: "/setup/?d=recovery"
+      label:
+      label-color:
+      badge:
+      disable:
+    - title: "Client access"
+      icon: play
+      host: client
+      url: "/"
       label:
       label-color:
       badge:
@@ -242,17 +274,19 @@ header3:
     #   label-color: "red"
     #   badge:
     #   disable:
-    - title: separator
-    - title: header
-      text: "Read our updates"
-    - title: "Blog"
-      icon: pencil
-      host: main-en
-      url: "/blog/"
-      label: "updated"
-      label-color: "blue"
-      badge: true
-      disable:
+
+    # Temporary disabled by Phumin Sept 21, 2017
+    # - title: separator
+    # - title: header
+    #   text: "Read our updates"
+    # - title: "Blog"
+    #   icon: pencil
+    #   host: main-en
+    #   url: "/blog/"
+    #   label: "updated"
+    #   label-color: "blue"
+    #   badge: true
+    #   disable:
 
 
 
