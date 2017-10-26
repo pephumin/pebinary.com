@@ -19,12 +19,12 @@ email:                support@pebinary.com
 description:          "A market research company specialised in mobile survey"
 locale:               en
 # permalink:            pretty
-excerpt_separator:    <!--more-->
+excerpt_separator:    "<!--more-->"
 host:                 localhost
 port:                 4000
-# url:                  https://www.pebinary.com
-url:                  http://pephumin.github.io
-baseurl:              /pebinary.com
+url:                  https://www.pebinary.com
+# url:                  http://pephumin.github.io
+# baseurl:              /pebinary.com
 paginate:             5
 paginate_path:        /blog/:num/
 permalink:            /blog/:year/:month/:day/:title.html
@@ -55,6 +55,7 @@ domains:
   support:            http://www.pebinary.net
   member:             http://www.siamsquare.org
   client:             http://www.siamsquare.org/admin
+  api:                http://www.siamsquare.org.uk
 
 include:
   - _pages
@@ -70,7 +71,7 @@ exclude:
   - firebase.json
   - .firebaserc
 
-gems:
+plugins:
   - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
