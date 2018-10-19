@@ -7,7 +7,7 @@ header1:
 - title: "Home"
   icon: home
   host: main-en
-  url: "/main.html"
+  url: "/index.html"
 
 header2:
 
