@@ -11,3 +11,4 @@ firebase-debug.log
 run
 Gemfile.lock
 .firebase/*
+*.cache
