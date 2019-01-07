@@ -80,80 +80,80 @@ header2:
   #     badge:
   #     disable: true
 
-- title: "Members"
-  icon: user
-  host: main-en
-  url: "/members/"
-  items:
-    - title: header
-      text: "Information for members"
-    - title: "Members"
-      icon: user
-      host: main-en
-      url: "/members/"
-      label:
-      label-color:
-      badge:
-      disable:
-    - title: "Member benefits"
-      icon: thumbs-o-up
-      host: main-en
-      url: "/members/benefits.html"
-      label:
-      label-color:
-      badge:
-      disable:
-    # - title: "Reward program"
-    #   icon: diamond
-    #   host: main-en
-    #   url: "/members/rewards.html"
-    #   label:
-    #   label-color:
-    #   badge:
-    #   disable: true
-    - title: separator
-    - title: header
-      text: "Join our membership"
-    - title: "Create an account"
-      icon: user-plus
-      host: member
-      url: "/members/signup/"
-      label:
-      label-color:
-      badge:
-      disable:
-    - title: "Account activation"
-      icon: flag-o
-      host: client
-      url: "/members/setup/"
-      label:
-      label-color:
-      badge:
-      disable:
-    - title: "Forgot password?"
-      icon: life-ring
-      host: client
-      url: "/members/setup/?d=recovery"
-      label:
-      label-color:
-      badge:
-      disable:
-    - title: "Member access"
-      icon: play
-      host: member
-      url: "/members/"
-      label:
-      label-color:
-      badge:
-      disable:
-    # - title: "Member support"
-    #   icon: university
-    #   host: support
-    #   url: "/th/members/"
-    #   label: "new"
-    #   label-color: "red"
-    #   badge:
-    #   disable:
+# - title: "Members"
+#   icon: user
+#   host: main-en
+#   url: "/members/"
+#   items:
+#     - title: header
+#       text: "Information for members"
+#     - title: "Members"
+#       icon: user
+#       host: main-en
+#       url: "/members/"
+#       label:
+#       label-color:
+#       badge:
+#       disable:
+#     - title: "Member benefits"
+#       icon: thumbs-o-up
+#       host: main-en
+#       url: "/members/benefits.html"
+#       label:
+#       label-color:
+#       badge:
+#       disable:
+#     # - title: "Reward program"
+#     #   icon: diamond
+#     #   host: main-en
+#     #   url: "/members/rewards.html"
+#     #   label:
+#     #   label-color:
+#     #   badge:
+#     #   disable: true
+#     - title: separator
+#     - title: header
+#       text: "Join our membership"
+#     - title: "Create an account"
+#       icon: user-plus
+#       host: member
+#       url: "/members/signup/"
+#       label:
+#       label-color:
+#       badge:
+#       disable:
+#     - title: "Account activation"
+#       icon: flag-o
+#       host: client
+#       url: "/members/setup/"
+#       label:
+#       label-color:
+#       badge:
+#       disable:
+#     - title: "Forgot password?"
+#       icon: life-ring
+#       host: client
+#       url: "/members/setup/?d=recovery"
+#       label:
+#       label-color:
+#       badge:
+#       disable:
+#     - title: "Member access"
+#       icon: play
+#       host: member
+#       url: "/members/"
+#       label:
+#       label-color:
+#       badge:
+#       disable:
+#     # - title: "Member support"
+#     #   icon: university
+#     #   host: support
+#     #   url: "/th/members/"
+#     #   label: "new"
+#     #   label-color: "red"
+#     #   badge:
+#     #   disable:
 
 - title: "Clients"
   icon: briefcase
