@@ -1,0 +1,52 @@
+  <h3>SiamSquare Portal and SiamSquare Survey! application</h3>
+  <p>We also operate the SiamSquare survey platform, which client companies use to run surveys:</p>
+  <ul>
+    <li><strong>SiamSquare Portal</strong> (<a href="https://siamsquare.org">siamsquare.org</a>), where companies design questionnaires, manage their team and interviewer logins, and view and download results.</li>
+    <li><strong>SiamSquare web survey</strong> (siamsquare.org/r/), where respondents and interviewers answer a survey in a browser.</li>
+    <li><strong>SiamSquare Survey!</strong>, our iOS and Android application, which interviewers use to conduct interviews, online or offline.</li>
+  </ul>
+  <p>The company that runs a survey decides what it asks and why, so it is responsible for its respondents' answers (the <em>"data controller"</em>). We store and process those answers on its behalf (the <em>"data processor"</em>). For portal accounts we are the data controller. We follow Thailand's Personal Data Protection Act B.E. 2562 (2019) (<em>"PDPA"</em>).</p>
+
+  <h4>What we collect</h4>
+  <ul>
+    <li><strong>Account details</strong> of portal users: full name, email address, optional mobile number, role and company.</li>
+    <li><strong>Sign-in records</strong>: the time and IP address of recent sign-ins, and failed sign-in attempts.</li>
+    <li><strong>Activity log</strong>: what was changed in the portal, by whom and when.</li>
+    <li><strong>Interviewer and supervisor logins</strong> created by a company in the portal, and the interviews each one submitted or edited.</li>
+    <li><strong>Survey answers</strong> given by respondents, as the company's questionnaire asks.</li>
+    <li><strong>Photos and files</strong>, only when a question asks for one.</li>
+    <li><strong>Audio recordings</strong> of an interview, only when the survey records audio.</li>
+    <li><strong>Location</strong> (latitude and longitude) at the time of an interview, only when the device allows it.</li>
+    <li><strong>Interview details</strong>: when the interview took place and how long it took, whether it came from the web survey or the application, and the IP address it was sent from.</li>
+    <li><strong>Credits and payments</strong>: credit balance and transactions. Card payments are handled by Stripe; we never see card numbers.</li>
+  </ul>
+  <p>We do not use advertising identifiers, we do not track people across other applications or websites, and we do not sell personal information.</p>
+
+  <h4>Why we collect it</h4>
+  <ul>
+    <li>To let people sign in, to keep accounts secure, and to show a team who did what.</li>
+    <li>To deliver survey results to the company that ran the survey.</li>
+    <li>For quality control: to confirm that an interview took place, when, where and how long it took.</li>
+    <li>To charge for paid features and to issue refunds.</li>
+  </ul>
+  <p>When a portal user imports a questionnaire document or asks the survey assistant for help, the document or question is sent to Anthropic's Claude service to prepare the answer. Respondents' answers are never sent.</p>
+
+  <h4>Consent and device permissions</h4>
+  <p>Respondents take part by choice, and the company running the survey must get their consent before an interview starts, including consent to audio recording. A respondent can stop an interview at any time.</p>
+  <p>The SiamSquare Survey! application asks for the phone's permission before it uses each of the following, and still works without them:</p>
+  <ul>
+    <li><strong>Microphone</strong>, to record interview audio when the survey requires it.</li>
+    <li><strong>Location</strong> (while the application is in use), to attach latitude and longitude to a saved interview.</li>
+    <li><strong>Camera</strong>, to take photos for photo questions and to scan a login QR code.</li>
+  </ul>
+  <p>Any permission can be withdrawn at any time in the phone's settings.</p>
+
+  <h4>Storage and retention</h4>
+  <p>The portal runs on Google Cloud in Bangkok, Thailand. Files such as photos and audio are kept in Google Cloud Storage. All traffic is encrypted, each company can see only its own data, and each person can open only what their role allows.</p>
+  <p>Answers waiting on an interviewer's phone (for example, an interview done offline) stay inside the application until they are sent, and the phone's copy is then cleared. Survey data is kept for as long as the company keeps the survey, and is removed when the company deletes it. Deleted files stay in the file bin for 7 days and are then removed for good.</p>
+
+  <h4>Who can see survey data</h4>
+  <p>A survey's data can be seen only by the company that runs it: its owner, its managers and the people it gives access to, within the limits of their role. Interviewers see only the interviews they submitted, and supervisors see the interviews of their survey. The service providers that run parts of the platform for us are Google Cloud (hosting and storage), Anthropic (questionnaire import and the survey assistant), Stripe (card payments) and our email provider (invitations and password resets). We disclose personal information to authorities only when Thai law requires it.</p>
+
+  <h4>Your rights</h4>
+  <p>Under the PDPA you can ask to see a copy of your personal information, to correct it, to have it deleted or its use limited, to object to its use, and to withdraw your consent at any time. Respondents should contact the company that ran the survey, whose support email is shown in the application; we will help that company carry out the request. Portal users, interviewers and supervisors can contact us directly. We answer requests within 30 days. You can also complain to Thailand's Personal Data Protection Committee.</p>
